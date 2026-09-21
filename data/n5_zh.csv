@@ -1,0 +1,672 @@
+ref,写法,读音,中文释义,原英文释义
+lesson_n5:w001,---,ああ,啊（感叹、应答）,"Ah!, Oh!"
+lesson_n5:w002,会う,あう,见面，会面,"to meet, to see"
+lesson_n5:w003,青,あお,蓝色，青色,blue
+lesson_n5:w004,青い,あおい,蓝色的,blue
+lesson_n5:w005,赤,あか,红色,red
+lesson_n5:w006,赤い,あかい,红色的,red
+lesson_n5:w007,明るい,あかるい,明亮，开朗,bright (in reference to personality or weather); cheerful
+lesson_n5:w008,秋,あき,秋天,fall (season)
+lesson_n5:w009,開く,あく,开着，打开（自动词）,"to open, to become open"
+lesson_n5:w010,開ける,あける,打开（他动词）,to open (v.t.)
+lesson_n5:w011,上げる,あげる,举起，提高,"to raise, to lift"
+lesson_n5:w012,朝,あさ,早上，早晨,morning
+lesson_n5:w013,朝御飯,あさごはん,早饭,breakfast
+lesson_n5:w014,明後日,あさって,后天,day after tomorrow
+lesson_n5:w015,足,あし,脚，腿,foot; leg
+lesson_n5:w016,明日,あした,明天,tomorrow
+lesson_n5:w017,---,あそこ,那里，那边,"there, over there, that place"
+lesson_n5:w018,遊ぶ,あそぶ,玩，玩耍,to play; to spend time pleasantly; to hang out
+lesson_n5:w019,暖かい,あたたかい,暖和,warm
+lesson_n5:w020,頭,あたま,头,head
+lesson_n5:w021,新しい,あたらしい,新的,new
+lesson_n5:w022,---,あちら,那边，那里（礼貌说法）,this way (polite)
+lesson_n5:w023,暑い,あつい,热（天气热）,"hot (in reference to weather), warm"
+lesson_n5:w024,熱い,あつい,烫（东西烫）,hot (objects)
+lesson_n5:w025,厚い,あつい,厚，深厚,"kind, warm(hearted), thick, deep"
+lesson_n5:w026,---,あっち,那边（口语）,over there
+lesson_n5:w027,後,あと,之后，以后，其余,afterwards (later); in the future; the rest; since then
+lesson_n5:w028,---,あなた,你,you
+lesson_n5:w029,兄,あに,哥哥（指自己的）,(my) older brother (humble)
+lesson_n5:w030,姉,あね,姐姐（指自己的）,(my) older sister (humble)
+lesson_n5:w031,---,アパート,apartment，公寓,apartment (abbr.)
+lesson_n5:w032,---,あの,那个；嗯…（迟疑）,"that over there; like that, that way; um..."
+lesson_n5:w033,浴びる,あびる,冲澡，淋浴,"to bathe, to shower"
+lesson_n5:w034,危ない,あぶない,危险,"dangerous, critical"
+lesson_n5:w035,甘い,あまい,甜，甜蜜,"generous, sweet"
+lesson_n5:w036,余り,あまり,不太…（后接否定）,not very; surplus
+lesson_n5:w037,雨,あめ,雨,rain
+lesson_n5:w038,飴,あめ,糖，糖果,(hard) candy
+lesson_n5:w039,洗う,あらう,洗,to wash
+lesson_n5:w040,在る,ある,在，位于（非生物）,"to be, to have"
+lesson_n5:w041,有る,ある,有，拥有（非生物）,"to be, to have"
+lesson_n5:w042,歩く,あるく,走，步行,to walk
+lesson_n5:w043,---,あれ,那个（远处）,that one (over there)
+lesson_n5:w044,---,いい,好，可以,good
+lesson_n5:w045,---,いいえ,不，不是,"no, not at all"
+lesson_n5:w046,言う,いう,说,to say
+lesson_n5:w047,家,いえ,家，房子,"house, home"
+lesson_n5:w048,---,いかが,如何，怎么样,"how, in what way"
+lesson_n5:w049,行く,いく,去,to go
+lesson_n5:w050,---,いくつ,几个，几岁,"how many, how old"
+lesson_n5:w051,---,いくら,多少钱，多少,"how much, how many"
+lesson_n5:w052,池,いけ,池塘,pond
+lesson_n5:w053,医者,いしゃ,医生,doctor; physician
+lesson_n5:w054,椅子,いす,椅子,chair
+lesson_n5:w055,忙しい,いそがしい,忙,"busy (people, days)"
+lesson_n5:w056,痛い,いたい,疼，痛,hurt; painful; sore
+lesson_n5:w057,一,いち,一,one
+lesson_n5:w058,一日,いちにち,一天,one day (duration)
+lesson_n5:w059,一番,いちばん,最，第一,"best (most), first, number one"
+lesson_n5:w060,---,いつ,什么时候,when
+lesson_n5:w061,五日,いつか,五天，五号,five days; fifth day of the month
+lesson_n5:w062,一緒,いっしょ,一起,together
+lesson_n5:w063,五つ,いつつ,五个，五岁,five things
+lesson_n5:w064,---,いつも,总是，经常,"always, usually, every time, never (with neg. verb)"
+lesson_n5:w065,犬,いぬ,狗,dog
+lesson_n5:w066,今,いま,现在,now
+lesson_n5:w067,意味,いみ,意思，含义,"meaning, significance"
+lesson_n5:w068,妹,いもうと,妹妹（指自己的）,younger sister (humble)
+lesson_n5:w069,嫌,いや,讨厌，不喜欢,"disagreeable, detestable, unpleasant"
+lesson_n5:w070,入口,いりぐち,入口,entrance
+lesson_n5:w071,居る,いる,有，在（生物）,"(humble) to be (animate), to exist"
+lesson_n5:w072,要る,いる,需要,to need
+lesson_n5:w073,入れる,いれる,放进，装入,to put in
+lesson_n5:w074,色,いろ,颜色,color
+lesson_n5:w075,色々,いろいろ,各种各样,various
+lesson_n5:w076,上,うえ,上面，上边,"above (up, top, etc.), over, on top of"
+lesson_n5:w077,後ろ,うしろ,后面，背后,"back, behind, rear"
+lesson_n5:w078,薄い,うすい,薄，淡,"thin, weak"
+lesson_n5:w079,歌,うた,歌，歌曲,a song
+lesson_n5:w080,歌う,うたう,唱（歌）,to sing
+lesson_n5:w081,---,うち,家，我家（口语）,home; house; my place
+lesson_n5:w082,生まれる,うまれる,出生,to be born
+lesson_n5:w083,海,うみ,海，海边,"sea, beach"
+lesson_n5:w084,売る,うる,卖,to sell (v.t.)
+lesson_n5:w085,---,うるさい,吵，烦人,noisy; annoying
+lesson_n5:w086,上着,うわぎ,外套，上衣,"coat, jacket"
+lesson_n5:w087,絵,え,画，图画,a painting; a picture; a drawing
+lesson_n5:w088,映画,えいが,电影,"movie, film"
+lesson_n5:w089,映画館,えいがかん,电影院,"movie theater, cinema"
+lesson_n5:w090,英語,えいご,英语,English (language)
+lesson_n5:w091,---,ええ,嗯，是（随和的应答）,yes
+lesson_n5:w092,駅,えき,车站,station
+lesson_n5:w093,---,エレベーター,elevator，电梯,elevator
+lesson_n5:w094,鉛筆,えんぴつ,铅笔,pencil
+lesson_n5:w095,美味しい,おいしい,好吃，美味,"delicious, tasty"
+lesson_n5:w096,多い,おおい,多,many; there are a lot
+lesson_n5:w097,大きい,おおきい,大,"big, large"
+lesson_n5:w098,大きな,おおきな,大的（只接名词）,big
+lesson_n5:w099,大勢,おおぜい,很多人，众人,great number of people
+lesson_n5:w100,お母さん,おかあさん,妈妈,mother (formal)
+lesson_n5:w101,お菓子,おかし,点心，零食,"confections, sweets, snack"
+lesson_n5:w102,お金,おかね,钱,money
+lesson_n5:w103,起きる,おきる,起床，起来,"to get up (e.g., from sleeping); to happen"
+lesson_n5:w104,置く,おく,放，放置,to put; to lay; to place
+lesson_n5:w105,奥さん,おくさん,夫人，太太（别人的妻子）,(someone else's) wife (hon.)
+lesson_n5:w106,お酒,おさけ,酒，日本酒,sake; alcohol
+lesson_n5:w107,お皿,おさら,盘子,"plate, dish"
+lesson_n5:w108,伯父,おじさん,叔叔，伯伯，中年男人,"uncle, middle-aged man"
+lesson_n5:w109,---,おじいさん,爷爷，老爷爷,"grandfather, male senior citizen"
+lesson_n5:w110,教える,おしえる,教，告诉,"to teach, to inform, to instruct"
+lesson_n5:w111,押す,おす,按，推,"to push, to press, to stamp (e.g., a passport)"
+lesson_n5:w112,遅い,おそい,慢，晚,slow; (to be) late
+lesson_n5:w113,お茶,おちゃ,茶,(green) tea
+lesson_n5:w114,お手洗い,おてあらい,洗手间，厕所,"toilet, restroom, bathroom (lit., a place to wash one's hands)"
+lesson_n5:w115,お父さん,おとうさん,爸爸,father (formal)
+lesson_n5:w116,弟,おとうと,弟弟（指自己的）,younger brother
+lesson_n5:w117,男,おとこ,男人，男性,"man, male"
+lesson_n5:w118,男の子,おとこのこ,男孩,boy
+lesson_n5:w119,一昨日,おととい,前天,the day before yesterday
+lesson_n5:w120,---,おととし,前年,year before last
+lesson_n5:w121,大人,おとな,大人,adult
+lesson_n5:w122,お腹,おなか,肚子,stomach
+lesson_n5:w123,同じ,おなじ,一样，相同,"same, identical"
+lesson_n5:w124,お兄さん,おにいさん,哥哥（别人的）,(someone else's) older brother (formal)
+lesson_n5:w125,お姉さん,おねえさん,姐姐（别人的）,older sister (formal)
+lesson_n5:w126,伯母さん,おばさん,阿姨，姑姑，中年女性,aunt
+lesson_n5:w127,---,おばあさん,奶奶，老奶奶,"grandmother, female senior-citizen"
+lesson_n5:w128,お風呂,おふろ,洗澡，泡澡,a bath
+lesson_n5:w129,お弁当,おべんとう,便当，盒饭,a boxed lunch
+lesson_n5:w130,覚える,おぼえる,记住，学会,"to learn, to commit to memory, to remember, to memorize"
+lesson_n5:w131,---,おまわりさん,警察（亲切说法）,policeman (friendly term)
+lesson_n5:w132,重い,おもい,重，沉重,heavy; serious
+lesson_n5:w133,面白い,おもしろい,有趣，有意思,"interesting, amusing"
+lesson_n5:w134,泳ぐ,およぐ,游泳,to swim
+lesson_n5:w135,降りる,おりる,下车，下来,to get off
+lesson_n5:w136,終る,おわる,结束，完,"to finish, to close"
+lesson_n5:w137,音楽,おんがく,音乐,Music
+lesson_n5:w138,女,おんな,女人，女性,"woman, female"
+lesson_n5:w139,女の子,おんなのこ,女孩,girl
+lesson_n5:w140,外国,がいこく,外国，国外,foreign country; abroad
+lesson_n5:w141,外国人,がいこくじん,外国人,foreigner
+lesson_n5:w142,会社,かいしゃ,公司,"company, corporation"
+lesson_n5:w143,階段,かいだん,楼梯,stairs
+lesson_n5:w144,買い物,かいもの,买东西，购物,shopping
+lesson_n5:w145,買う,かう,买,to buy
+lesson_n5:w146,返す,かえす,还，归还,to return something
+lesson_n5:w147,帰る,かえる,回家，回去,"to go back, to go home, to return"
+lesson_n5:w148,顔,かお,脸,face (body part)
+lesson_n5:w149,---,かかる,花费（时间、金钱）,"it takes (amount of time, money) (v.i.)"
+lesson_n5:w150,鍵,かぎ,钥匙，锁,a lock; a key
+lesson_n5:w151,書く,かく,写,to write
+lesson_n5:w152,学生,がくせい,学生,student
+lesson_n5:w153,掛ける,かける,挂，戴（眼镜）,"to put on (e.g., glasses); to hang (e.g., on a wall)"
+lesson_n5:w154,---,かける,打（电话），坐下,"to dial/call (e.g., phone); to sit down"
+lesson_n5:w155,傘,かさ,伞,"umbrella, parasol"
+lesson_n5:w156,貸す,かす,借出，借给,to lend
+lesson_n5:w157,風,かぜ,风,"wind, breeze"
+lesson_n5:w158,風邪,かぜ,感冒,"cold, flu"
+lesson_n5:w159,方,かた,位（人的敬称），方法,-- honorific form for 人 (ひと) --; way of doing
+lesson_n5:w160,家族,かぞく,家人，家庭,"family, members of a family"
+lesson_n5:w161,片仮名,かたかな,片假名,katakana
+lesson_n5:w162,学校,がっこう,学校,a school
+lesson_n5:w163,---,カップ,cup，杯子,cup
+lesson_n5:w164,家庭,かてい,家庭，家,home; family
+lesson_n5:w165,角,かど,角，拐角,"corner (e.g., desk, pavement)"
+lesson_n5:w166,---,かばん,包，书包,"bag, basket"
+lesson_n5:w167,花瓶,かびん,花瓶,(flower) vase
+lesson_n5:w168,---,かぶる,戴（帽子）,"to wear, to put on (e.g., a hat on the head)"
+lesson_n5:w169,紙,かみ,纸,paper
+lesson_n5:w170,---,カメラ,camera，照相机,camera
+lesson_n5:w171,火曜日,かようび,星期二,Tuesday
+lesson_n5:w172,辛い,からい,辣，咸,hot and spicy; salty
+lesson_n5:w173,体,からだ,身体,body; health
+lesson_n5:w174,借りる,かりる,借来，借入,"to borrow, to owe"
+lesson_n5:w175,軽い,かるい,轻,"light, non-serious, minor"
+lesson_n5:w176,---,カレー,curry，咖喱,curry (abbr. for curry and rice)
+lesson_n5:w177,---,カレンダー,calendar，日历,calendar
+lesson_n5:w178,川,かわ,河，河流,river
+lesson_n5:w179,可愛い,かわいい,可爱,"cute, adorable"
+lesson_n5:w180,漢字,かんじ,汉字,kanji; Chinese character
+lesson_n5:w181,木,き,树，木头,"tree, wood, timber"
+lesson_n5:w182,黄色,きいろ,黄色,yellow
+lesson_n5:w183,黄色い,きいろい,黄色的,yellow
+lesson_n5:w184,消える,きえる,消失，熄灭,"to vanish, to disappear"
+lesson_n5:w185,聞く,きく,听，问,"to hear, to listen, to ask"
+lesson_n5:w186,北,きた,北，北方,north
+lesson_n5:w187,---,ギター,guitar，吉他,guitar
+lesson_n5:w188,汚い,きたない,脏,"dirty, unclean, filthy"
+lesson_n5:w189,喫茶店,きっさてん,咖啡馆，茶馆,café
+lesson_n5:w190,切手,きって,邮票,postal (postage) stamps
+lesson_n5:w191,切符,きっぷ,票（车票等）,a ticket
+lesson_n5:w192,昨日,きのう,昨天,yesterday
+lesson_n5:w193,九,きゅう,九,nine
+lesson_n5:w194,牛肉,ぎゅうにく,牛肉,beef
+lesson_n5:w195,牛乳,ぎゅうにゅう,牛奶,milk
+lesson_n5:w196,今日,きょう,今天,"today, this day"
+lesson_n5:w197,教室,きょうしつ,教室,classroom
+lesson_n5:w198,兄弟,きょうだい,兄弟姐妹,"siblings (humble), brothers and sisters"
+lesson_n5:w199,去年,きょねん,去年,last year
+lesson_n5:w200,嫌い,きらい,讨厌，不喜欢,dislike
+lesson_n5:w201,切る,きる,切，剪；挂断（电话）,to cut; to hang up (a phone)
+lesson_n5:w202,着る,きる,穿（上衣）,to put on (clothes above your waist); to wear
+lesson_n5:w203,綺麗,きれい,漂亮，干净,"pretty, clean, tidy"
+lesson_n5:w204,---,きろ,公斤,(abbr.) kilo (kilogram)
+lesson_n5:w205,---,きろ,公里,(abbr.) kilo (kilometer)
+lesson_n5:w206,銀行,ぎんこう,银行,bank
+lesson_n5:w207,金曜日,きんようび,星期五,Friday
+lesson_n5:w208,九,く,九（另一种读法）,nine
+lesson_n5:w209,薬,くすり,药,medicine
+lesson_n5:w210,下さい,ください,请给（我）,(with te-form verb) please do for me
+lesson_n5:w211,果物,くだもの,水果,fruit
+lesson_n5:w212,口,くち,嘴，口,job opening; mouth
+lesson_n5:w213,靴,くつ,鞋,"shoes, footwear"
+lesson_n5:w214,靴下,くつした,袜子,socks
+lesson_n5:w215,国,くに,国家，家乡,country; place of origin
+lesson_n5:w216,曇り,くもり,阴天,"cloudiness, cloudy weather"
+lesson_n5:w217,曇る,くもる,天阴，阴下来,"to become cloudy, to become dim"
+lesson_n5:w218,暗い,くらい,暗，昏暗,"dark, gloomy"
+lesson_n5:w219,---,クラス,class，班，班级,a class
+lesson_n5:w220,---,グラム,gram，克,gram
+lesson_n5:w221,来る,くる,来,to come
+lesson_n5:w222,車,くるま,车，汽车,"car, vehicle"
+lesson_n5:w223,黒,くろ,黑色,black
+lesson_n5:w224,黒い,くろい,黑的,black; dark
+lesson_n5:w225,警官,けいかん,警察，警官,police officer
+lesson_n5:w226,今朝,けさ,今天早上,this morning
+lesson_n5:w227,消す,けす,关掉，消除,"to erase, to delete, to turn off power"
+lesson_n5:w228,結構,けっこう,足够，挺好；不用了（客气拒绝）,"splendid; enough, tolerably"
+lesson_n5:w229,月曜日,げつようび,星期一,Monday
+lesson_n5:w230,玄関,げんかん,门口，玄关,entrance (to a house or a building)
+lesson_n5:w231,元気,げんき,精神，健康,"health(y), energetic"
+lesson_n5:w232,五,ご,五,five
+lesson_n5:w233,公園,こうえん,公园,a park
+lesson_n5:w234,交差点,こうさてん,十字路口,intersection
+lesson_n5:w235,紅茶,こうちゃ,红茶,black tea
+lesson_n5:w236,交番,こうばん,派出所,police box
+lesson_n5:w237,声,こえ,声音,voice
+lesson_n5:w238,---,コート,coat，外套；court，球场,"coat; court (e.g., tennis)"
+lesson_n5:w239,---,コーヒー,coffee，咖啡,coffee
+lesson_n5:w240,---,ここ,这里,"here, this place"
+lesson_n5:w241,午後,ごご,下午,"afternoon, P.M."
+lesson_n5:w242,九日,ここのか,九天，九号,nine days; ninth day of the month
+lesson_n5:w243,九つ,ここのつ,九个，九岁,nine things
+lesson_n5:w244,午前,ごぜん,上午,"morning, A.M."
+lesson_n5:w245,答える,こたえる,回答,"to answer, to reply"
+lesson_n5:w246,---,こちら,这位；这边（礼貌说法）,this person (polite); this way (polite)
+lesson_n5:w247,---,こっち,这个，这边（口语）,this person; this direction; this side
+lesson_n5:w248,---,コップ,glass，杯子,a tumbler; a glass
+lesson_n5:w249,今年,ことし,今年,this year
+lesson_n5:w250,言葉,ことば,语言，词语,language; word(s); expression(s)
+lesson_n5:w251,子供,こども,孩子,child(ren)
+lesson_n5:w252,---,この,这个（后接名词）,this
+lesson_n5:w253,御飯,ごはん,米饭，饭,rice (cooked); meal
+lesson_n5:w254,---,こぴーする,复印,to copy
+lesson_n5:w255,困る,こまる,为难，困扰,"to be bothered, to have difficulty"
+lesson_n5:w256,---,これ,这个,this one
+lesson_n5:w257,今月,こんげつ,这个月,this month
+lesson_n5:w258,今週,こんしゅう,本周，这星期,this week
+lesson_n5:w259,---,こんな,这样的,"such, like this"
+lesson_n5:w260,今晩,こんばん,今晚,"tonight, this evening"
+lesson_n5:w261,---,さあ,那么，来吧（劝诱、催促）,"come now, well"
+lesson_n5:w262,財布,さいふ,钱包,wallet
+lesson_n5:w263,魚,さかな,鱼,fish
+lesson_n5:w264,先,さき,前面，前方，将来,"future; recent, previous"
+lesson_n5:w265,咲く,さく,开（花）,to bloom
+lesson_n5:w266,作文,さくぶん,作文,essay; composition
+lesson_n5:w267,差す,さす,撑（伞），举（手）,"to raise (stretch out) hands, to raise (e.g., umbrella)"
+lesson_n5:w268,雑誌,ざっし,杂志,"magazine, journal"
+lesson_n5:w269,砂糖,さとう,糖，砂糖,sugar
+lesson_n5:w270,寒い,さむい,冷（天气冷）,cold (in reference to weather)
+lesson_n5:w271,さ来年,さらいねん,后年,year after next
+lesson_n5:w272,三,さん,三,three
+lesson_n5:w273,四,し,四（し的读法）,four
+lesson_n5:w274,塩,しお,盐,salt
+lesson_n5:w275,---,しかし,可是，但是,however; but
+lesson_n5:w276,時間,じかん,时间,time
+lesson_n5:w277,仕事,しごと,工作,"work, job, occupation, employment"
+lesson_n5:w278,辞書,じしょ,词典,dictionary
+lesson_n5:w279,静か,しずか,安静,"quiet, calm"
+lesson_n5:w280,下,した,下面，下边,"under, below, beneath"
+lesson_n5:w281,七,しち,七,seven
+lesson_n5:w282,質問,しつもん,提问，问题,"question, inquiry"
+lesson_n5:w283,自転車,じてんしゃ,自行车,bicycle
+lesson_n5:w284,自動車,じどうしゃ,汽车,automobile
+lesson_n5:w285,死ぬ,しぬ,死,to die
+lesson_n5:w286,字引,じびき,字典,dictionary
+lesson_n5:w287,自分,じぶん,自己,"myself, oneself"
+lesson_n5:w288,閉まる,しまる,关上，关着（自动词）,"to close, to be closed"
+lesson_n5:w289,閉める,しめる,关上（他动词）,"to close, to shut"
+lesson_n5:w290,締める,しめる,系紧，勒紧,"to tie, to fasten, to tighten"
+lesson_n5:w291,---,じゃ,那么,"well, well then"
+lesson_n5:w292,写真,しゃしん,照片,a picture; a photograph
+lesson_n5:w293,---,シャツ,shirt，衬衫,shirt
+lesson_n5:w294,---,シャワー,shower，淋浴,shower
+lesson_n5:w295,十,じゅう,十,ten
+lesson_n5:w296,授業,じゅぎょう,课，上课,a class (of school)
+lesson_n5:w297,宿題,しゅくだい,作业,homework
+lesson_n5:w298,上手,じょうず,擅长，拿手,"be good at, skillful"
+lesson_n5:w299,丈夫,じょうぶ,结实，坚固,"strong, solid, durable"
+lesson_n5:w300,醤油,しょうゆ,酱油,soy sauce
+lesson_n5:w301,食堂,しょくどう,食堂,"cafeteria, dining hall"
+lesson_n5:w302,知る,しる,知道，认识,"to know, to understand"
+lesson_n5:w303,白,しろ,白色,white
+lesson_n5:w304,白い,しろい,白的,white
+lesson_n5:w305,新聞,しんぶん,报纸,newspaper
+lesson_n5:w306,水曜日,すいようび,星期三,Wednesday
+lesson_n5:w307,吸う,すう,吸，抽（烟）,"to breathe in, to suck"
+lesson_n5:w308,---,スカート,skirt，裙子,skirt
+lesson_n5:w309,好き,すき,喜欢,"liking, fondness, love"
+lesson_n5:w310,少ない,すくない,少,a little; a few
+lesson_n5:w311,---,すぐに,马上，立刻,"immediately, soon"
+lesson_n5:w312,少し,すこし,一点，稍微,"little, few"
+lesson_n5:w313,涼しい,すずしい,凉爽,"cool, refreshing (in reference to weather)"
+lesson_n5:w314,---,ストーブ,stove，炉子，暖炉,heater (lit: stove)
+lesson_n5:w315,---,スプーン,spoon，勺子,spoon
+lesson_n5:w316,---,スポーツ,sports，运动,sport(s)
+lesson_n5:w317,---,ズボン,裤子,trousers
+lesson_n5:w318,住む,すむ,住，居住,"to reside, to live in"
+lesson_n5:w319,---,する,做，干；戴（领带、手表等小物）,"to do, to try; to wear small items (e.g., necktie, watch, etc.)"
+lesson_n5:w320,座る,すわる,坐,to sit
+lesson_n5:w321,背,せい,身高,"(one's) height, stature"
+lesson_n5:w322,生徒,せいと,学生，中小学生,student; pupil
+lesson_n5:w323,---,セーター,sweater，毛衣,sweater
+lesson_n5:w324,石鹸,せっけん,肥皂,soap
+lesson_n5:w325,背広,せびろ,西装（男式）,men's suit
+lesson_n5:w326,狭い,せまい,窄，狭窄,narrow; not spacious
+lesson_n5:w327,---,ゼロ,zero，零,zero
+lesson_n5:w328,千,せん,千,thousand
+lesson_n5:w329,先月,せんげつ,上个月,last month
+lesson_n5:w330,先週,せんしゅう,上周,last week
+lesson_n5:w331,先生,せんせい,老师,"teacher, professor; master; doctor"
+lesson_n5:w332,洗濯,せんたく,洗衣服,"washing, laundry"
+lesson_n5:w333,全部,ぜんぶ,全部,"all, entire, whole"
+lesson_n5:w334,---,そう,是的；那样,"yes; appears, to be the case"
+lesson_n5:w335,---,そうして,然后，那样做,"and, like that"
+lesson_n5:w336,---,そこ,那里,"that place, there; bottom, sole"
+lesson_n5:w337,---,そちら,那边，那位（礼貌说法）,over there
+lesson_n5:w338,---,そっち,那边（口语）,over there
+lesson_n5:w339,外,そと,外面,"outside, exterior"
+lesson_n5:w340,---,その,那个（后接名词）,that
+lesson_n5:w341,---,そば,旁边；荞麦面,"near, close, beside; Japanese traditional buckwheat noodle"
+lesson_n5:w342,空,そら,天空,sky
+lesson_n5:w343,---,それ,那个,that one
+lesson_n5:w344,---,それから,然后，之后,"and then, after that"
+lesson_n5:w345,---,それでは,那么,"in that situation, well then..."
+lesson_n5:w346,大学,だいがく,大学,college; university
+lesson_n5:w347,大使館,たいしかん,大使馆,embassy
+lesson_n5:w348,大丈夫,だいじょうぶ,没问题，不要紧,It's ok (all right); No need to worry; Everything is under control
+lesson_n5:w349,大好き,だいすき,非常喜欢,"very like-able, like very much"
+lesson_n5:w350,大切,たいせつ,重要，珍惜,important
+lesson_n5:w351,台所,だいどころ,厨房,kitchen
+lesson_n5:w352,大変,たいへん,辛苦，够呛；非常,"very; difficult, hard"
+lesson_n5:w353,高い,たかい,高，贵,"tall, high; expensive"
+lesson_n5:w354,沢山,たくさん,很多,"many, much"
+lesson_n5:w355,---,タクシー,taxi，出租车,taxi
+lesson_n5:w356,出す,だす,拿出，交出,to take (something) out; to hand in (something)
+lesson_n5:w357,立つ,たつ,站，立,to stand up
+lesson_n5:w358,---,たて,纵向，长度,"length, height"
+lesson_n5:w359,建物,たてもの,建筑物，楼房,building
+lesson_n5:w360,楽しい,たのしい,愉快，快乐,"enjoyable, fun"
+lesson_n5:w361,頼む,たのむ,拜托，请求,"to request, to ask (a favor)"
+lesson_n5:w362,---,たばこ,香烟,"tobacco, cigarettes"
+lesson_n5:w363,多分,たぶん,大概，也许,"perhaps, probably, maybe"
+lesson_n5:w364,食べ物,たべもの,食物,food
+lesson_n5:w365,食べる,たべる,吃,to eat
+lesson_n5:w366,卵,たまご,蛋，鸡蛋,egg
+lesson_n5:w367,誰,だれ,谁,who
+lesson_n5:w368,誰か,だれか,某人，有人,someone
+lesson_n5:w369,誕生日,たんじょうび,生日,birthday
+lesson_n5:w370,段々,だんだん,渐渐，逐渐,"gradually, by degrees"
+lesson_n5:w371,小さい,ちいさい,小,"small, little"
+lesson_n5:w372,小さな,ちいさな,小的（只接名词）,"small, little"
+lesson_n5:w373,近い,ちかい,近,"near, close by, short"
+lesson_n5:w374,違う,ちがう,不同，不对,to be different; to differ; wrong
+lesson_n5:w375,近く,ちかく,附近,nearby; in the neighborhood
+lesson_n5:w376,地下鉄,ちかてつ,地铁,"underground train, subway"
+lesson_n5:w377,地図,ちず,地图,a map
+lesson_n5:w378,父,ちち,父亲（指自己的）,(my) father
+lesson_n5:w379,茶色,ちゃいろ,茶色，棕色,brown
+lesson_n5:w380,茶碗,ちゃわん,饭碗,rice bowl
+lesson_n5:w381,丁度,ちょうど,正好，恰好,"just, right, exactly"
+lesson_n5:w382,---,ちょっと,稍微，一点,"a little, somewhat; just a little, somewhat"
+lesson_n5:w383,一日,ついたち,一号（日期）,one day; first day of the month
+lesson_n5:w384,使う,つかう,使用,to use
+lesson_n5:w385,疲れる,つかれる,累，疲劳,to get (become) tired; to become fatigued
+lesson_n5:w386,次,つぎ,下一个，其次,next
+lesson_n5:w387,着く,つく,到达,"to arrive at, to reach"
+lesson_n5:w388,机,つくえ,桌子,desk
+lesson_n5:w389,作る,つくる,做，制作,"to make, to create"
+lesson_n5:w390,---,つける,打开（电灯等）,"to turn on (e.g., a light); to take"
+lesson_n5:w391,勤める,つとめる,工作，任职,to work (for)
+lesson_n5:w392,---,つまらない,无聊，没意思,"boring, dull; insignificant"
+lesson_n5:w393,冷たい,つめたい,凉，冰凉（东西冷）,"cold (things, people)"
+lesson_n5:w394,強い,つよい,强,"strong, powerful"
+lesson_n5:w395,手,て,手,hand
+lesson_n5:w396,---,テープ,tape，磁带，胶带,tape
+lesson_n5:w397,---,テープレコーダー,tape recorder，磁带录音机,tape recorder
+lesson_n5:w398,---,テーブル,table，桌子，餐桌,table
+lesson_n5:w399,出かける,でかける,出门，外出,to go out; to depart
+lesson_n5:w400,手紙,てがみ,信,letter
+lesson_n5:w401,---,できる,会，能,to be able to (to accomplish)
+lesson_n5:w402,出口,でぐち,出口,an exit
+lesson_n5:w403,---,テスト,test，考试，测验,test
+lesson_n5:w404,---,では,那么,"then, well, so"
+lesson_n5:w405,---,デパート,department store，百货商店,(abbr.) department store
+lesson_n5:w406,---,でも,但是,"but, however"
+lesson_n5:w407,出る,でる,出，出来，离开,"to appear, to leave"
+lesson_n5:w408,---,テレビ,TV，电视,"television, TV"
+lesson_n5:w409,天気,てんき,天气,weather
+lesson_n5:w410,電気,でんき,电，电灯,"electricity, (electric) light"
+lesson_n5:w411,電車,でんしゃ,电车,electric train
+lesson_n5:w412,電話,でんわ,电话,a telephone
+lesson_n5:w413,戸,と,门（日式）,door (Japanese style)
+lesson_n5:w414,---,ドア,door，门（西式）,door (Western style)
+lesson_n5:w415,---,トイレ,toilet，厕所,bathroom; toilet
+lesson_n5:w416,---,どう,怎么样,"how, in what way"
+lesson_n5:w417,---,どうして,为什么,"why, for what reason"
+lesson_n5:w418,---,どうぞ,请,"please, kindly, by all means"
+lesson_n5:w419,動物,どうぶつ,动物,animal
+lesson_n5:w420,---,どうも,谢谢；总觉得,Thank you; somehow; no matter how hard one may try
+lesson_n5:w421,遠い,とおい,远,"far (away), distant"
+lesson_n5:w422,十日,とおか,十天，十号,ten days; tenth day of the month
+lesson_n5:w423,時々,ときどき,有时，偶尔,sometimes
+lesson_n5:w424,時計,とけい,钟，表,a watch; a clock
+lesson_n5:w425,---,どこ,哪里,"where, what place"
+lesson_n5:w426,所,ところ,地方,place
+lesson_n5:w427,年,とし,年，年龄,"year, age"
+lesson_n5:w428,図書館,としょかん,图书馆,library
+lesson_n5:w429,---,どちら,哪边，哪位（礼貌说法）,which (one) (way); where (polite)
+lesson_n5:w430,---,どっち,哪个，哪边（口语）,"which one, which way"
+lesson_n5:w431,---,とても,非常，很,"very (much), greatly, exceedingly"
+lesson_n5:w432,---,どなた,哪位,who
+lesson_n5:w433,隣,となり,旁边，邻居,"next to, next door to"
+lesson_n5:w434,---,どの,哪个（后接名词）,which
+lesson_n5:w435,飛ぶ,とぶ,飞,"to fly, to hop"
+lesson_n5:w436,止まる,とまる,停，停下,to come to a halt
+lesson_n5:w437,友達,ともだち,朋友,friend
+lesson_n5:w438,土曜日,どようび,星期六,Saturday
+lesson_n5:w439,鳥,とり,鸟，鸡,"chicken (lit., bird)"
+lesson_n5:w440,鶏肉,とりにく,鸡肉,chicken meat
+lesson_n5:w441,取る,とる,拿，取；选（课）,to take (a class); to get (a grade)
+lesson_n5:w442,撮る,とる,拍（照）,"to take (a photo), to make (a film)"
+lesson_n5:w443,---,どれ,哪个,which one
+lesson_n5:w444,---,どんな,什么样的,"what, what kind of"
+lesson_n5:w445,---,ない,没有，不存在,"there isn't, doesn't have"
+lesson_n5:w446,---,ナイフ,knife，小刀，餐刀,knife
+lesson_n5:w447,中,なか,里面，中间,"inside, middle, among"
+lesson_n5:w448,長い,ながい,长,"long, lengthy"
+lesson_n5:w449,鳴く,なく,叫，鸣（动物）,to make sound (animal)
+lesson_n5:w450,無くす,なくす,弄丢，丢失,to lose something
+lesson_n5:w451,---,なぜ,为什么（略书面）,why (same as どうして)
+lesson_n5:w452,夏,なつ,夏天,summer
+lesson_n5:w453,夏休み,なつやすみ,暑假,summer vacation
+lesson_n5:w454,七つ,ななつ,七个，七岁,seven things
+lesson_n5:w455,何,なん,什么,what
+lesson_n5:w456,七日,なのか,七天，七号,seven days; seventh day (of the month)
+lesson_n5:w457,名前,なまえ,名字,name
+lesson_n5:w458,習う,ならう,学习（跟人学）,to learn
+lesson_n5:w459,並ぶ,ならぶ,排队，排列（自动词）,"to line up, to stand in a line (v.i.)"
+lesson_n5:w460,並べる,ならべる,排列，摆放（他动词）,to put (things) side by side; to line up
+lesson_n5:w461,---,なる,成为，变成,to become
+lesson_n5:w462,二,に,二,two
+lesson_n5:w463,---,にぎやか,热闹,"bustling, busy"
+lesson_n5:w464,肉,にく,肉,meat
+lesson_n5:w465,西,にし,西，西边,west
+lesson_n5:w466,日曜日,にちようび,星期日,Sunday
+lesson_n5:w467,荷物,にもつ,行李,luggage; baggage
+lesson_n5:w468,---,ニュース,news，新闻,news
+lesson_n5:w469,庭,にわ,院子,garden
+lesson_n5:w470,脱ぐ,ぬぐ,脱（衣服）,to take off (clothes)
+lesson_n5:w471,温い,ぬるい,温，微温,lukewarm
+lesson_n5:w472,---,ネクタイ,necktie，领带,"tie, necktie"
+lesson_n5:w473,猫,ねこ,猫,cat
+lesson_n5:w474,寝る,ねる,睡觉，就寝,to sleep; to go to sleep; to go to bed
+lesson_n5:w475,---,ノート,notebook，笔记本,notebook
+lesson_n5:w476,登る,のぼる,爬，登,to climb
+lesson_n5:w477,飲み物,のみもの,饮料,"drink, beverage"
+lesson_n5:w478,飲む,のむ,喝,to drink
+lesson_n5:w479,乗る,のる,乘，坐（车）,"to get on, to ride in, to board"
+lesson_n5:w480,歯,は,牙，牙齿,tooth
+lesson_n5:w481,---,パーティー,party，聚会,a party
+lesson_n5:w482,---,はい,是，在（应答）,yes
+lesson_n5:w483,灰皿,はいざら,烟灰缸,ashtray
+lesson_n5:w484,入る,はいる,进入，进（自动词）,"to enter, to contain, to hold"
+lesson_n5:w485,葉書,はがき,明信片,postcard
+lesson_n5:w486,---,はく,穿（下半身、鞋袜）,to put on (items below your waist)
+lesson_n5:w487,箱,はこ,盒子,box
+lesson_n5:w488,橋,はし,桥,bridge
+lesson_n5:w489,箸,はし,筷子,chopsticks
+lesson_n5:w490,始まる,はじまる,开始（自动词）,(something) begins
+lesson_n5:w491,初め,はじめ,开始，起初,"beginning, start"
+lesson_n5:w492,初めて,はじめて,第一次,for the first time
+lesson_n5:w493,走る,はしる,跑,to run
+lesson_n5:w494,---,バス,bus，公共汽车；bath，浴缸；bass，贝斯,bus; bath; bass
+lesson_n5:w495,---,バター,butter，黄油,butter
+lesson_n5:w496,二十歳,はたち,二十岁,20 years old
+lesson_n5:w497,働く,はたらく,工作，劳动,to work
+lesson_n5:w498,八,はち,八,eight
+lesson_n5:w499,二十日,はつか,二十天，二十号,"twenty days, twentieth (day of the month)"
+lesson_n5:w500,花,はな,花,flower
+lesson_n5:w501,鼻,はな,鼻子,nose
+lesson_n5:w502,話,はなし,话，故事,"talk (chat), story"
+lesson_n5:w503,話す,はなす,说，讲,to speak
+lesson_n5:w504,母,はは,母亲（指自己的）,(my) mother
+lesson_n5:w505,早い,はやい,早（时间早）,early
+lesson_n5:w506,速い,はやい,快（速度快）,"fast, quick"
+lesson_n5:w507,春,はる,春天,spring
+lesson_n5:w508,貼る,はる,贴，粘贴,to post; to paste; to attach
+lesson_n5:w509,晴れ,はれ,晴，晴天,clear (sunny) weather
+lesson_n5:w510,晴れる,はれる,放晴，天晴,to be sunny
+lesson_n5:w511,半,はん,半（几点半）,"half (e.g., にじはん | half-past two)"
+lesson_n5:w512,晩,ばん,晚上,evening
+lesson_n5:w513,---,パン,面包,bread
+lesson_n5:w514,---,ハンカチ,handkerchief，手帕,handkerchief
+lesson_n5:w515,番号,ばんごう,号码,"number, series of digits"
+lesson_n5:w516,晩御飯,ばんごはん,晚饭,"dinner, evening meal"
+lesson_n5:w517,半分,はんぶん,一半,half
+lesson_n5:w518,東,ひがし,东，东边,east
+lesson_n5:w519,引く,ひく,拉，减,"to pull, to draw; subtract"
+lesson_n5:w520,弾く,ひく,弹（琴）,to play (a string instrument or piano)
+lesson_n5:w521,低い,ひくい,低，矮,"short, low"
+lesson_n5:w522,飛行機,ひこうき,飞机,airplane
+lesson_n5:w523,左,ひだり,左，左边,left hand side
+lesson_n5:w524,人,ひと,人,"man, person"
+lesson_n5:w525,一つ,ひとつ,一个，一岁,one thing
+lesson_n5:w526,一月,ひとつき,一个月,one month
+lesson_n5:w527,一人,ひとり,一个人,one person
+lesson_n5:w528,暇,ひま,空闲，工夫,"free time, leisure"
+lesson_n5:w529,百,ひゃく,百,hundred
+lesson_n5:w530,病院,びょういん,医院,hospital
+lesson_n5:w531,病気,びょうき,病，生病,illness; sickness
+lesson_n5:w532,平仮名,ひらがな,平假名,hiragana
+lesson_n5:w533,昼,ひる,白天，中午,"noon, daytime"
+lesson_n5:w534,昼御飯,ひるごはん,午饭,"lunch, midday meal"
+lesson_n5:w535,広い,ひろい,宽敞，宽广,spacious; wide; broad
+lesson_n5:w536,---,フィルム,film，胶卷,film (roll of)
+lesson_n5:w537,封筒,ふうとう,信封,envelope
+lesson_n5:w538,---,プール,pool，游泳池,swimming pool
+lesson_n5:w539,---,フォーク,fork，叉子,fork
+lesson_n5:w540,吹く,ふく,吹（风）,"to blow (wind, etc.)"
+lesson_n5:w541,服,ふく,衣服,clothes
+lesson_n5:w542,二つ,ふたつ,两个，两岁,two things
+lesson_n5:w543,豚肉,ぶたにく,猪肉,pork
+lesson_n5:w544,二人,ふたり,两个人,two people
+lesson_n5:w545,二日,ふつか,两天，二号,two days; second day of the month
+lesson_n5:w546,太い,ふとい,粗，胖,"fat, thick"
+lesson_n5:w547,冬,ふゆ,冬天,winter
+lesson_n5:w548,降る,ふる,下（雨、雪）,"to precipitate, to fall (e.g., rain, snow, etc.)"
+lesson_n5:w549,古い,ふるい,旧，古老（指物品）,"old (in reference to objects, not people), aged, ancient"
+lesson_n5:w550,文章,ぶんしょう,文章，句子,"sentence, text"
+lesson_n5:w551,---,ページ,page，页,a page
+lesson_n5:w552,下手,へた,不擅长，拙劣,"unskillful, poor"
+lesson_n5:w553,---,ベッド,bed，床,bed
+lesson_n5:w554,---,ペット,pet，宠物,pet
+lesson_n5:w555,部屋,へや,房间,a room
+lesson_n5:w556,辺,へん,一带，附近,"area, vicinity"
+lesson_n5:w557,---,ペン,pen，钢笔,pen
+lesson_n5:w558,便利,べんり,方便,"convenient, handy"
+lesson_n5:w559,帽子,ぼうし,帽子,hat; cap
+lesson_n5:w560,---,ボールペン,ballpoint pen，圆珠笔,ball-point pen
+lesson_n5:w561,外,ほか,其他，另外,"other, the rest"
+lesson_n5:w562,---,ポケット,pocket，口袋,pocket
+lesson_n5:w563,欲しい,ほしい,想要,"to want, in need of"
+lesson_n5:w564,---,ポスト,post，邮筒，信箱,"mailbox; post, position"
+lesson_n5:w565,細い,ほそい,细，纤细,"thin, slender, fine"
+lesson_n5:w566,---,ボタン,button，纽扣,button
+lesson_n5:w567,---,ホテル,hotel，旅馆，酒店,hotel
+lesson_n5:w568,本,ほん,书,book
+lesson_n5:w569,本棚,ほんだな,书架,bookshelf
+lesson_n5:w570,本当,ほんとう,真的，真,"real, true"
+lesson_n5:w571,毎朝,まいあさ,每天早上,every morning
+lesson_n5:w572,毎月,まいげつ,每月,"every month, monthly"
+lesson_n5:w573,毎週,まいしゅう,每周,every week
+lesson_n5:w574,毎日,まいにち,每天,every day
+lesson_n5:w575,毎年,まいねん,每年,"every year, yearly, annually"
+lesson_n5:w576,毎晩,まいばん,每天晚上,every night
+lesson_n5:w577,前,まえ,前面，之前,"before, in front"
+lesson_n5:w578,曲る,まがる,拐弯，弯曲,"to turn, to bend"
+lesson_n5:w579,---,まずい,难吃，味道差,"terrible (in reference to food), unappetizing, unpleasant (taste)"
+lesson_n5:w580,---,また,又，再,and; furthermore
+lesson_n5:w581,---,まだ,还，尚未,"yet, still, besides"
+lesson_n5:w582,町,まち,城镇，街,town; city
+lesson_n5:w583,待つ,まつ,等，等待,to wait
+lesson_n5:w584,---,まっすぐ,一直，笔直,"straight (ahead), direct"
+lesson_n5:w585,---,マッチ,match，火柴,match
+lesson_n5:w586,窓,まど,窗户,window
+lesson_n5:w587,丸い,まるい,圆，圆形,"round, circular"
+lesson_n5:w588,万,まん,万,ten thousand
+lesson_n5:w589,万年筆,まんねんひつ,钢笔,fountain pen
+lesson_n5:w590,磨く,みがく,刷（牙），擦,to brush (teeth); to polish
+lesson_n5:w591,右,みぎ,右，右边,right hand side
+lesson_n5:w592,短い,みじかい,短,short (length)
+lesson_n5:w593,水,みず,水,water
+lesson_n5:w594,店,みせ,店，商店,"store, shop"
+lesson_n5:w595,見せる,みせる,给…看，展示,"to show, to display"
+lesson_n5:w596,道,みち,道路，路,"road, street; way, directions"
+lesson_n5:w597,三日,みっか,三天，三号,"three days, third day of the month"
+lesson_n5:w598,三つ,みっつ,三个，三岁,three things
+lesson_n5:w599,緑,みどり,绿色,green
+lesson_n5:w600,皆さん,みなさん,大家,"all of you, everyone"
+lesson_n5:w601,南,みなみ,南，南边,South
+lesson_n5:w602,耳,みみ,耳朵,ear
+lesson_n5:w603,見る,みる,看,"to see, to look"
+lesson_n5:w604,---,みんな,大家，全部,"all, everyone, everybody"
+lesson_n5:w605,六日,むいか,六天，六号,six days; sixth day of month
+lesson_n5:w606,向こう,むこう,对面，那边,"beyond, over there"
+lesson_n5:w607,難しい,むずかしい,难,difficult
+lesson_n5:w608,六つ,むっつ,六个，六岁,six things
+lesson_n5:w609,村,むら,村子,village
+lesson_n5:w610,目,め,眼睛,eye(s)
+lesson_n5:w611,---,メートル,meter，米（长度单位）,meter
+lesson_n5:w612,眼鏡,めがね,眼镜,eye glasses
+lesson_n5:w613,---,もう,已经；再,already; again; more
+lesson_n5:w614,木曜日,もくようび,星期四,Thursday
+lesson_n5:w615,---,もしもし,喂（打电话）,Hello? (used on the phone)
+lesson_n5:w616,持つ,もつ,拿，持有,"to hold, to carry; to possess"
+lesson_n5:w617,---,もっと,更，更加,more
+lesson_n5:w618,物,もの,东西，物品,thing (concrete object)
+lesson_n5:w619,門,もん,门，大门,gate
+lesson_n5:w620,問題,もんだい,问题,a problem
+lesson_n5:w621,八百屋,やおや,蔬菜店,greengrocer
+lesson_n5:w622,野菜,やさい,蔬菜,vegetable
+lesson_n5:w623,易しい,やさしい,容易，简单,"easy, plain, simple"
+lesson_n5:w624,安い,やすい,便宜,inexpensive; cheap (things)
+lesson_n5:w625,休み,やすみ,休息，假日,holiday; day off; absence
+lesson_n5:w626,休む,やすむ,休息，请假,"to rest, to have a break, to get time off"
+lesson_n5:w627,八つ,やっつ,八个，八岁,eight things
+lesson_n5:w628,山,やま,山,mountain
+lesson_n5:w629,---,やる,做；给（动植物、晚辈）,"to do; to give (to pets, parents, siblings, etc.)"
+lesson_n5:w630,夕方,ゆうがた,傍晚,"late afternoon (typically just before dinner time), evening"
+lesson_n5:w631,夕飯,ゆうはん,晚饭,"dinner, supper, evening meal"
+lesson_n5:w632,郵便局,ゆうびんきょく,邮局,post office
+lesson_n5:w633,昨夜,ゆうべ,昨晚,last night
+lesson_n5:w634,有名,ゆうめい,有名,famous
+lesson_n5:w635,雪,ゆき,雪,snow
+lesson_n5:w636,---,ゆっくりと,慢慢，从容,"slowly, at ease"
+lesson_n5:w637,八日,ようか,八天，八号,eight days; eighth day of the month
+lesson_n5:w638,洋服,ようふく,西服，西装,Western-style clothes
+lesson_n5:w639,---,よく,经常；很好地,"frequently, often (much); well, skillfully"
+lesson_n5:w640,横,よこ,旁边，横向,beside; side; width
+lesson_n5:w641,四日,よっか,四天，四号,four days; fourth day of the month
+lesson_n5:w642,四つ,よっつ,四个，四岁,four things
+lesson_n5:w643,呼ぶ,よぶ,叫，招呼，邀请,to call (one's name); to invite
+lesson_n5:w644,読む,よむ,读,to read
+lesson_n5:w645,夜,よる,晚上，夜里,"evening, night"
+lesson_n5:w646,弱い,よわい,弱,weak
+lesson_n5:w647,来月,らいげつ,下个月,next month
+lesson_n5:w648,来週,らいしゅう,下周,next week
+lesson_n5:w649,来年,らいねん,明年,next year
+lesson_n5:w650,---,ラジオ,radio，收音机,radio
+lesson_n5:w651,---,ラジオカセ,radio cassette，收录机,radio cassette player
+lesson_n5:w652,---,りっぱ,出色，气派,"splendid, fine"
+lesson_n5:w653,留学生,りゅうがくせい,留学生,international student
+lesson_n5:w654,両親,りょうしん,父母，双亲,"parents (lit., both parents)"
+lesson_n5:w655,料理,りょうり,菜，烹饪,cooking; cuisine
+lesson_n5:w656,旅行,りょこう,旅行,"travel, trip"
+lesson_n5:w657,零,れい,零,"zero, nought"
+lesson_n5:w658,冷蔵庫,れいぞうこ,冰箱,refrigerator
+lesson_n5:w659,---,レコード,record，唱片,record
+lesson_n5:w660,---,レストラン,restaurant，西餐馆，餐厅,restaurant
+lesson_n5:w661,廊下,ろうか,走廊,corridor
+lesson_n5:w662,六,ろく,六,six
+lesson_n5:w663,---,ワイシャツ,white shirt，衬衫,"shirt (lit: white shirt), business shirt"
+lesson_n5:w664,若い,わかい,年轻,young
+lesson_n5:w665,分かる,わかる,明白，懂,to understand
+lesson_n5:w666,忘れる,わすれる,忘，忘记,to forget
+lesson_n5:w667,私,わたし,我,"I, myself"
+lesson_n5:w668,私,わたくし,我（正式说法）,"I (formal), myself, private affairs"
+lesson_n5:w669,渡す,わたす,交给（他动词）,to hand (something) over (v.t.); to get across
+lesson_n5:w670,渡る,わたる,过（马路、桥）,"to cross over, to go across"
+lesson_n5:w671,悪い,わるい,坏，不好,"bad, sinful; inferior"

@@ -1,0 +1,36 @@
+# 日语练习程序依赖
+# 安装：python.exe -m pip install -r requirements.txt
+# 下面按「缺了会怎样」分档：只有 Flask 是启动必需的，其余都只影响对应功能，
+# 缺失时代码会抛出带 pip install 提示的异常，不影响其他部分。
+
+# 版本一律「下限 + 主版本上限」：这套代码是在下面这些主版本上跑通的，
+# 大版本升级可能改行为（TTS 参数、分词结果、PDF 接口都改过），
+# 升级前先跑一遍 python.exe practice\test_app.py。
+# 下面注释是验证通过的版本，供核对。
+
+# Web 服务（唯一启动必需项）
+Flask>=3.0,<4          # 3.1.3
+
+# 微软 Neural TTS：听音模式发音、句子朗读（需联网首次生成）
+edge-tts>=7.0,<8       # 7.2.8
+
+# 日语分词：组句排序题把例句拆成词块；未安装时组句题自动不可用
+janome>=0.4,<1         # 0.5.0；分词结果直接决定出题，升级要重跑组句相关测试
+
+# 读 pdf 台本：音声作品导入时提取台词（voice.read_pdf_text）
+pymupdf>=1.24,<2       # 1.28.2
+
+# 本地 ASR：无字幕的音声作品转写对齐（voice_align.py）；有字幕的作品不需要它
+# 首次运行会下载 whisper 模型，且要 CPU/int8 推理，体积较大可不装
+faster-whisper>=1.2,<2 # 1.2.1
+
+# 真题听力配图裁剪与时长探测（data/jlpt_n5/_crop_listening.py）
+pillow>=10.0,<13       # 12.1.0
+numpy>=1.26,<3         # 2.3.5
+
+# 系统依赖（pip 装不了，要单独装并加进 PATH）：
+#   ffmpeg / ffprobe —— voice.py 探测音频时长、_split_audio.py 切分音轨。
+#     winget install Gyan.FFmpeg 装完重开终端，`ffprobe -version` 能跑即成。
+#
+# 不在此清单的依赖：server_asr/transcribe.py 里的 torch / transformers / whisper
+# 只跑在远端 GPU 服务器上（经 ssh 调用），本机不需要，故不列在这里。

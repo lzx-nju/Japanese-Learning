@@ -1,0 +1,3101 @@
+{
+  "meta": {
+    "generator_version": 3,
+    "generated_at": "2026-09-09T20:09:19",
+    "vocab_mtime": "2026-09-09T09:34:11",
+    "counts": {
+      "verbs": 128,
+      "derived": 110,
+      "converted": 15,
+      "manual": 3
+    }
+  },
+  "verbs": [
+    {
+      "ref": "lesson_duolingo:w137",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w137",
+      "written": "起きます",
+      "reading": "おきます",
+      "meaning": "起床",
+      "basic": "起きる",
+      "infl_type": "一段",
+      "source": "converted",
+      "forms": {
+        "te": "起きて",
+        "ta": "起きた",
+        "nai": "起きない",
+        "masu": "起きます"
+      },
+      "kana_forms": {
+        "te": "おきて",
+        "ta": "おきた",
+        "nai": "おきない",
+        "masu": "おきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w144",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w144",
+      "written": "作ります",
+      "reading": "つくります",
+      "meaning": "做",
+      "basic": "作る",
+      "infl_type": "五段・ラ行",
+      "source": "converted",
+      "forms": {
+        "te": "作って",
+        "ta": "作った",
+        "nai": "作らない",
+        "masu": "作ります"
+      },
+      "kana_forms": {
+        "te": "つくって",
+        "ta": "つくった",
+        "nai": "つくらない",
+        "masu": "つくります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w151",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w151",
+      "written": "寝ます",
+      "reading": "ねます",
+      "meaning": "上床睡觉",
+      "basic": "寝る",
+      "infl_type": "一段",
+      "source": "converted",
+      "forms": {
+        "te": "寝て",
+        "ta": "寝た",
+        "nai": "寝ない",
+        "masu": "寝ます"
+      },
+      "kana_forms": {
+        "te": "ねて",
+        "ta": "ねた",
+        "nai": "ねない",
+        "masu": "ねます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w153",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w153",
+      "written": "浴びます",
+      "reading": "あびます",
+      "meaning": "淋浴，浇水",
+      "basic": "浴びる",
+      "infl_type": "一段",
+      "source": "converted",
+      "forms": {
+        "te": "浴びて",
+        "ta": "浴びた",
+        "nai": "浴びない",
+        "masu": "浴びます"
+      },
+      "kana_forms": {
+        "te": "あびて",
+        "ta": "あびた",
+        "nai": "あびない",
+        "masu": "あびます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w155",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w155",
+      "written": "出かけます",
+      "reading": "でかけます",
+      "meaning": "出门",
+      "basic": "出かける",
+      "infl_type": "一段",
+      "source": "converted",
+      "forms": {
+        "te": "出かけて",
+        "ta": "出かけた",
+        "nai": "出かけない",
+        "masu": "出かけます"
+      },
+      "kana_forms": {
+        "te": "でかけて",
+        "ta": "でかけた",
+        "nai": "でかけない",
+        "masu": "でかけます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w156",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w156",
+      "written": "走ります",
+      "reading": "はしります",
+      "meaning": "跑步",
+      "basic": "走る",
+      "infl_type": "五段・ラ行",
+      "source": "converted",
+      "forms": {
+        "te": "走って",
+        "ta": "走った",
+        "nai": "走らない",
+        "masu": "走ります"
+      },
+      "kana_forms": {
+        "te": "はしって",
+        "ta": "はしった",
+        "nai": "はしらない",
+        "masu": "はしります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w157",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w157",
+      "written": "泳ぎます",
+      "reading": "およぎます",
+      "meaning": "游泳",
+      "basic": "泳ぐ",
+      "infl_type": "五段・ガ行",
+      "source": "converted",
+      "forms": {
+        "te": "泳いで",
+        "ta": "泳いだ",
+        "nai": "泳がない",
+        "masu": "泳ぎます"
+      },
+      "kana_forms": {
+        "te": "およいで",
+        "ta": "およいだ",
+        "nai": "およがない",
+        "masu": "およぎます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w159",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w159",
+      "written": "行きます",
+      "reading": "いきます",
+      "meaning": "去某地",
+      "basic": "行く",
+      "infl_type": "五段・カ行促音便",
+      "source": "converted",
+      "forms": {
+        "te": "行って",
+        "ta": "行った",
+        "nai": "行かない",
+        "masu": "行きます"
+      },
+      "kana_forms": {
+        "te": "いって",
+        "ta": "いった",
+        "nai": "いかない",
+        "masu": "いきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w163",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w163",
+      "written": "来ます",
+      "reading": "きます",
+      "meaning": "来了",
+      "basic": "来る",
+      "infl_type": "カ変・来ル",
+      "source": "converted",
+      "forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "こない",
+        "masu": "きます"
+      },
+      "kana_forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "こない",
+        "masu": "きます"
+      },
+      "alt_forms": {
+        "te": "来て",
+        "ta": "来た",
+        "nai": "来ない",
+        "masu": "来ます"
+      }
+    },
+    {
+      "ref": "lesson_duolingo:w166",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w166",
+      "written": "掛かります",
+      "reading": "かかります",
+      "meaning": "花费",
+      "basic": "掛かる",
+      "infl_type": "五段・ラ行",
+      "source": "converted",
+      "forms": {
+        "te": "掛かって",
+        "ta": "掛かった",
+        "nai": "掛からない",
+        "masu": "掛かります"
+      },
+      "kana_forms": {
+        "te": "かかって",
+        "ta": "かかった",
+        "nai": "かからない",
+        "masu": "かかります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w187",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w187",
+      "written": "話します",
+      "reading": "はなします",
+      "meaning": "谈话，聊天",
+      "basic": "話す",
+      "infl_type": "五段・サ行",
+      "source": "converted",
+      "forms": {
+        "te": "話して",
+        "ta": "話した",
+        "nai": "話さない",
+        "masu": "話します"
+      },
+      "kana_forms": {
+        "te": "はなして",
+        "ta": "はなした",
+        "nai": "はなさない",
+        "masu": "はなします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w224",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w224",
+      "written": "開きます",
+      "reading": "あきます",
+      "meaning": "开门",
+      "basic": "開く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "converted",
+      "forms": {
+        "te": "開いて",
+        "ta": "開いた",
+        "nai": "開かない",
+        "masu": "開きます"
+      },
+      "kana_forms": {
+        "te": "あいて",
+        "ta": "あいた",
+        "nai": "あかない",
+        "masu": "あきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w260",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w260",
+      "written": "引っ越します",
+      "reading": "ひっこします",
+      "meaning": "搬家",
+      "basic": "引っ越す",
+      "infl_type": "五段・サ行",
+      "source": "converted",
+      "forms": {
+        "te": "引っ越して",
+        "ta": "引っ越した",
+        "nai": "引っ越さない",
+        "masu": "引っ越します"
+      },
+      "kana_forms": {
+        "te": "ひっこして",
+        "ta": "ひっこした",
+        "nai": "ひっこさない",
+        "masu": "ひっこします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_duolingo:w310",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w310",
+      "written": "来ます",
+      "reading": "きます",
+      "meaning": "来",
+      "basic": "来る",
+      "infl_type": "カ変・来ル",
+      "source": "converted",
+      "forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "こない",
+        "masu": "きます"
+      },
+      "kana_forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "こない",
+        "masu": "きます"
+      },
+      "alt_forms": {
+        "te": "来て",
+        "ta": "来た",
+        "nai": "来ない",
+        "masu": "来ます"
+      }
+    },
+    {
+      "ref": "lesson_duolingo:w336",
+      "lesson_id": "lesson_duolingo",
+      "word_id": "w336",
+      "written": "着ます",
+      "reading": "きます",
+      "meaning": "穿xx",
+      "basic": "着る",
+      "infl_type": "一段",
+      "source": "converted",
+      "forms": {
+        "te": "着て",
+        "ta": "着た",
+        "nai": "着ない",
+        "masu": "着ます"
+      },
+      "kana_forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "きない",
+        "masu": "きます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w002",
+      "lesson_id": "lesson_n5",
+      "word_id": "w002",
+      "written": "会う",
+      "reading": "あう",
+      "meaning": "见面，会面",
+      "basic": "会う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "会って",
+        "ta": "会った",
+        "nai": "会わない",
+        "masu": "会います"
+      },
+      "kana_forms": {
+        "te": "あって",
+        "ta": "あった",
+        "nai": "あわない",
+        "masu": "あいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w009",
+      "lesson_id": "lesson_n5",
+      "word_id": "w009",
+      "written": "開く",
+      "reading": "あく",
+      "meaning": "开着，打开（自动词）",
+      "basic": "開く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "開いて",
+        "ta": "開いた",
+        "nai": "開かない",
+        "masu": "開きます"
+      },
+      "kana_forms": {
+        "te": "あいて",
+        "ta": "あいた",
+        "nai": "あかない",
+        "masu": "あきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w010",
+      "lesson_id": "lesson_n5",
+      "word_id": "w010",
+      "written": "開ける",
+      "reading": "あける",
+      "meaning": "打开（他动词）",
+      "basic": "開ける",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "開けて",
+        "ta": "開けた",
+        "nai": "開けない",
+        "masu": "開けます"
+      },
+      "kana_forms": {
+        "te": "あけて",
+        "ta": "あけた",
+        "nai": "あけない",
+        "masu": "あけます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w011",
+      "lesson_id": "lesson_n5",
+      "word_id": "w011",
+      "written": "上げる",
+      "reading": "あげる",
+      "meaning": "举起，提高",
+      "basic": "上げる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "上げて",
+        "ta": "上げた",
+        "nai": "上げない",
+        "masu": "上げます"
+      },
+      "kana_forms": {
+        "te": "あげて",
+        "ta": "あげた",
+        "nai": "あげない",
+        "masu": "あげます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w018",
+      "lesson_id": "lesson_n5",
+      "word_id": "w018",
+      "written": "遊ぶ",
+      "reading": "あそぶ",
+      "meaning": "玩，玩耍",
+      "basic": "遊ぶ",
+      "infl_type": "五段・バ行",
+      "source": "derived",
+      "forms": {
+        "te": "遊んで",
+        "ta": "遊んだ",
+        "nai": "遊ばない",
+        "masu": "遊びます"
+      },
+      "kana_forms": {
+        "te": "あそんで",
+        "ta": "あそんだ",
+        "nai": "あそばない",
+        "masu": "あそびます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w033",
+      "lesson_id": "lesson_n5",
+      "word_id": "w033",
+      "written": "浴びる",
+      "reading": "あびる",
+      "meaning": "冲澡，淋浴",
+      "basic": "浴びる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "浴びて",
+        "ta": "浴びた",
+        "nai": "浴びない",
+        "masu": "浴びます"
+      },
+      "kana_forms": {
+        "te": "あびて",
+        "ta": "あびた",
+        "nai": "あびない",
+        "masu": "あびます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w039",
+      "lesson_id": "lesson_n5",
+      "word_id": "w039",
+      "written": "洗う",
+      "reading": "あらう",
+      "meaning": "洗",
+      "basic": "洗う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "洗って",
+        "ta": "洗った",
+        "nai": "洗わない",
+        "masu": "洗います"
+      },
+      "kana_forms": {
+        "te": "あらって",
+        "ta": "あらった",
+        "nai": "あらわない",
+        "masu": "あらいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w040",
+      "lesson_id": "lesson_n5",
+      "word_id": "w040",
+      "written": "在る",
+      "reading": "ある",
+      "meaning": "在，位于（非生物）",
+      "basic": "在る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "あって",
+        "ta": "あった",
+        "nai": "ない",
+        "masu": "あります"
+      },
+      "kana_forms": {
+        "te": "あって",
+        "ta": "あった",
+        "nai": "ない",
+        "masu": "あります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w041",
+      "lesson_id": "lesson_n5",
+      "word_id": "w041",
+      "written": "有る",
+      "reading": "ある",
+      "meaning": "有，拥有（非生物）",
+      "basic": "有る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "あって",
+        "ta": "あった",
+        "nai": "ない",
+        "masu": "あります"
+      },
+      "kana_forms": {
+        "te": "あって",
+        "ta": "あった",
+        "nai": "ない",
+        "masu": "あります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w042",
+      "lesson_id": "lesson_n5",
+      "word_id": "w042",
+      "written": "歩く",
+      "reading": "あるく",
+      "meaning": "走，步行",
+      "basic": "歩く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "歩いて",
+        "ta": "歩いた",
+        "nai": "歩かない",
+        "masu": "歩きます"
+      },
+      "kana_forms": {
+        "te": "あるいて",
+        "ta": "あるいた",
+        "nai": "あるかない",
+        "masu": "あるきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w046",
+      "lesson_id": "lesson_n5",
+      "word_id": "w046",
+      "written": "言う",
+      "reading": "いう",
+      "meaning": "说",
+      "basic": "言う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "言って",
+        "ta": "言った",
+        "nai": "言わない",
+        "masu": "言います"
+      },
+      "kana_forms": {
+        "te": "いって",
+        "ta": "いった",
+        "nai": "いわない",
+        "masu": "いいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w049",
+      "lesson_id": "lesson_n5",
+      "word_id": "w049",
+      "written": "行く",
+      "reading": "いく",
+      "meaning": "去",
+      "basic": "行く",
+      "infl_type": "五段・カ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "行って",
+        "ta": "行った",
+        "nai": "行かない",
+        "masu": "行きます"
+      },
+      "kana_forms": {
+        "te": "いって",
+        "ta": "いった",
+        "nai": "いかない",
+        "masu": "いきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w071",
+      "lesson_id": "lesson_n5",
+      "word_id": "w071",
+      "written": "居る",
+      "reading": "いる",
+      "meaning": "有，在（生物）",
+      "basic": "居る",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "いて",
+        "ta": "いた",
+        "nai": "いない",
+        "masu": "います"
+      },
+      "kana_forms": {
+        "te": "いて",
+        "ta": "いた",
+        "nai": "いない",
+        "masu": "います"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w072",
+      "lesson_id": "lesson_n5",
+      "word_id": "w072",
+      "written": "要る",
+      "reading": "いる",
+      "meaning": "需要",
+      "basic": "要る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "要って",
+        "ta": "要った",
+        "nai": "要らない",
+        "masu": "要ります"
+      },
+      "kana_forms": {
+        "te": "いって",
+        "ta": "いった",
+        "nai": "いらない",
+        "masu": "いります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w073",
+      "lesson_id": "lesson_n5",
+      "word_id": "w073",
+      "written": "入れる",
+      "reading": "いれる",
+      "meaning": "放进，装入",
+      "basic": "入れる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "入れて",
+        "ta": "入れた",
+        "nai": "入れない",
+        "masu": "入れます"
+      },
+      "kana_forms": {
+        "te": "いれて",
+        "ta": "いれた",
+        "nai": "いれない",
+        "masu": "いれます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w080",
+      "lesson_id": "lesson_n5",
+      "word_id": "w080",
+      "written": "歌う",
+      "reading": "うたう",
+      "meaning": "唱（歌）",
+      "basic": "歌う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "歌って",
+        "ta": "歌った",
+        "nai": "歌わない",
+        "masu": "歌います"
+      },
+      "kana_forms": {
+        "te": "うたって",
+        "ta": "うたった",
+        "nai": "うたわない",
+        "masu": "うたいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w082",
+      "lesson_id": "lesson_n5",
+      "word_id": "w082",
+      "written": "生まれる",
+      "reading": "うまれる",
+      "meaning": "出生",
+      "basic": "生まれる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "生まれて",
+        "ta": "生まれた",
+        "nai": "生まれない",
+        "masu": "生まれます"
+      },
+      "kana_forms": {
+        "te": "うまれて",
+        "ta": "うまれた",
+        "nai": "うまれない",
+        "masu": "うまれます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w084",
+      "lesson_id": "lesson_n5",
+      "word_id": "w084",
+      "written": "売る",
+      "reading": "うる",
+      "meaning": "卖",
+      "basic": "売る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "売って",
+        "ta": "売った",
+        "nai": "売らない",
+        "masu": "売ります"
+      },
+      "kana_forms": {
+        "te": "うって",
+        "ta": "うった",
+        "nai": "うらない",
+        "masu": "うります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w103",
+      "lesson_id": "lesson_n5",
+      "word_id": "w103",
+      "written": "起きる",
+      "reading": "おきる",
+      "meaning": "起床，起来",
+      "basic": "起きる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "起きて",
+        "ta": "起きた",
+        "nai": "起きない",
+        "masu": "起きます"
+      },
+      "kana_forms": {
+        "te": "おきて",
+        "ta": "おきた",
+        "nai": "おきない",
+        "masu": "おきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w104",
+      "lesson_id": "lesson_n5",
+      "word_id": "w104",
+      "written": "置く",
+      "reading": "おく",
+      "meaning": "放，放置",
+      "basic": "置く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "置いて",
+        "ta": "置いた",
+        "nai": "置かない",
+        "masu": "置きます"
+      },
+      "kana_forms": {
+        "te": "おいて",
+        "ta": "おいた",
+        "nai": "おかない",
+        "masu": "おきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w110",
+      "lesson_id": "lesson_n5",
+      "word_id": "w110",
+      "written": "教える",
+      "reading": "おしえる",
+      "meaning": "教，告诉",
+      "basic": "教える",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "教えて",
+        "ta": "教えた",
+        "nai": "教えない",
+        "masu": "教えます"
+      },
+      "kana_forms": {
+        "te": "おしえて",
+        "ta": "おしえた",
+        "nai": "おしえない",
+        "masu": "おしえます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w111",
+      "lesson_id": "lesson_n5",
+      "word_id": "w111",
+      "written": "押す",
+      "reading": "おす",
+      "meaning": "按，推",
+      "basic": "押す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "押して",
+        "ta": "押した",
+        "nai": "押さない",
+        "masu": "押します"
+      },
+      "kana_forms": {
+        "te": "おして",
+        "ta": "おした",
+        "nai": "おさない",
+        "masu": "おします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w130",
+      "lesson_id": "lesson_n5",
+      "word_id": "w130",
+      "written": "覚える",
+      "reading": "おぼえる",
+      "meaning": "记住，学会",
+      "basic": "覚える",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "覚えて",
+        "ta": "覚えた",
+        "nai": "覚えない",
+        "masu": "覚えます"
+      },
+      "kana_forms": {
+        "te": "おぼえて",
+        "ta": "おぼえた",
+        "nai": "おぼえない",
+        "masu": "おぼえます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w134",
+      "lesson_id": "lesson_n5",
+      "word_id": "w134",
+      "written": "泳ぐ",
+      "reading": "およぐ",
+      "meaning": "游泳",
+      "basic": "泳ぐ",
+      "infl_type": "五段・ガ行",
+      "source": "derived",
+      "forms": {
+        "te": "泳いで",
+        "ta": "泳いだ",
+        "nai": "泳がない",
+        "masu": "泳ぎます"
+      },
+      "kana_forms": {
+        "te": "およいで",
+        "ta": "およいだ",
+        "nai": "およがない",
+        "masu": "およぎます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w135",
+      "lesson_id": "lesson_n5",
+      "word_id": "w135",
+      "written": "降りる",
+      "reading": "おりる",
+      "meaning": "下车，下来",
+      "basic": "降りる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "降りて",
+        "ta": "降りた",
+        "nai": "降りない",
+        "masu": "降ります"
+      },
+      "kana_forms": {
+        "te": "おりて",
+        "ta": "おりた",
+        "nai": "おりない",
+        "masu": "おります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w136",
+      "lesson_id": "lesson_n5",
+      "word_id": "w136",
+      "written": "終わる",
+      "reading": "おわる",
+      "meaning": "结束，完",
+      "basic": "終わる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "終わって",
+        "ta": "終わった",
+        "nai": "終わらない",
+        "masu": "終わります"
+      },
+      "kana_forms": {
+        "te": "おわって",
+        "ta": "おわった",
+        "nai": "おわらない",
+        "masu": "おわります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w145",
+      "lesson_id": "lesson_n5",
+      "word_id": "w145",
+      "written": "買う",
+      "reading": "かう",
+      "meaning": "买",
+      "basic": "買う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "買って",
+        "ta": "買った",
+        "nai": "買わない",
+        "masu": "買います"
+      },
+      "kana_forms": {
+        "te": "かって",
+        "ta": "かった",
+        "nai": "かわない",
+        "masu": "かいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w146",
+      "lesson_id": "lesson_n5",
+      "word_id": "w146",
+      "written": "返す",
+      "reading": "かえす",
+      "meaning": "还，归还",
+      "basic": "返す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "返して",
+        "ta": "返した",
+        "nai": "返さない",
+        "masu": "返します"
+      },
+      "kana_forms": {
+        "te": "かえして",
+        "ta": "かえした",
+        "nai": "かえさない",
+        "masu": "かえします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w147",
+      "lesson_id": "lesson_n5",
+      "word_id": "w147",
+      "written": "帰る",
+      "reading": "かえる",
+      "meaning": "回家，回去",
+      "basic": "帰る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "帰って",
+        "ta": "帰った",
+        "nai": "帰らない",
+        "masu": "帰ります"
+      },
+      "kana_forms": {
+        "te": "かえって",
+        "ta": "かえった",
+        "nai": "かえらない",
+        "masu": "かえります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w149",
+      "lesson_id": "lesson_n5",
+      "word_id": "w149",
+      "written": "かかる",
+      "reading": "かかる",
+      "meaning": "花费（时间、金钱）",
+      "basic": "かかる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "かかって",
+        "ta": "かかった",
+        "nai": "かからない",
+        "masu": "かかります"
+      },
+      "kana_forms": {
+        "te": "かかって",
+        "ta": "かかった",
+        "nai": "かからない",
+        "masu": "かかります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w151",
+      "lesson_id": "lesson_n5",
+      "word_id": "w151",
+      "written": "書く",
+      "reading": "かく",
+      "meaning": "写",
+      "basic": "書く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "書いて",
+        "ta": "書いた",
+        "nai": "書かない",
+        "masu": "書きます"
+      },
+      "kana_forms": {
+        "te": "かいて",
+        "ta": "かいた",
+        "nai": "かかない",
+        "masu": "かきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w153",
+      "lesson_id": "lesson_n5",
+      "word_id": "w153",
+      "written": "掛ける",
+      "reading": "かける",
+      "meaning": "挂，戴（眼镜）",
+      "basic": "掛ける",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "掛けて",
+        "ta": "掛けた",
+        "nai": "掛けない",
+        "masu": "掛けます"
+      },
+      "kana_forms": {
+        "te": "かけて",
+        "ta": "かけた",
+        "nai": "かけない",
+        "masu": "かけます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w154",
+      "lesson_id": "lesson_n5",
+      "word_id": "w154",
+      "written": "かける",
+      "reading": "かける",
+      "meaning": "打（电话），坐下",
+      "basic": "かける",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "かけて",
+        "ta": "かけた",
+        "nai": "かけない",
+        "masu": "かけます"
+      },
+      "kana_forms": {
+        "te": "かけて",
+        "ta": "かけた",
+        "nai": "かけない",
+        "masu": "かけます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w156",
+      "lesson_id": "lesson_n5",
+      "word_id": "w156",
+      "written": "貸す",
+      "reading": "かす",
+      "meaning": "借出，借给",
+      "basic": "貸す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "貸して",
+        "ta": "貸した",
+        "nai": "貸さない",
+        "masu": "貸します"
+      },
+      "kana_forms": {
+        "te": "かして",
+        "ta": "かした",
+        "nai": "かさない",
+        "masu": "かします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w168",
+      "lesson_id": "lesson_n5",
+      "word_id": "w168",
+      "written": "かぶる",
+      "reading": "かぶる",
+      "meaning": "戴（帽子）",
+      "basic": "かぶる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "かぶって",
+        "ta": "かぶった",
+        "nai": "かぶらない",
+        "masu": "かぶります"
+      },
+      "kana_forms": {
+        "te": "かぶって",
+        "ta": "かぶった",
+        "nai": "かぶらない",
+        "masu": "かぶります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w174",
+      "lesson_id": "lesson_n5",
+      "word_id": "w174",
+      "written": "借りる",
+      "reading": "かりる",
+      "meaning": "借来，借入",
+      "basic": "借りる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "借りて",
+        "ta": "借りた",
+        "nai": "借りない",
+        "masu": "借ります"
+      },
+      "kana_forms": {
+        "te": "かりて",
+        "ta": "かりた",
+        "nai": "かりない",
+        "masu": "かります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w184",
+      "lesson_id": "lesson_n5",
+      "word_id": "w184",
+      "written": "消える",
+      "reading": "きえる",
+      "meaning": "消失，熄灭",
+      "basic": "消える",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "消えて",
+        "ta": "消えた",
+        "nai": "消えない",
+        "masu": "消えます"
+      },
+      "kana_forms": {
+        "te": "きえて",
+        "ta": "きえた",
+        "nai": "きえない",
+        "masu": "きえます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w185",
+      "lesson_id": "lesson_n5",
+      "word_id": "w185",
+      "written": "聞く",
+      "reading": "きく",
+      "meaning": "听，问",
+      "basic": "聞く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "聞いて",
+        "ta": "聞いた",
+        "nai": "聞かない",
+        "masu": "聞きます"
+      },
+      "kana_forms": {
+        "te": "きいて",
+        "ta": "きいた",
+        "nai": "きかない",
+        "masu": "ききます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w201",
+      "lesson_id": "lesson_n5",
+      "word_id": "w201",
+      "written": "切る",
+      "reading": "きる",
+      "meaning": "切，剪；挂断（电话）",
+      "basic": "切る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "切って",
+        "ta": "切った",
+        "nai": "切らない",
+        "masu": "切ります"
+      },
+      "kana_forms": {
+        "te": "きって",
+        "ta": "きった",
+        "nai": "きらない",
+        "masu": "きります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w202",
+      "lesson_id": "lesson_n5",
+      "word_id": "w202",
+      "written": "着る",
+      "reading": "きる",
+      "meaning": "穿（上衣）",
+      "basic": "着る",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "着て",
+        "ta": "着た",
+        "nai": "着ない",
+        "masu": "着ます"
+      },
+      "kana_forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "きない",
+        "masu": "きます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w210",
+      "lesson_id": "lesson_n5",
+      "word_id": "w210",
+      "written": "下さい",
+      "reading": "ください",
+      "meaning": "请给（我）",
+      "basic": "下さる",
+      "infl_type": "五段・ラ行特殊",
+      "source": "manual",
+      "forms": {
+        "te": "下さって",
+        "ta": "下さった",
+        "nai": "下さらない",
+        "masu": "下さいます"
+      },
+      "kana_forms": {
+        "te": "くださって",
+        "ta": "くださった",
+        "nai": "くださらない",
+        "masu": "くださいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w217",
+      "lesson_id": "lesson_n5",
+      "word_id": "w217",
+      "written": "曇る",
+      "reading": "くもる",
+      "meaning": "天阴，阴下来",
+      "basic": "曇る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "曇って",
+        "ta": "曇った",
+        "nai": "曇らない",
+        "masu": "曇ります"
+      },
+      "kana_forms": {
+        "te": "くもって",
+        "ta": "くもった",
+        "nai": "くもらない",
+        "masu": "くもります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w221",
+      "lesson_id": "lesson_n5",
+      "word_id": "w221",
+      "written": "来る",
+      "reading": "くる",
+      "meaning": "来",
+      "basic": "来る",
+      "infl_type": "カ変・来ル",
+      "source": "derived",
+      "forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "こない",
+        "masu": "きます"
+      },
+      "kana_forms": {
+        "te": "きて",
+        "ta": "きた",
+        "nai": "こない",
+        "masu": "きます"
+      },
+      "alt_forms": {
+        "te": "来て",
+        "ta": "来た",
+        "nai": "来ない",
+        "masu": "来ます"
+      }
+    },
+    {
+      "ref": "lesson_n5:w227",
+      "lesson_id": "lesson_n5",
+      "word_id": "w227",
+      "written": "消す",
+      "reading": "けす",
+      "meaning": "关掉，消除",
+      "basic": "消す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "消して",
+        "ta": "消した",
+        "nai": "消さない",
+        "masu": "消します"
+      },
+      "kana_forms": {
+        "te": "けして",
+        "ta": "けした",
+        "nai": "けさない",
+        "masu": "けします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w245",
+      "lesson_id": "lesson_n5",
+      "word_id": "w245",
+      "written": "答える",
+      "reading": "こたえる",
+      "meaning": "回答",
+      "basic": "答える",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "答えて",
+        "ta": "答えた",
+        "nai": "答えない",
+        "masu": "答えます"
+      },
+      "kana_forms": {
+        "te": "こたえて",
+        "ta": "こたえた",
+        "nai": "こたえない",
+        "masu": "こたえます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w254",
+      "lesson_id": "lesson_n5",
+      "word_id": "w254",
+      "written": "コピーする",
+      "reading": "コピーする",
+      "meaning": "复印",
+      "basic": "コピーする",
+      "infl_type": "サ変・スル",
+      "source": "manual",
+      "forms": {
+        "te": "コピーして",
+        "ta": "コピーした",
+        "nai": "コピーしない",
+        "masu": "コピーします"
+      },
+      "kana_forms": {
+        "te": "コピーして",
+        "ta": "コピーした",
+        "nai": "コピーしない",
+        "masu": "コピーします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w255",
+      "lesson_id": "lesson_n5",
+      "word_id": "w255",
+      "written": "困る",
+      "reading": "こまる",
+      "meaning": "为难，困扰",
+      "basic": "困る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "困って",
+        "ta": "困った",
+        "nai": "困らない",
+        "masu": "困ります"
+      },
+      "kana_forms": {
+        "te": "こまって",
+        "ta": "こまった",
+        "nai": "こまらない",
+        "masu": "こまります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w265",
+      "lesson_id": "lesson_n5",
+      "word_id": "w265",
+      "written": "咲く",
+      "reading": "さく",
+      "meaning": "开（花）",
+      "basic": "咲く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "咲いて",
+        "ta": "咲いた",
+        "nai": "咲かない",
+        "masu": "咲きます"
+      },
+      "kana_forms": {
+        "te": "さいて",
+        "ta": "さいた",
+        "nai": "さかない",
+        "masu": "さきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w267",
+      "lesson_id": "lesson_n5",
+      "word_id": "w267",
+      "written": "差す",
+      "reading": "さす",
+      "meaning": "撑（伞），举（手）",
+      "basic": "差す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "差して",
+        "ta": "差した",
+        "nai": "差さない",
+        "masu": "差します"
+      },
+      "kana_forms": {
+        "te": "さして",
+        "ta": "さした",
+        "nai": "ささない",
+        "masu": "さします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w285",
+      "lesson_id": "lesson_n5",
+      "word_id": "w285",
+      "written": "死ぬ",
+      "reading": "しぬ",
+      "meaning": "死",
+      "basic": "死ぬ",
+      "infl_type": "五段・ナ行",
+      "source": "derived",
+      "forms": {
+        "te": "死んで",
+        "ta": "死んだ",
+        "nai": "死なない",
+        "masu": "死にます"
+      },
+      "kana_forms": {
+        "te": "しんで",
+        "ta": "しんだ",
+        "nai": "しなない",
+        "masu": "しにます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w288",
+      "lesson_id": "lesson_n5",
+      "word_id": "w288",
+      "written": "閉まる",
+      "reading": "しまる",
+      "meaning": "关上，关着（自动词）",
+      "basic": "閉まる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "閉まって",
+        "ta": "閉まった",
+        "nai": "閉まらない",
+        "masu": "閉まります"
+      },
+      "kana_forms": {
+        "te": "しまって",
+        "ta": "しまった",
+        "nai": "しまらない",
+        "masu": "しまります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w289",
+      "lesson_id": "lesson_n5",
+      "word_id": "w289",
+      "written": "閉める",
+      "reading": "しめる",
+      "meaning": "关上（他动词）",
+      "basic": "閉める",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "閉めて",
+        "ta": "閉めた",
+        "nai": "閉めない",
+        "masu": "閉めます"
+      },
+      "kana_forms": {
+        "te": "しめて",
+        "ta": "しめた",
+        "nai": "しめない",
+        "masu": "しめます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w290",
+      "lesson_id": "lesson_n5",
+      "word_id": "w290",
+      "written": "締める",
+      "reading": "しめる",
+      "meaning": "系紧，勒紧",
+      "basic": "締める",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "締めて",
+        "ta": "締めた",
+        "nai": "締めない",
+        "masu": "締めます"
+      },
+      "kana_forms": {
+        "te": "しめて",
+        "ta": "しめた",
+        "nai": "しめない",
+        "masu": "しめます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w302",
+      "lesson_id": "lesson_n5",
+      "word_id": "w302",
+      "written": "知る",
+      "reading": "しる",
+      "meaning": "知道，认识",
+      "basic": "知る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "知って",
+        "ta": "知った",
+        "nai": "知らない",
+        "masu": "知ります"
+      },
+      "kana_forms": {
+        "te": "しって",
+        "ta": "しった",
+        "nai": "しらない",
+        "masu": "しります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w307",
+      "lesson_id": "lesson_n5",
+      "word_id": "w307",
+      "written": "吸う",
+      "reading": "すう",
+      "meaning": "吸，抽（烟）",
+      "basic": "吸う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "吸って",
+        "ta": "吸った",
+        "nai": "吸わない",
+        "masu": "吸います"
+      },
+      "kana_forms": {
+        "te": "すって",
+        "ta": "すった",
+        "nai": "すわない",
+        "masu": "すいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w318",
+      "lesson_id": "lesson_n5",
+      "word_id": "w318",
+      "written": "住む",
+      "reading": "すむ",
+      "meaning": "住，居住",
+      "basic": "住む",
+      "infl_type": "五段・マ行",
+      "source": "derived",
+      "forms": {
+        "te": "住んで",
+        "ta": "住んだ",
+        "nai": "住まない",
+        "masu": "住みます"
+      },
+      "kana_forms": {
+        "te": "すんで",
+        "ta": "すんだ",
+        "nai": "すまない",
+        "masu": "すみます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w319",
+      "lesson_id": "lesson_n5",
+      "word_id": "w319",
+      "written": "する",
+      "reading": "する",
+      "meaning": "做，干；戴（领带、手表等小物）",
+      "basic": "する",
+      "infl_type": "サ変・スル",
+      "source": "derived",
+      "forms": {
+        "te": "して",
+        "ta": "した",
+        "nai": "しない",
+        "masu": "します"
+      },
+      "kana_forms": {
+        "te": "して",
+        "ta": "した",
+        "nai": "しない",
+        "masu": "します"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w320",
+      "lesson_id": "lesson_n5",
+      "word_id": "w320",
+      "written": "座る",
+      "reading": "すわる",
+      "meaning": "坐",
+      "basic": "座る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "座って",
+        "ta": "座った",
+        "nai": "座らない",
+        "masu": "座ります"
+      },
+      "kana_forms": {
+        "te": "すわって",
+        "ta": "すわった",
+        "nai": "すわらない",
+        "masu": "すわります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w356",
+      "lesson_id": "lesson_n5",
+      "word_id": "w356",
+      "written": "出す",
+      "reading": "だす",
+      "meaning": "拿出，交出",
+      "basic": "出す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "出して",
+        "ta": "出した",
+        "nai": "出さない",
+        "masu": "出します"
+      },
+      "kana_forms": {
+        "te": "だして",
+        "ta": "だした",
+        "nai": "ださない",
+        "masu": "だします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w357",
+      "lesson_id": "lesson_n5",
+      "word_id": "w357",
+      "written": "立つ",
+      "reading": "たつ",
+      "meaning": "站，立",
+      "basic": "立つ",
+      "infl_type": "五段・タ行",
+      "source": "derived",
+      "forms": {
+        "te": "立って",
+        "ta": "立った",
+        "nai": "立たない",
+        "masu": "立ちます"
+      },
+      "kana_forms": {
+        "te": "たって",
+        "ta": "たった",
+        "nai": "たたない",
+        "masu": "たちます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w361",
+      "lesson_id": "lesson_n5",
+      "word_id": "w361",
+      "written": "頼む",
+      "reading": "たのむ",
+      "meaning": "拜托，请求",
+      "basic": "頼む",
+      "infl_type": "五段・マ行",
+      "source": "derived",
+      "forms": {
+        "te": "頼んで",
+        "ta": "頼んだ",
+        "nai": "頼まない",
+        "masu": "頼みます"
+      },
+      "kana_forms": {
+        "te": "たのんで",
+        "ta": "たのんだ",
+        "nai": "たのまない",
+        "masu": "たのみます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w365",
+      "lesson_id": "lesson_n5",
+      "word_id": "w365",
+      "written": "食べる",
+      "reading": "たべる",
+      "meaning": "吃",
+      "basic": "食べる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "食べて",
+        "ta": "食べた",
+        "nai": "食べない",
+        "masu": "食べます"
+      },
+      "kana_forms": {
+        "te": "たべて",
+        "ta": "たべた",
+        "nai": "たべない",
+        "masu": "たべます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w374",
+      "lesson_id": "lesson_n5",
+      "word_id": "w374",
+      "written": "違う",
+      "reading": "ちがう",
+      "meaning": "不同，不对",
+      "basic": "違う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "違って",
+        "ta": "違った",
+        "nai": "違わない",
+        "masu": "違います"
+      },
+      "kana_forms": {
+        "te": "ちがって",
+        "ta": "ちがった",
+        "nai": "ちがわない",
+        "masu": "ちがいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w384",
+      "lesson_id": "lesson_n5",
+      "word_id": "w384",
+      "written": "使う",
+      "reading": "つかう",
+      "meaning": "使用",
+      "basic": "使う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "使って",
+        "ta": "使った",
+        "nai": "使わない",
+        "masu": "使います"
+      },
+      "kana_forms": {
+        "te": "つかって",
+        "ta": "つかった",
+        "nai": "つかわない",
+        "masu": "つかいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w385",
+      "lesson_id": "lesson_n5",
+      "word_id": "w385",
+      "written": "疲れる",
+      "reading": "つかれる",
+      "meaning": "累，疲劳",
+      "basic": "疲れる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "疲れて",
+        "ta": "疲れた",
+        "nai": "疲れない",
+        "masu": "疲れます"
+      },
+      "kana_forms": {
+        "te": "つかれて",
+        "ta": "つかれた",
+        "nai": "つかれない",
+        "masu": "つかれます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w387",
+      "lesson_id": "lesson_n5",
+      "word_id": "w387",
+      "written": "着く",
+      "reading": "つく",
+      "meaning": "到达",
+      "basic": "着く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "着いて",
+        "ta": "着いた",
+        "nai": "着かない",
+        "masu": "着きます"
+      },
+      "kana_forms": {
+        "te": "ついて",
+        "ta": "ついた",
+        "nai": "つかない",
+        "masu": "つきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w389",
+      "lesson_id": "lesson_n5",
+      "word_id": "w389",
+      "written": "作る",
+      "reading": "つくる",
+      "meaning": "做，制作",
+      "basic": "作る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "作って",
+        "ta": "作った",
+        "nai": "作らない",
+        "masu": "作ります"
+      },
+      "kana_forms": {
+        "te": "つくって",
+        "ta": "つくった",
+        "nai": "つくらない",
+        "masu": "つくります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w390",
+      "lesson_id": "lesson_n5",
+      "word_id": "w390",
+      "written": "つける",
+      "reading": "つける",
+      "meaning": "打开（电灯等）",
+      "basic": "つける",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "つけて",
+        "ta": "つけた",
+        "nai": "つけない",
+        "masu": "つけます"
+      },
+      "kana_forms": {
+        "te": "つけて",
+        "ta": "つけた",
+        "nai": "つけない",
+        "masu": "つけます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w391",
+      "lesson_id": "lesson_n5",
+      "word_id": "w391",
+      "written": "勤める",
+      "reading": "つとめる",
+      "meaning": "工作，任职",
+      "basic": "勤める",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "勤めて",
+        "ta": "勤めた",
+        "nai": "勤めない",
+        "masu": "勤めます"
+      },
+      "kana_forms": {
+        "te": "つとめて",
+        "ta": "つとめた",
+        "nai": "つとめない",
+        "masu": "つとめます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w399",
+      "lesson_id": "lesson_n5",
+      "word_id": "w399",
+      "written": "出かける",
+      "reading": "でかける",
+      "meaning": "出门，外出",
+      "basic": "出かける",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "出かけて",
+        "ta": "出かけた",
+        "nai": "出かけない",
+        "masu": "出かけます"
+      },
+      "kana_forms": {
+        "te": "でかけて",
+        "ta": "でかけた",
+        "nai": "でかけない",
+        "masu": "でかけます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w401",
+      "lesson_id": "lesson_n5",
+      "word_id": "w401",
+      "written": "できる",
+      "reading": "できる",
+      "meaning": "会，能",
+      "basic": "できる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "できて",
+        "ta": "できた",
+        "nai": "できない",
+        "masu": "できます"
+      },
+      "kana_forms": {
+        "te": "できて",
+        "ta": "できた",
+        "nai": "できない",
+        "masu": "できます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w407",
+      "lesson_id": "lesson_n5",
+      "word_id": "w407",
+      "written": "出る",
+      "reading": "でる",
+      "meaning": "出，出来，离开",
+      "basic": "出る",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "出て",
+        "ta": "出た",
+        "nai": "出ない",
+        "masu": "出ます"
+      },
+      "kana_forms": {
+        "te": "でて",
+        "ta": "でた",
+        "nai": "でない",
+        "masu": "でます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w435",
+      "lesson_id": "lesson_n5",
+      "word_id": "w435",
+      "written": "飛ぶ",
+      "reading": "とぶ",
+      "meaning": "飞",
+      "basic": "飛ぶ",
+      "infl_type": "五段・バ行",
+      "source": "derived",
+      "forms": {
+        "te": "飛んで",
+        "ta": "飛んだ",
+        "nai": "飛ばない",
+        "masu": "飛びます"
+      },
+      "kana_forms": {
+        "te": "とんで",
+        "ta": "とんだ",
+        "nai": "とばない",
+        "masu": "とびます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w436",
+      "lesson_id": "lesson_n5",
+      "word_id": "w436",
+      "written": "止まる",
+      "reading": "とまる",
+      "meaning": "停，停下",
+      "basic": "止まる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "止まって",
+        "ta": "止まった",
+        "nai": "止まらない",
+        "masu": "止まります"
+      },
+      "kana_forms": {
+        "te": "とまって",
+        "ta": "とまった",
+        "nai": "とまらない",
+        "masu": "とまります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w441",
+      "lesson_id": "lesson_n5",
+      "word_id": "w441",
+      "written": "取る",
+      "reading": "とる",
+      "meaning": "拿，取；选（课）",
+      "basic": "取る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "取って",
+        "ta": "取った",
+        "nai": "取らない",
+        "masu": "取ります"
+      },
+      "kana_forms": {
+        "te": "とって",
+        "ta": "とった",
+        "nai": "とらない",
+        "masu": "とります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w442",
+      "lesson_id": "lesson_n5",
+      "word_id": "w442",
+      "written": "撮る",
+      "reading": "とる",
+      "meaning": "拍（照）",
+      "basic": "撮る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "撮って",
+        "ta": "撮った",
+        "nai": "撮らない",
+        "masu": "撮ります"
+      },
+      "kana_forms": {
+        "te": "とって",
+        "ta": "とった",
+        "nai": "とらない",
+        "masu": "とります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w449",
+      "lesson_id": "lesson_n5",
+      "word_id": "w449",
+      "written": "鳴く",
+      "reading": "なく",
+      "meaning": "叫，鸣（动物）",
+      "basic": "鳴く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "鳴いて",
+        "ta": "鳴いた",
+        "nai": "鳴かない",
+        "masu": "鳴きます"
+      },
+      "kana_forms": {
+        "te": "ないて",
+        "ta": "ないた",
+        "nai": "なかない",
+        "masu": "なきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w450",
+      "lesson_id": "lesson_n5",
+      "word_id": "w450",
+      "written": "無くす",
+      "reading": "なくす",
+      "meaning": "弄丢，丢失",
+      "basic": "無くす",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "無くして",
+        "ta": "無くした",
+        "nai": "無くさない",
+        "masu": "無くします"
+      },
+      "kana_forms": {
+        "te": "なくして",
+        "ta": "なくした",
+        "nai": "なくさない",
+        "masu": "なくします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w458",
+      "lesson_id": "lesson_n5",
+      "word_id": "w458",
+      "written": "習う",
+      "reading": "ならう",
+      "meaning": "学习（跟人学）",
+      "basic": "習う",
+      "infl_type": "五段・ワ行促音便",
+      "source": "derived",
+      "forms": {
+        "te": "習って",
+        "ta": "習った",
+        "nai": "習わない",
+        "masu": "習います"
+      },
+      "kana_forms": {
+        "te": "ならって",
+        "ta": "ならった",
+        "nai": "ならわない",
+        "masu": "ならいます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w459",
+      "lesson_id": "lesson_n5",
+      "word_id": "w459",
+      "written": "並ぶ",
+      "reading": "ならぶ",
+      "meaning": "排队，排列（自动词）",
+      "basic": "並ぶ",
+      "infl_type": "五段・バ行",
+      "source": "derived",
+      "forms": {
+        "te": "並んで",
+        "ta": "並んだ",
+        "nai": "並ばない",
+        "masu": "並びます"
+      },
+      "kana_forms": {
+        "te": "ならんで",
+        "ta": "ならんだ",
+        "nai": "ならばない",
+        "masu": "ならびます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w460",
+      "lesson_id": "lesson_n5",
+      "word_id": "w460",
+      "written": "並べる",
+      "reading": "ならべる",
+      "meaning": "排列，摆放（他动词）",
+      "basic": "並べる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "並べて",
+        "ta": "並べた",
+        "nai": "並べない",
+        "masu": "並べます"
+      },
+      "kana_forms": {
+        "te": "ならべて",
+        "ta": "ならべた",
+        "nai": "ならべない",
+        "masu": "ならべます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w461",
+      "lesson_id": "lesson_n5",
+      "word_id": "w461",
+      "written": "なる",
+      "reading": "なる",
+      "meaning": "成为，变成",
+      "basic": "なる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "なって",
+        "ta": "なった",
+        "nai": "ならない",
+        "masu": "なります"
+      },
+      "kana_forms": {
+        "te": "なって",
+        "ta": "なった",
+        "nai": "ならない",
+        "masu": "なります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w470",
+      "lesson_id": "lesson_n5",
+      "word_id": "w470",
+      "written": "脱ぐ",
+      "reading": "ぬぐ",
+      "meaning": "脱（衣服）",
+      "basic": "脱ぐ",
+      "infl_type": "五段・ガ行",
+      "source": "derived",
+      "forms": {
+        "te": "脱いで",
+        "ta": "脱いだ",
+        "nai": "脱がない",
+        "masu": "脱ぎます"
+      },
+      "kana_forms": {
+        "te": "ぬいで",
+        "ta": "ぬいだ",
+        "nai": "ぬがない",
+        "masu": "ぬぎます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w474",
+      "lesson_id": "lesson_n5",
+      "word_id": "w474",
+      "written": "寝る",
+      "reading": "ねる",
+      "meaning": "睡觉，就寝",
+      "basic": "寝る",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "寝て",
+        "ta": "寝た",
+        "nai": "寝ない",
+        "masu": "寝ます"
+      },
+      "kana_forms": {
+        "te": "ねて",
+        "ta": "ねた",
+        "nai": "ねない",
+        "masu": "ねます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w476",
+      "lesson_id": "lesson_n5",
+      "word_id": "w476",
+      "written": "登る",
+      "reading": "のぼる",
+      "meaning": "爬，登",
+      "basic": "登る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "登って",
+        "ta": "登った",
+        "nai": "登らない",
+        "masu": "登ります"
+      },
+      "kana_forms": {
+        "te": "のぼって",
+        "ta": "のぼった",
+        "nai": "のぼらない",
+        "masu": "のぼります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w478",
+      "lesson_id": "lesson_n5",
+      "word_id": "w478",
+      "written": "飲む",
+      "reading": "のむ",
+      "meaning": "喝",
+      "basic": "飲む",
+      "infl_type": "五段・マ行",
+      "source": "derived",
+      "forms": {
+        "te": "飲んで",
+        "ta": "飲んだ",
+        "nai": "飲まない",
+        "masu": "飲みます"
+      },
+      "kana_forms": {
+        "te": "のんで",
+        "ta": "のんだ",
+        "nai": "のまない",
+        "masu": "のみます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w479",
+      "lesson_id": "lesson_n5",
+      "word_id": "w479",
+      "written": "乗る",
+      "reading": "のる",
+      "meaning": "乘，坐（车）",
+      "basic": "乗る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "乗って",
+        "ta": "乗った",
+        "nai": "乗らない",
+        "masu": "乗ります"
+      },
+      "kana_forms": {
+        "te": "のって",
+        "ta": "のった",
+        "nai": "のらない",
+        "masu": "のります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w484",
+      "lesson_id": "lesson_n5",
+      "word_id": "w484",
+      "written": "入る",
+      "reading": "はいる",
+      "meaning": "进入，进（自动词）",
+      "basic": "入る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "入って",
+        "ta": "入った",
+        "nai": "入らない",
+        "masu": "入ります"
+      },
+      "kana_forms": {
+        "te": "はいって",
+        "ta": "はいった",
+        "nai": "はいらない",
+        "masu": "はいります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w490",
+      "lesson_id": "lesson_n5",
+      "word_id": "w490",
+      "written": "始まる",
+      "reading": "はじまる",
+      "meaning": "开始（自动词）",
+      "basic": "始まる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "始まって",
+        "ta": "始まった",
+        "nai": "始まらない",
+        "masu": "始まります"
+      },
+      "kana_forms": {
+        "te": "はじまって",
+        "ta": "はじまった",
+        "nai": "はじまらない",
+        "masu": "はじまります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w493",
+      "lesson_id": "lesson_n5",
+      "word_id": "w493",
+      "written": "走る",
+      "reading": "はしる",
+      "meaning": "跑",
+      "basic": "走る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "走って",
+        "ta": "走った",
+        "nai": "走らない",
+        "masu": "走ります"
+      },
+      "kana_forms": {
+        "te": "はしって",
+        "ta": "はしった",
+        "nai": "はしらない",
+        "masu": "はしります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w497",
+      "lesson_id": "lesson_n5",
+      "word_id": "w497",
+      "written": "働く",
+      "reading": "はたらく",
+      "meaning": "工作，劳动",
+      "basic": "働く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "働いて",
+        "ta": "働いた",
+        "nai": "働かない",
+        "masu": "働きます"
+      },
+      "kana_forms": {
+        "te": "はたらいて",
+        "ta": "はたらいた",
+        "nai": "はたらかない",
+        "masu": "はたらきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w503",
+      "lesson_id": "lesson_n5",
+      "word_id": "w503",
+      "written": "話す",
+      "reading": "はなす",
+      "meaning": "说，讲",
+      "basic": "話す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "話して",
+        "ta": "話した",
+        "nai": "話さない",
+        "masu": "話します"
+      },
+      "kana_forms": {
+        "te": "はなして",
+        "ta": "はなした",
+        "nai": "はなさない",
+        "masu": "はなします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w508",
+      "lesson_id": "lesson_n5",
+      "word_id": "w508",
+      "written": "貼る",
+      "reading": "はる",
+      "meaning": "贴，粘贴",
+      "basic": "貼る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "貼って",
+        "ta": "貼った",
+        "nai": "貼らない",
+        "masu": "貼ります"
+      },
+      "kana_forms": {
+        "te": "はって",
+        "ta": "はった",
+        "nai": "はらない",
+        "masu": "はります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w510",
+      "lesson_id": "lesson_n5",
+      "word_id": "w510",
+      "written": "晴れる",
+      "reading": "はれる",
+      "meaning": "放晴，天晴",
+      "basic": "晴れる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "晴れて",
+        "ta": "晴れた",
+        "nai": "晴れない",
+        "masu": "晴れます"
+      },
+      "kana_forms": {
+        "te": "はれて",
+        "ta": "はれた",
+        "nai": "はれない",
+        "masu": "はれます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w519",
+      "lesson_id": "lesson_n5",
+      "word_id": "w519",
+      "written": "引く",
+      "reading": "ひく",
+      "meaning": "拉，减",
+      "basic": "引く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "引いて",
+        "ta": "引いた",
+        "nai": "引かない",
+        "masu": "引きます"
+      },
+      "kana_forms": {
+        "te": "ひいて",
+        "ta": "ひいた",
+        "nai": "ひかない",
+        "masu": "ひきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w520",
+      "lesson_id": "lesson_n5",
+      "word_id": "w520",
+      "written": "弾く",
+      "reading": "ひく",
+      "meaning": "弹（琴）",
+      "basic": "弾く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "弾いて",
+        "ta": "弾いた",
+        "nai": "弾かない",
+        "masu": "弾きます"
+      },
+      "kana_forms": {
+        "te": "ひいて",
+        "ta": "ひいた",
+        "nai": "ひかない",
+        "masu": "ひきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w540",
+      "lesson_id": "lesson_n5",
+      "word_id": "w540",
+      "written": "吹く",
+      "reading": "ふく",
+      "meaning": "吹（风）",
+      "basic": "吹く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "吹いて",
+        "ta": "吹いた",
+        "nai": "吹かない",
+        "masu": "吹きます"
+      },
+      "kana_forms": {
+        "te": "ふいて",
+        "ta": "ふいた",
+        "nai": "ふかない",
+        "masu": "ふきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w548",
+      "lesson_id": "lesson_n5",
+      "word_id": "w548",
+      "written": "降る",
+      "reading": "ふる",
+      "meaning": "下（雨、雪）",
+      "basic": "降る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "降って",
+        "ta": "降った",
+        "nai": "降らない",
+        "masu": "降ります"
+      },
+      "kana_forms": {
+        "te": "ふって",
+        "ta": "ふった",
+        "nai": "ふらない",
+        "masu": "ふります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w578",
+      "lesson_id": "lesson_n5",
+      "word_id": "w578",
+      "written": "曲がる",
+      "reading": "まがる",
+      "meaning": "拐弯，弯曲",
+      "basic": "曲がる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "曲がって",
+        "ta": "曲がった",
+        "nai": "曲がらない",
+        "masu": "曲がります"
+      },
+      "kana_forms": {
+        "te": "まがって",
+        "ta": "まがった",
+        "nai": "まがらない",
+        "masu": "まがります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w583",
+      "lesson_id": "lesson_n5",
+      "word_id": "w583",
+      "written": "待つ",
+      "reading": "まつ",
+      "meaning": "等，等待",
+      "basic": "待つ",
+      "infl_type": "五段・タ行",
+      "source": "derived",
+      "forms": {
+        "te": "待って",
+        "ta": "待った",
+        "nai": "待たない",
+        "masu": "待ちます"
+      },
+      "kana_forms": {
+        "te": "まって",
+        "ta": "まった",
+        "nai": "またない",
+        "masu": "まちます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w590",
+      "lesson_id": "lesson_n5",
+      "word_id": "w590",
+      "written": "磨く",
+      "reading": "みがく",
+      "meaning": "刷（牙），擦",
+      "basic": "磨く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "derived",
+      "forms": {
+        "te": "磨いて",
+        "ta": "磨いた",
+        "nai": "磨かない",
+        "masu": "磨きます"
+      },
+      "kana_forms": {
+        "te": "みがいて",
+        "ta": "みがいた",
+        "nai": "みがかない",
+        "masu": "みがきます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w595",
+      "lesson_id": "lesson_n5",
+      "word_id": "w595",
+      "written": "見せる",
+      "reading": "みせる",
+      "meaning": "给…看，展示",
+      "basic": "見せる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "見せて",
+        "ta": "見せた",
+        "nai": "見せない",
+        "masu": "見せます"
+      },
+      "kana_forms": {
+        "te": "みせて",
+        "ta": "みせた",
+        "nai": "みせない",
+        "masu": "みせます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w603",
+      "lesson_id": "lesson_n5",
+      "word_id": "w603",
+      "written": "見る",
+      "reading": "みる",
+      "meaning": "看",
+      "basic": "見る",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "見て",
+        "ta": "見た",
+        "nai": "見ない",
+        "masu": "見ます"
+      },
+      "kana_forms": {
+        "te": "みて",
+        "ta": "みた",
+        "nai": "みない",
+        "masu": "みます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w616",
+      "lesson_id": "lesson_n5",
+      "word_id": "w616",
+      "written": "持つ",
+      "reading": "もつ",
+      "meaning": "拿，持有",
+      "basic": "持つ",
+      "infl_type": "五段・タ行",
+      "source": "derived",
+      "forms": {
+        "te": "持って",
+        "ta": "持った",
+        "nai": "持たない",
+        "masu": "持ちます"
+      },
+      "kana_forms": {
+        "te": "もって",
+        "ta": "もった",
+        "nai": "もたない",
+        "masu": "もちます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w626",
+      "lesson_id": "lesson_n5",
+      "word_id": "w626",
+      "written": "休む",
+      "reading": "やすむ",
+      "meaning": "休息，请假",
+      "basic": "休む",
+      "infl_type": "五段・マ行",
+      "source": "derived",
+      "forms": {
+        "te": "休んで",
+        "ta": "休んだ",
+        "nai": "休まない",
+        "masu": "休みます"
+      },
+      "kana_forms": {
+        "te": "やすんで",
+        "ta": "やすんだ",
+        "nai": "やすまない",
+        "masu": "やすみます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w629",
+      "lesson_id": "lesson_n5",
+      "word_id": "w629",
+      "written": "やる",
+      "reading": "やる",
+      "meaning": "做；给（动植物、晚辈）",
+      "basic": "やる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "やって",
+        "ta": "やった",
+        "nai": "やらない",
+        "masu": "やります"
+      },
+      "kana_forms": {
+        "te": "やって",
+        "ta": "やった",
+        "nai": "やらない",
+        "masu": "やります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w643",
+      "lesson_id": "lesson_n5",
+      "word_id": "w643",
+      "written": "呼ぶ",
+      "reading": "よぶ",
+      "meaning": "叫，招呼，邀请",
+      "basic": "呼ぶ",
+      "infl_type": "五段・バ行",
+      "source": "derived",
+      "forms": {
+        "te": "呼んで",
+        "ta": "呼んだ",
+        "nai": "呼ばない",
+        "masu": "呼びます"
+      },
+      "kana_forms": {
+        "te": "よんで",
+        "ta": "よんだ",
+        "nai": "よばない",
+        "masu": "よびます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w644",
+      "lesson_id": "lesson_n5",
+      "word_id": "w644",
+      "written": "読む",
+      "reading": "よむ",
+      "meaning": "读",
+      "basic": "読む",
+      "infl_type": "五段・マ行",
+      "source": "derived",
+      "forms": {
+        "te": "読んで",
+        "ta": "読んだ",
+        "nai": "読まない",
+        "masu": "読みます"
+      },
+      "kana_forms": {
+        "te": "よんで",
+        "ta": "よんだ",
+        "nai": "よまない",
+        "masu": "よみます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w665",
+      "lesson_id": "lesson_n5",
+      "word_id": "w665",
+      "written": "分かる",
+      "reading": "わかる",
+      "meaning": "明白，懂",
+      "basic": "分かる",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "分かって",
+        "ta": "分かった",
+        "nai": "分からない",
+        "masu": "分かります"
+      },
+      "kana_forms": {
+        "te": "わかって",
+        "ta": "わかった",
+        "nai": "わからない",
+        "masu": "わかります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w666",
+      "lesson_id": "lesson_n5",
+      "word_id": "w666",
+      "written": "忘れる",
+      "reading": "わすれる",
+      "meaning": "忘，忘记",
+      "basic": "忘れる",
+      "infl_type": "一段",
+      "source": "derived",
+      "forms": {
+        "te": "忘れて",
+        "ta": "忘れた",
+        "nai": "忘れない",
+        "masu": "忘れます"
+      },
+      "kana_forms": {
+        "te": "わすれて",
+        "ta": "わすれた",
+        "nai": "わすれない",
+        "masu": "わすれます"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w669",
+      "lesson_id": "lesson_n5",
+      "word_id": "w669",
+      "written": "渡す",
+      "reading": "わたす",
+      "meaning": "交给（他动词）",
+      "basic": "渡す",
+      "infl_type": "五段・サ行",
+      "source": "derived",
+      "forms": {
+        "te": "渡して",
+        "ta": "渡した",
+        "nai": "渡さない",
+        "masu": "渡します"
+      },
+      "kana_forms": {
+        "te": "わたして",
+        "ta": "わたした",
+        "nai": "わたさない",
+        "masu": "わたします"
+      },
+      "alt_forms": {}
+    },
+    {
+      "ref": "lesson_n5:w670",
+      "lesson_id": "lesson_n5",
+      "word_id": "w670",
+      "written": "渡る",
+      "reading": "わたる",
+      "meaning": "过（马路、桥）",
+      "basic": "渡る",
+      "infl_type": "五段・ラ行",
+      "source": "derived",
+      "forms": {
+        "te": "渡って",
+        "ta": "渡った",
+        "nai": "渡らない",
+        "masu": "渡ります"
+      },
+      "kana_forms": {
+        "te": "わたって",
+        "ta": "わたった",
+        "nai": "わたらない",
+        "masu": "わたります"
+      },
+      "alt_forms": {}
+    },
+    {
+      "word_id": "w002",
+      "written": "渇いた",
+      "reading": "かわいた",
+      "meaning": "口渴了",
+      "basic": "渇く",
+      "infl_type": "五段・カ行イ音便",
+      "source": "manual",
+      "forms": {
+        "te": "渇いて",
+        "ta": "渇いた",
+        "nai": "渇かない",
+        "masu": "渇きます"
+      },
+      "kana_forms": {
+        "te": "かわいて",
+        "ta": "かわいた",
+        "nai": "かわかない",
+        "masu": "かわきます"
+      },
+      "alt_forms": {}
+    }
+  ],
+  "overrides": {}
+}

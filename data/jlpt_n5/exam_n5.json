@@ -1,0 +1,3620 @@
+{
+  "meta": {
+    "description": "JLPT N5 真题题库（官方《日本語能力試験公式問題集》，题目选自真实考题）",
+    "source": "https://www.jlpt.jp/samples/sampleindex.html",
+    "volumes": [
+      {
+        "id": "2012",
+        "name": "公式問題集 Vol.1（2012 年发行）"
+      },
+      {
+        "id": "2018",
+        "name": "公式問題集 Vol.2（2018 年发行）"
+      }
+    ],
+    "note": "答案取自官方正解表。PDF 原件与页面截图存于 data/jlpt_n5/。聴解音频为官方 MP3 切片。",
+    "sections": [
+      "文字・語彙",
+      "文法",
+      "聴解",
+      "読解"
+    ]
+  },
+  "questions": [
+    {
+      "id": "e2012v001",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 1,
+      "stem": "先週 デパートに かいものに いきました。",
+      "options": [
+        "せんしゅ",
+        "せんしゅう",
+        "ぜんしゅ",
+        "ぜんしゅう"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v002",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 2,
+      "stem": "ごはんの 後で さんぽします。",
+      "options": [
+        "つぎ",
+        "うしろ",
+        "まえ",
+        "あと"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v003",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 3,
+      "stem": "もう いちど 言って ください。",
+      "options": [
+        "いって",
+        "きって",
+        "まって",
+        "たって"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v004",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 4,
+      "stem": "ちかくに 山が あります。",
+      "options": [
+        "かわ",
+        "やま",
+        "いけ",
+        "うみ"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v005",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 5,
+      "stem": "この ホテルは へやが 多いです。",
+      "options": [
+        "すくない",
+        "おおい",
+        "せまい",
+        "ひろい"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v006",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 6,
+      "stem": "ともだちと いっしょに 学校に いきます。",
+      "options": [
+        "がこう",
+        "がこお",
+        "がっこう",
+        "がっこお"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v007",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 7,
+      "stem": "えんぴつが 六本 あります。",
+      "options": [
+        "ろくぼん",
+        "ろくぽん",
+        "ろっぼん",
+        "ろっぽん"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v008",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 8,
+      "stem": "この 新聞は いくらですか。",
+      "options": [
+        "しんむん",
+        "しんぶん",
+        "しぶん",
+        "しふん"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v009",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 9,
+      "stem": "この カメラは 安いです。",
+      "options": [
+        "たかい",
+        "やすい",
+        "おもい",
+        "かるい"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v010",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 10,
+      "stem": "かさは 外に あります。",
+      "options": [
+        "いえ",
+        "なか",
+        "そと",
+        "にわ"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v011",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 11,
+      "stem": "けさ しゃわーを あびました。",
+      "options": [
+        "シャワー",
+        "シャウー",
+        "ツャワー",
+        "ツャウー"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v012",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 12,
+      "stem": "コーヒーを のみました。",
+      "options": [
+        "飯みました",
+        "飲みました",
+        "餃みました",
+        "飮みました"
+      ],
+      "answer": 1,
+      "note": "飮为飲的旧字体",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v013",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 13,
+      "stem": "あたらしい くるまを かいました。",
+      "options": [
+        "卓",
+        "卓",
+        "車",
+        "東"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v014",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 14,
+      "stem": "この ぼうしは 1000えんです。",
+      "options": [
+        "1000内",
+        "1000用",
+        "1000冊",
+        "1000円"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v015",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 15,
+      "stem": "しゅくだいが はんぶん おわりました。",
+      "options": [
+        "羊分",
+        "半分",
+        "羊分",
+        "半分"
+      ],
+      "answer": 3,
+      "note": "官方卷选项 2 与 4 同为「半分」，按正解表取 4；本应用按文本判分，两者皆可",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v016",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 16,
+      "stem": "わたしの うちに きませんか。",
+      "options": [
+        "来ませんか",
+        "采ませんか",
+        "木ませんか",
+        "未ませんか"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v017",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 17,
+      "stem": "きのう たなかさんと あいました。",
+      "options": [
+        "見いました",
+        "書いました",
+        "会いました",
+        "話いました"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v018",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 18,
+      "stem": "いもうとと おなじ ふくを かいました。",
+      "options": [
+        "同じ",
+        "回じ",
+        "向じ",
+        "囘じ"
+      ],
+      "answer": 0,
+      "note": "囘为回的旧字体",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v019",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 19,
+      "stem": "わたしの へやは この（　　）の 2かいです。",
+      "options": [
+        "エレベーター",
+        "プール",
+        "エアコン",
+        "アパート"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v020",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 20,
+      "stem": "さとうさんは ギターを じょうずに（　　）。",
+      "options": [
+        "うたいます",
+        "ききます",
+        "ひきます",
+        "あそびます"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v021",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 21,
+      "stem": "テーブルに おさらと はしを（　　）ください。",
+      "options": [
+        "ならべて",
+        "とって",
+        "たべて",
+        "あらって"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v022",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 22,
+      "stem": "けさ そうじを したから へやは（　　）です。",
+      "options": [
+        "きれい",
+        "きたない",
+        "あかるい",
+        "くらい"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v023",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 23,
+      "stem": "きょうは 500（　　） およぎました。",
+      "options": [
+        "ご",
+        "ばん",
+        "メートル",
+        "グラム"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v024",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 24,
+      "stem": "えきから たいしかんまでの（　　）を かいて ください。",
+      "options": [
+        "しゃしん",
+        "ちず",
+        "てがみ",
+        "きっぷ"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v025",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 25,
+      "stem": "うるさいから テレビを（　　）ください。",
+      "options": [
+        "けして",
+        "つけて",
+        "しめて",
+        "あけて"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v026",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 26,
+      "stem": "きょうは（　　）が ふっています。",
+      "options": [
+        "くもり",
+        "はれ",
+        "かぜ",
+        "ゆき"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v027",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 27,
+      "stem": "はこに りんごが（　　）あります。",
+      "options": [
+        "よっつ",
+        "いつつ",
+        "むっつ",
+        "ななつ"
+      ],
+      "answer": 1,
+      "image": "/static/exam/n5v2012_q27.png",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v028",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 28,
+      "stem": "めがねは つくえの（　　）に あります。",
+      "options": [
+        "そば",
+        "よこ",
+        "した",
+        "うえ"
+      ],
+      "answer": 3,
+      "image": "/static/exam/n5v2012_q28.png",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v029",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 29,
+      "stem": "まいばん くにの かぞくに でんわします。",
+      "options": [
+        "よるは ときどき くにの かぞくに でんわします。",
+        "あさは ときどき くにの かぞくに でんわします。",
+        "よるは いつも くにの かぞくに でんわします。",
+        "あさは いつも くにの かぞくに でんわします。"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v030",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 30,
+      "stem": "この まちには ゆうめいな たてものが あります。",
+      "options": [
+        "この まちには ゆうめいな ビルが あります。",
+        "この まちには ゆうめいな おちゃが あります。",
+        "この まちには ゆうめいな ケーキが あります。",
+        "この まちには ゆうめいな こうえんが あります。"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v031",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 31,
+      "stem": "その えいがは おもしろくなかったです。",
+      "options": [
+        "その えいがは たのしかったです。",
+        "その えいがは つまらなかったです。",
+        "その えいがは みじかかったです。",
+        "その えいがは ながかったです。"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v032",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 32,
+      "stem": "たんじょうびは 6がつ15にちです。",
+      "options": [
+        "6がつ15にちに けっこんしました。",
+        "6がつ15にちに テストが はじまりました。",
+        "6がつ15にちに うまれました。",
+        "6がつ15にちに くにへ かえりました。"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012v033",
+      "source": "Vol.1 (2012)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 33,
+      "stem": "にねんまえに きょうとへ いきました。",
+      "options": [
+        "きのう きょうとへ いきました。",
+        "おととい きょうとへ いきました。",
+        "きょねん きょうとへ いきました。",
+        "おととし きょうとへ いきました。"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g001",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 1,
+      "stem": "日本（　）ラーメンは おいしいです。",
+      "options": [
+        "に",
+        "の",
+        "を",
+        "へ"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g002",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 2,
+      "stem": "わたしには きょうだいが 二人 います。弟（　）妹です。",
+      "options": [
+        "は",
+        "も",
+        "と",
+        "か"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g003",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 3,
+      "stem": "山下「田中さん（　）きのう どこかに 出かけましたか。」\n田中「いいえ、いえに いました。」",
+      "options": [
+        "で",
+        "は",
+        "を",
+        "に"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g004",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 4,
+      "stem": "（タクシーで）\nA「つぎの かどを 右（　）まがって ください。」\nB「わかりました。」",
+      "options": [
+        "が",
+        "や",
+        "か",
+        "に"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g005",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 5,
+      "stem": "きのう、わたしは ひとり（　）えいがを 見に 行きました。",
+      "options": [
+        "が",
+        "を",
+        "で",
+        "は"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g006",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 6,
+      "stem": "山下「今日 パーティーが ありますから、田中さん（　）来て ください。」\n田中「ありがとうございます。」",
+      "options": [
+        "に",
+        "も",
+        "や",
+        "で"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g007",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 7,
+      "stem": "田中「この ぼうしは 山田さん（　）ですか。」\n山田「はい。」",
+      "options": [
+        "や",
+        "は",
+        "の",
+        "か"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g008",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 8,
+      "stem": "駅まで タクシーで 1000円（　）です。",
+      "options": [
+        "ぐらい",
+        "など",
+        "ごろ",
+        "も"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g009",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 9,
+      "stem": "A「さようなら。」\nB「さようなら。また（　）。」",
+      "options": [
+        "おととい",
+        "今日",
+        "来週",
+        "今月"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g010",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 10,
+      "stem": "わたしの 母は 50さいです。父は 55さいです。母は 父（　）5さい わかいです。",
+      "options": [
+        "から",
+        "まで",
+        "より",
+        "のほうが"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g011",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 11,
+      "stem": "子ども「いただきます。」\n母「あ、食べる（　）手を あらいましょう。」",
+      "options": [
+        "まえに",
+        "のまえに",
+        "あとに",
+        "のあとに"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g012",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 12,
+      "stem": "A「東京でも 雪が ふりますか。」\nB「ええ、ふりますよ。でも、きょねんは あまり（　）。」",
+      "options": [
+        "ふりませんでした",
+        "ふりません",
+        "ふりました",
+        "ふります"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g013",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 13,
+      "stem": "（川で）\nA「見て ください。小さな 魚が たくさん（　）よ。」\nB「ほんとうですね。30ぴきくらい いますね。」",
+      "options": [
+        "およぎます",
+        "およぎません",
+        "およぎました",
+        "およいで います"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g014",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 14,
+      "stem": "中川「山田さんの その カメラは いいですね。どこで かいましたか。」\n山田「いえ、これは 兄に（　）。」",
+      "options": [
+        "あげました",
+        "もらいました",
+        "うりました",
+        "かいました"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g015",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 15,
+      "stem": "たまごりょうりの じょうずな 作りかたを（　）読みました。",
+      "options": [
+        "何に",
+        "何も",
+        "何かへ",
+        "何かで"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g016",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 16,
+      "stem": "（電話で）\n本田「はい、本田です。」\n北山「あ、北山花子です。すみません、（　）。」\n本田「はい。ちょっと まって くださいね。」",
+      "options": [
+        "ひろこさんを おねがいします",
+        "ひろこさんを ください",
+        "ひろこさんと 話しますか",
+        "ひろこさんと 話しませんか"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g017",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 17,
+      "stem": "（店で）\n田中「すみません。くだもの ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ か。」\n店の 人「こちらです。」\n（★に入るものは どれですか）",
+      "options": [
+        "どこ",
+        "あります",
+        "は",
+        "に"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题：选填入★位置的词（くだものは どこに ありますか）"
+    },
+    {
+      "id": "e2012g018",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 18,
+      "stem": "A「山下さんは？」\nB「となりの へやで ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ しています。」\n（★に入るものは どれですか）",
+      "options": [
+        "れんしゅう",
+        "の",
+        "ギター",
+        "を"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题（ギターの れんしゅうを しています）"
+    },
+    {
+      "id": "e2012g019",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 19,
+      "stem": "A「会社 ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ 行って いますか。」\nB「わたしは あるいて 行って います。」\n（★に入るものは どれですか）",
+      "options": [
+        "で",
+        "は",
+        "へ",
+        "何"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题（会社へは 何で 行って いますか）"
+    },
+    {
+      "id": "e2012g020",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 20,
+      "stem": "山田「ジョンさん、しゅくだいは ぜんぶ おわりましたか。」\nジョン「いいえ、まだです。ここ ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿、さいごの もんだいが むずかしいです。」\n（★に入るものは どれですか）",
+      "options": [
+        "は",
+        "かんたんでした",
+        "が",
+        "まで"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题（ここまでは かんたんでしたが、…）"
+    },
+    {
+      "id": "e2012g021",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 21,
+      "stem": "（本屋で）\nヤン「わたしは この 本を 買います。アンナさんは どんな 本が いいですか。」\nアンナ「わたしは もう 少し ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ が いいです。」\n（★に入るものは どれですか）",
+      "options": [
+        "本",
+        "かんたんな",
+        "が",
+        "日本語"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题（日本語が かんたんな 本が いいです）"
+    },
+    {
+      "id": "e2012g022",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 22,
+      "stem": "日本で べんきょうしている 学生が「すきな 店」の ぶんしょうを 書きました。\n（ケンさんの ぶんしょう）\nわたしは すしが すきです。日本には たくさん すし屋が ありますね。わたしの 国には すし屋が ありませんから、今 とても うれしいです。日本に [22]、いろいろな 店で 食べました。学校の 前の 店は、安くて おいしいです。すしが すきな 人は、いっしょに [23]。",
+      "options": [
+        "行くから",
+        "行ってから",
+        "来るから",
+        "来てから"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g023",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 23,
+      "stem": "日本で べんきょうしている 学生が「すきな 店」の ぶんしょうを 書きました。\n（ケンさんの ぶんしょう）\nわたしは すしが すきです。日本には たくさん すし屋が ありますね。わたしの 国には すし屋が ありませんから、今 とても うれしいです。日本に [22]、いろいろな 店で 食べました。学校の 前の 店は、安くて おいしいです。すしが すきな 人は、いっしょに [23]。",
+      "options": [
+        "行きましたか",
+        "行きませんか",
+        "行って いましたか",
+        "行って いませんか"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g024",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 24,
+      "stem": "日本で べんきょうしている 学生が「すきな 店」の ぶんしょうを 書きました。\n（ミンジさんの ぶんしょう）\nわたしは えきの ちかくの 本屋が すきです。えきの ちかくの 本屋 [24] 大きい お店です。外国の 本も 売って います。わたしの 国のも [25]。そして、わたしが すきな りょうりの 本も 多いです。[26]、本は いつも えきの ちかくの 本屋で 買います。みなさんは すきな 本屋が ありますか。",
+      "options": [
+        "か",
+        "と",
+        "の",
+        "は"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g025",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 25,
+      "stem": "日本で べんきょうしている 学生が「すきな 店」の ぶんしょうを 書きました。\n（ミンジさんの ぶんしょう）\nわたしは えきの ちかくの 本屋が すきです。えきの ちかくの 本屋 [24] 大きい お店です。外国の 本も 売って います。わたしの 国のも [25]。そして、わたしが すきな りょうりの 本も 多いです。[26]、本は いつも えきの ちかくの 本屋で 買います。みなさんは すきな 本屋が ありますか。",
+      "options": [
+        "います",
+        "読みます",
+        "あります",
+        "します"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012g026",
+      "source": "Vol.1 (2012)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 26,
+      "stem": "日本で べんきょうしている 学生が「すきな 店」の ぶんしょうを 書きました。\n（ミンジさんの ぶんしょう）\nわたしは えきの ちかくの 本屋が すきです。えきの ちかくの 本屋 [24] 大きい お店です。外国の 本も 売って います。わたしの 国のも [25]。そして、わたしが すきな りょうりの 本も 多いです。[26]、本は いつも えきの ちかくの 本屋で 買います。みなさんは すきな 本屋が ありますか。",
+      "options": [
+        "だから",
+        "では",
+        "それから",
+        "でも"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012r027",
+      "source": "Vol.1 (2012)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 27,
+      "stem": "わたしは 今日、友だちと 買い物に 行きました。3か月前に 見た えいがの DVDが ほしかったからです。買った DVDは、友だちや 姉と いっしょに 見ます。\n「わたし」は 今日、何を しましたか。",
+      "options": [
+        "友だちと えいがを 見に 行きました。",
+        "友だちと DVDを 買いに 行きました。",
+        "姉と えいがを 見に 行きました。",
+        "姉と DVDを 買いに 行きました。"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012r028",
+      "source": "Vol.1 (2012)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 28,
+      "stem": "わたしの へやには、テーブルが 一つと いすが 二つと 本だなが 一つ あります。本が たくさん ありますから、もっと 大きい 本だなが ほしいです。\n今の へやは どれですか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "看图题：选项为插图中编号对应的房间",
+      "image": "/static/exam/n5r2012_q28.png"
+    },
+    {
+      "id": "e2012r029",
+      "source": "Vol.1 (2012)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 29,
+      "stem": "森さんの 机の 上に、山口先生の メモと 本が あります。\nメモ\n「森さん\nクラスで 使う 本を 中川先生に かりました。5ページを 25枚 コピーしてください。コピーは 南さんに わたしてください。本は、わたしが あした かえしますから、わたしの 机の 上に おいてください。\n山口」\n森さんは コピーを した あとで、本を どうしますか。",
+      "options": [
+        "クラスで 使います。",
+        "南さんに わたします。",
+        "中川先生に かえします。",
+        "山口先生の 机の 上に おきます。"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012r030",
+      "source": "Vol.1 (2012)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 30,
+      "stem": "きのうの 夜は おそくまで しごとを しました。とても つかれました。しごとの あと、電車で 帰りました。家の 近くの 駅で 電車を おりました。外は 雨でしたが、わたしは かさが ありませんでした。とても こまりました。駅の 人が わたしを 見て、「あの はこの 中の かさを 使って ください。」と 言いました。はこの 中には かさが 3本 ありました。わたしは 「えっ、いいんですか。」と 聞きました。駅の 人は「あれは『みんなの かさ』です。お金は いりません。あした、あの はこに かえしてください。」と 言いました。わたしは「わかりました。ありがとうございます。」と 言って、かさを かりて 帰りました。\nどうして こまりましたか。",
+      "options": [
+        "おそい 時間に 駅に 着いたから",
+        "しごとが たくさん あったから",
+        "とても つかれたから",
+        "かさが なかったから"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012r031",
+      "source": "Vol.1 (2012)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 31,
+      "stem": "きのうの 夜は おそくまで しごとを しました。とても つかれました。しごとの あと、電車で 帰りました。家の 近くの 駅で 電車を おりました。外は 雨でしたが、わたしは かさが ありませんでした。とても こまりました。駅の 人が わたしを 見て、「あの はこの 中の かさを 使って ください。」と 言いました。はこの 中には かさが 3本 ありました。わたしは 「えっ、いいんですか。」と 聞きました。駅の 人は「あれは『みんなの かさ』です。お金は いりません。あした、あの はこに かえしてください。」と 言いました。わたしは「わかりました。ありがとうございます。」と 言って、かさを かりて 帰りました。\n「わたし」は、あした どうしますか。",
+      "options": [
+        "かさを はこの 中に 入れます。",
+        "かさを 駅の 人に わたします。",
+        "お金を はこの 中に 入れます。",
+        "お金を 駅の 人に わたします。"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2012r032",
+      "source": "Vol.1 (2012)",
+      "section": "読解",
+      "qtype": "情報検索",
+      "number": 32,
+      "stem": "あらきやで トイレットペーパーと にくと やさいを 同じ 日に 買いたいです。いつが 安いですか。",
+      "options": [
+        "6月11日（月）と 12日（火）",
+        "6月13日（水）と 14日（木）",
+        "6月15日（金）と 16日（土）",
+        "6月17日（日）と 18日（月）"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "看广告题：トイレットペーパー 11-14日特价；にく・やさい 每周三、四特价 → 13日（水）と14日（木）",
+      "image": "/static/exam/n5r2012_q32.png"
+    },
+    {
+      "id": "e2018v001",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 1,
+      "stem": "あしたは 雨ですか。",
+      "options": [
+        "ゆき",
+        "はれ",
+        "くもり",
+        "あめ"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v002",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 2,
+      "stem": "きょうしつで 書いて ください。",
+      "options": [
+        "かいて",
+        "きいて",
+        "はいて",
+        "ひいて"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v003",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 3,
+      "stem": "しゃしんは はこの 中に あります。",
+      "options": [
+        "そば",
+        "そと",
+        "なか",
+        "よこ"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v004",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 4,
+      "stem": "この いすは 小さいです。",
+      "options": [
+        "ちいさい",
+        "ちさい",
+        "しいさい",
+        "しさい"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v005",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 5,
+      "stem": "あしたは 火よう日です。",
+      "options": [
+        "どようび",
+        "すいようび",
+        "かようび",
+        "にちようび"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v006",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 6,
+      "stem": "きれいな 空ですね。",
+      "options": [
+        "いえ",
+        "うみ",
+        "にわ",
+        "そら"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v007",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 7,
+      "stem": "せいとは 百人 います。",
+      "options": [
+        "ひゃくにん",
+        "びゃくにん",
+        "ひゃくじん",
+        "びゃくじん"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v008",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 8,
+      "stem": "魚が たくさん いますよ。",
+      "options": [
+        "ねこ",
+        "とり",
+        "いぬ",
+        "さかな"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v009",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 9,
+      "stem": "パンを 半分 ともだちに あげました。",
+      "options": [
+        "はんふん",
+        "はんぶん",
+        "ほんぶん",
+        "ほんふん"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v010",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 10,
+      "stem": "ぎんこうと スーパーの 間に ほそい みちが あります。",
+      "options": [
+        "あいた",
+        "となり",
+        "あいだ",
+        "どなり"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v011",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 11,
+      "stem": "たまごを 三つ とって ください。",
+      "options": [
+        "いつつ",
+        "みっつ",
+        "さんつ",
+        "ごつ"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v012",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "漢字読み",
+      "number": 12,
+      "stem": "きょうは 元気が いいですね。",
+      "options": [
+        "けんき",
+        "げんき",
+        "でんき",
+        "てんき"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v013",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 13,
+      "stem": "この わいしゃつを ください。",
+      "options": [
+        "ウイシャン",
+        "ウイシャツ",
+        "ワイシャン",
+        "ワイシャツ"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v014",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 14,
+      "stem": "わたしの くには かわが おおいです。",
+      "options": [
+        "花",
+        "山",
+        "川",
+        "木"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v015",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 15,
+      "stem": "ヤンさんの がっこうは どこですか。",
+      "options": [
+        "宇校",
+        "学校",
+        "宇枚",
+        "学枚"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v016",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 16,
+      "stem": "この ざっしを みて ください。",
+      "options": [
+        "見て",
+        "買て",
+        "具て",
+        "目て"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v017",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 17,
+      "stem": "この カメラは たかいですね。",
+      "options": [
+        "高い",
+        "安い",
+        "古い",
+        "新い"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "官方卷选项 4 即为「新い」（非规范词，作干扰项）"
+    },
+    {
+      "id": "e2018v018",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 18,
+      "stem": "きのうは かいしゃを やすみました。",
+      "options": [
+        "公仕",
+        "公社",
+        "会仕",
+        "会社"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v019",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 19,
+      "stem": "まだ いわないで ください。",
+      "options": [
+        "行わないで",
+        "立わないで",
+        "言わないで",
+        "食わないで"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v020",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "表記",
+      "number": 20,
+      "stem": "らいげつ けっこんします。",
+      "options": [
+        "今月",
+        "来月",
+        "来週",
+        "今週"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v021",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 21,
+      "stem": "わたしの へやは この アパートの 2（　）です。",
+      "options": [
+        "ほん",
+        "さつ",
+        "だい",
+        "かい"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v022",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 22,
+      "stem": "その ナイフで りんごを（　）ください。",
+      "options": [
+        "おきて",
+        "つけて",
+        "しめて",
+        "きって"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v023",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 23,
+      "stem": "（　）を わすれましたから、じかんが わかりません。",
+      "options": [
+        "じしょ",
+        "ちず",
+        "とけい",
+        "さいふ"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v024",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 24,
+      "stem": "わたしの うちは えきに ちかいですから、（　）です。",
+      "options": [
+        "べんり",
+        "じょうぶ",
+        "いっぱい",
+        "へた"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v025",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 25,
+      "stem": "なつやすみは まいにち（　）で およぎました。",
+      "options": [
+        "レストラン",
+        "プール",
+        "エレベーター",
+        "ビル"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v026",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 26,
+      "stem": "しらない ことばが ありましたから、せんせいに（　）しました。",
+      "options": [
+        "しつもん",
+        "べんきょう",
+        "れんしゅう",
+        "じゅぎょう"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v027",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 27,
+      "stem": "この へやは あついですから、（　）を あけましょう。",
+      "options": [
+        "おふろ",
+        "まど",
+        "エアコン",
+        "テーブル"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v028",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 28,
+      "stem": "きのうは がっこうで たくさん かんじを（　）。",
+      "options": [
+        "うりました",
+        "もちました",
+        "おぼえました",
+        "こまりました"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v029",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 29,
+      "stem": "この コーヒーは、さとうを たくさん いれましたから、（　）です。",
+      "options": [
+        "わかい",
+        "くろい",
+        "まるい",
+        "あまい"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v030",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "文脈規定",
+      "number": 30,
+      "stem": "つよい かぜが（　）います。",
+      "options": [
+        "ふいて",
+        "いそいで",
+        "とんで",
+        "はしって"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v031",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 31,
+      "stem": "これは りょうしんの しゃしんです。",
+      "options": [
+        "そふと そぼの しゃしんです。",
+        "ちちと ははの しゃしんです。",
+        "あにと おとうとの しゃしんです。",
+        "あねと いもうとの しゃしんです。"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v032",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 32,
+      "stem": "この ダンスは やさしいです。",
+      "options": [
+        "かんたんです",
+        "たいへんです",
+        "たのしいです",
+        "つまらないです"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v033",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 33,
+      "stem": "ふくを せんたくしました。",
+      "options": [
+        "ぬぎました",
+        "わたしました",
+        "あらいました",
+        "きました"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v034",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 34,
+      "stem": "この へやは くらいですね。",
+      "options": [
+        "この へやは あかるいですね。",
+        "この へやは あかるくないですね。",
+        "この へやは しずかじゃ ないですね。",
+        "この へやは しずかですね。"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018v035",
+      "source": "Vol.2 (2018)",
+      "section": "文字・語彙",
+      "qtype": "言い換え類義",
+      "number": 35,
+      "stem": "リーさんは もりさんに ペンを かしました。",
+      "options": [
+        "リーさんは もりさんに ペンを もらいました。",
+        "もりさんは リーさんに ペンを もらいました。",
+        "リーさんは もりさんに ペンを かりました。",
+        "もりさんは リーさんに ペンを かりました。"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g001",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 1,
+      "stem": "私は あしたの ひこうき（　）国へ 帰ります。",
+      "options": [
+        "に",
+        "で",
+        "か",
+        "を"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g002",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 2,
+      "stem": "先週 デパートで かばん（　）くつなどを 買いました。",
+      "options": [
+        "は",
+        "も",
+        "へ",
+        "や"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g003",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 3,
+      "stem": "私は 毎朝 7時ごろ 家（　）出ます。",
+      "options": [
+        "を",
+        "と",
+        "が",
+        "で"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g004",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 4,
+      "stem": "きのう スーパーで 田中さん（　）会いました。",
+      "options": [
+        "を",
+        "の",
+        "で",
+        "に"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g005",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 5,
+      "stem": "私の うちの ほんだなは、きょねん 父（　）作りました。",
+      "options": [
+        "や",
+        "が",
+        "を",
+        "で"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g006",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 6,
+      "stem": "今日 やおやで りんごを 買いました。五つ（　）300円でした。",
+      "options": [
+        "に",
+        "と",
+        "で",
+        "や"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g007",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 7,
+      "stem": "きのう（　）少し 寒かったですが、今日（　）寒くないです。",
+      "options": [
+        "は／は",
+        "に／に",
+        "も／も",
+        "を／を"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g008",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 8,
+      "stem": "南町は、海が きれい（　）、静かです。",
+      "options": [
+        "も",
+        "や",
+        "で",
+        "と"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g009",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 9,
+      "stem": "前川「林さん、（　）に ある カメラは 林さんのですか。」\n林「いいえ。田中さんのですよ。」",
+      "options": [
+        "そこ",
+        "どこ",
+        "その",
+        "どの"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g010",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 10,
+      "stem": "A「先週 はじめて スキーを しました。」\nB「そうですか。（　）でしたか。」\nA「とても 楽しかったです。」",
+      "options": [
+        "いくつ",
+        "いかが",
+        "どなた",
+        "どちら"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g011",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 11,
+      "stem": "森「ケンさん、大学の じゅぎょうは 始まりましたか。」\nケン「いいえ、（　）です。来週 始まります。」",
+      "options": [
+        "よく",
+        "もう",
+        "ちょっと",
+        "まだ"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g012",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 12,
+      "stem": "（びょういんで）\nいしゃ「今日から 一週間 薬を 飲んで、来週の 月曜日に（　）来て ください。」",
+      "options": [
+        "たくさん",
+        "あまり",
+        "また",
+        "だんだん"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g013",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 13,
+      "stem": "父は 毎朝 コーヒーを（　）ながら 新聞を 読みます。",
+      "options": [
+        "飲む",
+        "飲み",
+        "飲んで",
+        "飲んだ"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g014",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 14,
+      "stem": "私は 小さいとき、なっとうが 好き（　）でした。",
+      "options": [
+        "ない",
+        "じゃない",
+        "ありません",
+        "じゃありません"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g015",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 15,
+      "stem": "（ケーキ屋で）\n店の 人「いらっしゃいませ。」\n山下「すみません、いちごの ケーキを 二つ（　）。」\n店の 人「はい。ありがとうございます。800円です。」",
+      "options": [
+        "ありますか",
+        "どうぞ",
+        "ください",
+        "ほしいですか"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g016",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文法形式",
+      "number": 16,
+      "stem": "リー「日曜日に、私の 家で アンさんと べんきょうを します。キムさんも（　）。」\nキム「あ、行きたいです。」",
+      "options": [
+        "来ませんか",
+        "来て いますか",
+        "来ませんでしたか",
+        "来て いましたか"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g017",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 17,
+      "stem": "（タクシーの 中で）\nA「すみません、つぎの ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ ＿＿＿＿ まがって ください。」\nB「はい、わかりました。」\n（★に入るものは どれですか）",
+      "options": [
+        "に",
+        "しんごう",
+        "右",
+        "を"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题：つぎの しんごう を★ 右に まがって（★在第2空）"
+    },
+    {
+      "id": "e2018g018",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 18,
+      "stem": "私は 日曜日に 兄 ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ 出かけました。\n（★に入るものは どれですか）",
+      "options": [
+        "の",
+        "と",
+        "子ども",
+        "いっしょに"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题：兄の 子ども と★ いっしょに 出かけました"
+    },
+    {
+      "id": "e2018g019",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 19,
+      "stem": "きのう 買った おかしは ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ でした。\n（★に入るものは どれですか）",
+      "options": [
+        "色",
+        "きれい",
+        "が",
+        "まるくて"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题：まるくて 色が★ きれい でした"
+    },
+    {
+      "id": "e2018g020",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 20,
+      "stem": "駅の ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ で 雑誌を 買いました。\n（★に入るものは どれですか）",
+      "options": [
+        "に",
+        "ある",
+        "近く",
+        "本屋"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题：駅の 近くに ある★ 本屋で 雑誌を 買いました"
+    },
+    {
+      "id": "e2018g021",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文の組み立て",
+      "number": 21,
+      "stem": "先週 ＿＿＿＿ ＿＿＿＿ ★＿＿＿＿ ＿＿＿＿ の クッキーは とても おいしかったです。\n（★に入るものは どれですか）",
+      "options": [
+        "もらった",
+        "ともだち",
+        "外国",
+        "に"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "排序题：ともだちに もらった★ 外国の クッキー"
+    },
+    {
+      "id": "e2018g022",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 22,
+      "stem": "ニンさんと メイさんは「私の 好きな 飲み物」の さくぶんを 書いて、クラスの みんなの 前で 読みます。\n（ニンさんの さくぶん）\n私の 好きな 飲み物は くだものの ジュースです。大好きな ジュースは スイカジュースです。私の 国では いろいろな 店に あります。[22]、日本では 売って いる 店を 知りません。日本で 好きな ジュースは リンゴジュースです。毎日 飲みます。\nみなさんは 何の ジュースが 好きですか。好きな ジュースを [23]。",
+      "options": [
+        "だから",
+        "でも",
+        "いつも",
+        "もっと"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g023",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 23,
+      "stem": "ニンさんと メイさんは「私の 好きな 飲み物」の さくぶんを 書いて、クラスの みんなの 前で 読みます。\n（ニンさんの さくぶん）\n私の 好きな 飲み物は くだものの ジュースです。大好きな ジュースは スイカジュースです。私の 国では いろいろな 店に あります。[22]、日本では 売って いる 店を 知りません。日本で 好きな ジュースは リンゴジュースです。毎日 飲みます。\nみなさんは 何の ジュースが 好きですか。好きな ジュースを [23]。",
+      "options": [
+        "教えて ください",
+        "教えたいです",
+        "教えますよ",
+        "教えて います"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g024",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 24,
+      "stem": "ニンさんと メイさんは「私の 好きな 飲み物」の さくぶんを 書いて、クラスの みんなの 前で 読みます。\n（メイさんの さくぶん）\n私は きっさてんで 飲む コーヒーが 大好きです。先週も きっさてんで おいしい コーヒーを 飲みました。\n先週の 土曜日は いい 天気でした。昼に 買い物を してから、きっさてんに [24]。名前は「はな」です。「はな」[25] コーヒーは 安かったです。私は 2はい 飲みました。来週も「はな」に コーヒーを [26]。",
+      "options": [
+        "入るからです",
+        "入ったからです",
+        "入ります",
+        "入りました"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g025",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 25,
+      "stem": "ニンさんと メイさんは「私の 好きな 飲み物」の さくぶんを 書いて、クラスの みんなの 前で 読みます。\n（メイさんの さくぶん）\n私は きっさてんで 飲む コーヒーが 大好きです。先週も きっさてんで おいしい コーヒーを 飲みました。\n先週の 土曜日は いい 天気でした。昼に 買い物を してから、きっさてんに [24]。名前は「はな」です。「はな」[25] コーヒーは 安かったです。私は 2はい 飲みました。来週も「はな」に コーヒーを [26]。",
+      "options": [
+        "から",
+        "と",
+        "の",
+        "より"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018g026",
+      "source": "Vol.2 (2018)",
+      "section": "文法",
+      "qtype": "文章の文法",
+      "number": 26,
+      "stem": "ニンさんと メイさんは「私の 好きな 飲み物」の さくぶんを 書いて、クラスの みんなの 前で 読みます。\n（メイさんの さくぶん）\n私は きっさてんで 飲む コーヒーが 大好きです。先週も きっさてんで おいしい コーヒーを 飲みました。\n先週の 土曜日は いい 天気でした。昼に 買い物を してから、きっさてんに [24]。名前は「はな」です。「はな」[25] コーヒーは 安かったです。私は 2はい 飲みました。来週も「はな」に コーヒーを [26]。",
+      "options": [
+        "飲んで 行きます",
+        "飲んで 来ます",
+        "飲みに 行きます",
+        "飲みに 来ます"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018r027",
+      "source": "Vol.2 (2018)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 27,
+      "stem": "わたしは 毎朝 ご飯と なっとうか、パンと たまごを 食べて、学校へ 行きます。でも、けさは 何も 食べませんでした。バナナを 学校へ 持っていきました。起きた 時間が おそかったからです。\nけさ「わたし」は 学校へ 行く 前に、何を 食べましたか。",
+      "options": [
+        "ご飯と なっとうを 食べました。",
+        "パンと たまごを 食べました。",
+        "何も 食べませんでした。",
+        "バナナを 食べました。"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018r028",
+      "source": "Vol.2 (2018)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 28,
+      "stem": "（大学で）学生が この 紙を 見ました。\n「日本語1」と「日本語2」の クラスの みなさんへ\n今日 出川先生は お昼まで お休みです。午前の「日本語1」の クラスは ありません。午後の「日本語2」の クラスは あります。\n・「日本語1」の しゅくだいは 来週 出して ください。\n2016年12月2日 高見大学\n大学は「日本語1」の クラスの 学生に 何が 言いたいですか。",
+      "options": [
+        "今日 クラスは ありません。しゅくだいは 午後 出して ください。",
+        "今日 クラスは ありません。しゅくだいは 来週 出して ください。",
+        "今日 クラスが ありますが、しゅくだいは 来週 出して ください。",
+        "今日 クラスが ありますから、しゅくだいを 出して ください。"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018r029",
+      "source": "Vol.2 (2018)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 29,
+      "stem": "（会社で）\nボゴさんの 机の 上に、この メモと にもつが あります。\nメモ\n「ボゴさん\n10時ごろ ゆうびんきょくの 人が この にもつを とりに 来ますから、にもつと お金を わたして ください。お金は 中西さんが 持って います。ゆうびんきょくの 人が 来る 前に もらいに 行って ください。\nよろしく おねがいします。\n多田\n11月30日 9:30」\nこの メモを 読んで、ボゴさんは はじめに 何を しますか。",
+      "options": [
+        "中西さんに お金を もらいます。",
+        "中西さんに にもつと お金を わたします。",
+        "ゆうびんきょくの 人に にもつを もらいます。",
+        "ゆうびんきょくの 人に にもつと お金を わたします。"
+      ],
+      "answer": 0,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018r030",
+      "source": "Vol.2 (2018)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 30,
+      "stem": "これは チンさんが 書いた さくぶんです。\n「まちがえました」チン・シュン\nわたしは きのうの 日曜日、友だちと サッカーを しました。朝から ゆうがたまで しましたから、とても つかれました。ゆうべは ばんご飯を 食べた あとで、すぐに ねました。ですから、今日の かんじテストの べんきょうが できませんでした。\n①けさは 5時に 起きました。シャワーを あびて、朝ご飯を 食べました。それから、すぐ かんじの テキストの 41ページから 60ページまで べんきょうしました。それから 学校へ 行きました。とても いそがしい 朝でした。\nしかし、きょうしつで かんじを べんきょうしている 人は いませんでした。②まちがえました。テストは 今日ではなくて、あしたでした。\nどうして ①けさは 5時に 起きましたか。",
+      "options": [
+        "朝から ゆうがたまで サッカーを したかったから",
+        "かんじテストの べんきょうが したかったから",
+        "シャワーを あびて、朝ご飯を 食べたかったから",
+        "学校へ 行って、べんきょうが したかったから"
+      ],
+      "answer": 1,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018r031",
+      "source": "Vol.2 (2018)",
+      "section": "読解",
+      "qtype": "内容理解",
+      "number": 31,
+      "stem": "これは チンさんが 書いた さくぶんです。\n「まちがえました」チン・シュン\nわたしは きのうの 日曜日、友だちと サッカーを しました。朝から ゆうがたまで しましたから、とても つかれました。ゆうべは ばんご飯を 食べた あとで、すぐに ねました。ですから、今日の かんじテストの べんきょうが できませんでした。\n①けさは 5時に 起きました。シャワーを あびて、朝ご飯を 食べました。それから、すぐ かんじの テキストの 41ページから 60ページまで べんきょうしました。それから 学校へ 行きました。とても いそがしい 朝でした。\nしかし、きょうしつで かんじを べんきょうしている 人は いませんでした。②まちがえました。テストは 今日ではなくて、あしたでした。\nチンさんは 何を ②まちがえましたか。",
+      "options": [
+        "かんじの テキスト",
+        "かんじの テキストの ページ",
+        "かんじの テストが ある 日",
+        "かんじの テストを する きょうしつ"
+      ],
+      "answer": 2,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "e2018r032",
+      "source": "Vol.2 (2018)",
+      "section": "読解",
+      "qtype": "情報検索",
+      "number": 32,
+      "stem": "パブロさんは 高木大学に 行きたいです。花田駅か 糸川駅から 乗ります。駅から 大学まで かかる お金は 500円までで、時間は みじかいほうが いいです。パブロさんは どの 行き方で 行きますか。",
+      "options": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": 3,
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "路线图题：③450円/40分（花田発）与④430円/35分（糸川発）均在500円内，④时间最短 → ④",
+      "image": "/static/exam/n5r2018_q32.png"
+    },
+    {
+      "id": "e2012lm1r",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 0,
+      "stem": "クラスで先生が話しています。学生は、今日家で、どこを勉強しますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m1_rei.mp3",
+      "script": "クラスで先生が話しています。学生は、今日家で、どこを勉強しますか。\nＦ：では、今日は20ページまで終わりましたから、21ページは宿題ですね。\nＭ：全部ですか。\nＦ：いえ、21ページの１番です。２番は、クラスでします。\n学生は、今日家で、どこを勉強しますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m1_rei.png",
+      "note": "例題：音频含考前说明与本問題的例题讲解",
+      "script_zh": "老师在班里说话。学生今天要在家里复习哪部分？\n女：今天讲到第20页，所以第21页是作业。\n男：全部吗？\n女：不，是第21页的第1题。第2题在班里做。"
+    },
+    {
+      "id": "e2012lm101",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 1,
+      "stem": "靴下の店で、女の人と店の人が話しています。女の人は、どの靴下を買いますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m1_q01.mp3",
+      "script": "靴下の店で、女の人と店の人が話しています。女の人は、どの靴下を買いますか。\nＦ：子供の靴下、ありますか。\nＭ：はい。長いのですか、短いのですか。\nＦ：長いのです。\nＭ：はい。果物の絵と動物の絵があります。どちらがいいですか。\nＦ：そうですね、動物のを下さい。\n女の人は、どの靴下を買いますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m1_q01.png",
+      "script_zh": "在袜子店，女士和店员对话。女士要买哪双袜子？\n女：有小孩的袜子吗？\n男：有。要长的还是短的？\n女：长的。\n男：好的。有水果图案和动物图案的，您要哪种？\n女：嗯，请给我动物的。"
+    },
+    {
+      "id": "e2012lm102",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 2,
+      "stem": "病院で、医者と女の人が話しています。女の人は、一日に何回薬を飲みますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m1_q02.mp3",
+      "script": "病院で、医者と女の人が話しています。女の人は、一日に何回薬を飲みますか。\nＭ：この薬は、朝と夜、ご飯を食べたあとで飲んでください。\nＦ：昼ご飯のあとは?\nＭ：昼は飲まないでください。\nＦ：はい。\nＭ：４日間飲んでくださいね。\nＦ：分かりました。\n女の人は、一日に何回薬を飲みますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "在医院，医生和女士对话。女士一天服几次药？\n男：这药请早晚饭后服用。\n女：午饭之后呢？\n男：中午不用服。\n女：好的。\n男：请连服4天。\n女：明白了。"
+    },
+    {
+      "id": "e2012lm103",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 3,
+      "stem": "デパートで、女の人と店の人が話しています。店の人は、どのかばんを取りますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m1_q03.mp3",
+      "script": "デパートで、女の人と店の人が話しています。店の人は、どのかばんを取りますか。\nＦ：すみません、その上の黒いかばんを取ってください。\nＭ：どちらですか。この小さいのですか。\nＦ：いいえ。大きいのです。\nＭ：はい。\n店の人は、どのかばんを取りますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m1_q03.png",
+      "script_zh": "在百货商店，女士和店员对话。店员要拿哪只包？\n女：麻烦您，请把上面那只黑色的包拿给我。\n男：是哪只？这只小的吗？\n女：不，是大的。"
+    },
+    {
+      "id": "e2012lm104",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 4,
+      "stem": "教室で、先生が話しています。学生は、机の上に何を置きますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m1_q04.mp3",
+      "script": "教室で、先生が話しています。学生は、机の上に何を置きますか。\nＭ：今からテストをします。このテストでは、辞書を使う問題がありますから、机の上に辞書を出してください。鉛筆と消しゴムも出してください。時計は、かばんの中に入れてください。\nＦ：先生、ノートはどうしますか。\nＭ：ノートもかばんの中に入れてください。\n学生は、机の上に何を置きますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m1_q04.png",
+      "script_zh": "老师在教室里说话。学生要在桌上放什么？\n男：现在开始考试。这次考试有使用词典的题，所以请把词典拿出来放桌上。铅笔和橡皮也拿出来。手表请放进包里。\n女：老师，笔记本怎么办？\n男：笔记本也放进包里。"
+    },
+    {
+      "id": "e2012lm105",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 5,
+      "stem": "バスの中で、旅行会社の人が学生に話しています。学生は、始めに何をしますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2012_m1_q05.mp3",
+      "script": "バスの中で、旅行会社の人が学生に話しています。学生は、始めに何をしますか。\nＦ：皆さん、ホテルに着きました。今から１階のレストランで晩ご飯を食べます。晩ご飯は７時からです。今６時50分ですから、すぐに行ってください。皆さんの荷物は、ホテルの人が部屋に持っていきます。晩ご飯のあとは、テレビを見たり、買い物をしたりしてください。\n学生は、始めに何をしますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m1_q05.png",
+      "script_zh": "在巴士里，旅行社的人对学生说话。学生首先要做什么？\n女：各位，到酒店了。现在去一楼餐厅吃晚饭。晚饭7点开始，现在6点50分，请马上去。大家的行李由酒店工作人员送到房间。晚饭后可以看看电视、逛逛街。"
+    },
+    {
+      "id": "e2012lm106",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 6,
+      "stem": "男の人と女の人が話しています。男の人は、何を持っていきますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2012_m1_q06.mp3",
+      "script": "男の人と女の人が話しています。男の人は、何を持っていきますか。\nＭ：来週の日曜日、海へ行きますね。何を持っていきましょうか。\nＦ：私はおにぎりを持っていきます。\nＭ：じゃあ僕は。\nＦ：飲み物とお菓子をお願いします。\nＭ：はい。飲み物とお菓子ですね。\nＦ：あ、飲み物は重いですね。海に着いてから買いましょう。\nＭ：そうですね。\n男の人は、何を持っていきますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m1_q06.png",
+      "script_zh": "男士和女士对话。男士要带什么去？\n男：下周日去海边，带点什么好呢？\n女：我带饭团。\n男：那我带什么？\n女：饮料和点心就拜托你了。\n男：好，饮料和点心。\n女：啊，饮料挺重的，到了海边再买吧。\n男：说得对。"
+    },
+    {
+      "id": "e2012lm107",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 7,
+      "stem": "バス停で、女の人とバス会社の人が話しています。女の人は、何番のバスに乗りますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2012_m1_q07.mp3",
+      "script": "バス停で、女の人とバス会社の人が話しています。女の人は、何番のバスに乗りますか。\nＦ：すみません、１番のバスはみどり駅に行きますか。\nＭ：いいえ、みどり駅に行くバスは３番と５番と７番ですよ。\nＦ：そうですか。\nＭ：あ、でも、今日は日曜日ですから、５番のバスはありません。\nＦ：そうですか。\nＭ：それから、３番は朝と夕方のバスですから、今の時間は７番ですね。\nＦ：分かりました。ありがとうございます。\n女の人は、何番のバスに乗りますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "在公交站，女士和公交公司的人对话。女士要乘几路车？\n女：请问，1路车到绿站吗？\n男：不到。去绿站的是3路、5路和7路。\n女：这样啊。\n男：不过今天是周日，5路停开。\n女：好的。\n男：还有，3路只有早上和傍晚发车，现在这个时间是7路。"
+    },
+    {
+      "id": "e2012lm2r",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 0,
+      "stem": "男の人と女の人が話しています。男の人は昨日、どこへ行きましたか。男の人です。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m2_rei.mp3",
+      "script": "男の人と女の人が話しています。男の人は昨日、どこへ行きましたか。男の人です。\nＭ：山田さん、昨日どこかへ行きましたか。\nＦ：図書館へ行きました。\nＭ：駅のそばの図書館ですか。\nＦ：はい。\nＭ：僕は山川デパートへ行って、買い物をしました。\nＦ：え、私も昨日の夜、山川デパートのレストランへ行きましたよ。\nＭ：そうですか。男の人は昨日、どこへ行きましたか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "例題：音频含考前说明与本問題的例题讲解",
+      "script_zh": "男士和女士对话。男士昨天去了哪里？（要选的是男士的行程）\n男：山田，昨天你去哪儿了吗？\n女：去了图书馆。\n男：是车站旁边那家图书馆吗？\n女：是。\n男：我去了山川百货，买了东西。\n女：诶，我昨晚也去了山川百货的餐厅。\n男：这样啊。"
+    },
+    {
+      "id": "e2012lm201",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 1,
+      "stem": "大学で、男の学生と女の学生が話しています。女の学生は、今日、何時間勉強しますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2012_m2_q01.mp3",
+      "script": "大学で、男の学生と女の学生が話しています。女の学生は、今日、何時間勉強しますか。\nＭ：山田さんはいつも何時間ぐらい勉強しますか。\nＦ：うーん、毎日３時間ぐらいです。\nＭ：えっ、私は毎日１時間です。\nＦ：あ、でも、明日はテストがありますから、今日は４時間勉強します。\nＭ：そうですか。\n女の学生は、今日、何時間勉強しますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "在大学，男生和女生对话。女生今天要学习几个小时？\n男：山田你平时大概学习几小时？\n女：嗯，每天3小时左右。\n男：诶，我每天1小时。\n女：不过明天有考试，所以今天要学4小时。"
+    },
+    {
+      "id": "e2012lm202",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 2,
+      "stem": "男の人と女の人が話しています。女の人の電話番号は何番ですか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m2_q02.mp3",
+      "script": "男の人と女の人が話しています。女の人の電話番号は何番ですか。\nＭ：あのう、山田さんの電話番号は、512-7734ですね？\nＦ：いいえ、7734じゃなくて7743です。\nＭ：え、ちょっと待ってください。メモします。512の。\nＦ：7743です。\nＭ：はい。ありがとうございました。\n女の人の電話番号は何番ですか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "男士和女士对话。女士的电话号码是多少？\n男：那个，山田的电话号码是512-7734吧？\n女：不是，7734不对，是7743。\n男：诶，等一下，我记一下。512……\n女：7743。\n男：好，谢谢您。"
+    },
+    {
+      "id": "e2012lm203",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 3,
+      "stem": "女の学生と男の学生が話しています。男の学生は、だれと住んでいますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m2_q03.mp3",
+      "script": "女の学生と男の学生が話しています。男の学生は、だれと住んでいますか。\nＦ：山田さんは、お父さんとお母さんと、一緒に住んでいますか。\nＭ：いえ、両親は遠くに住んでいます。\nＦ：そうですか。\nＭ：いま、姉と一緒に住んでいます。\nＦ：兄弟は一人ですか。\nＭ：あ、弟もいますよ。弟は両親と一緒です。\n男の学生は、だれと住んでいますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "女生和男生对话。男生和谁住在一起？\n女：山田你和爸爸妈妈住在一起吗？\n男：不，父母住在很远的地方。\n女：这样啊。\n男：我现在和姐姐住在一起。\n女：你只有一个兄弟姐妹吗？\n男：啊，还有弟弟，弟弟和父母一起住。"
+    },
+    {
+      "id": "e2012lm204",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 4,
+      "stem": "学校で男の学生と女の学生が話しています。二人はどこで昼ご飯を食べますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2012_m2_q04.mp3",
+      "script": "学校で男の学生と女の学生が話しています。二人はどこで昼ご飯を食べますか。\nＭ：もう１時ですね。何か食べませんか。\nＦ：そうですね。でも今日は土曜日だから、学校の、食堂や喫茶店は休みですよ。\nＭ：じゃ、パン屋でパンを買って、教室で食べましょうか。\nＦ：そうですね。\n二人はどこで昼ご飯を食べますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "在学校，男生和女生对话。两人中午在哪里吃饭？\n男：已经1点了，吃点什么吧？\n女：好啊。不过今天是周六，学校的食堂和咖啡店都休息。\n男：那就在面包店买面包，去教室吃吧。\n女：好。"
+    },
+    {
+      "id": "e2012lm205",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 5,
+      "stem": "教室で、先生が学生に話しています。学生は何で名前を書きますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2012_m2_q05.mp3",
+      "script": "教室で、先生が学生に話しています。学生は何で名前を書きますか。\nＦ：はい、じゃあちょっと聞いてください。えー、来月のバス旅行に行きたい人は、この紙に、ボールペンで名前を書いてください。鉛筆じゃなくて、ボールペンですよ。黒で書いてください。赤で書かないでくださいね。\n学生は何で名前を書きますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "老师在教室里对学生说话。学生要用什么写名字？\n女：好，请大家听一下。呃——想参加下个月巴士旅行的同学，请在这张纸上用圆珠笔写名字。不是铅笔，是圆珠笔哦。请用黑色写，不要用红色。"
+    },
+    {
+      "id": "e2012lm206",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 6,
+      "stem": "女の学生と男の学生が話しています。二人は明日どこで会いますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m2_q06.mp3",
+      "script": "女の学生と男の学生が話しています。二人は明日どこで会いますか。\nＦ：明日の夜、一緒にサッカーを見に行きませんか。\nＭ：いいですね。どこで会いましょうか。\nＦ：５時に駅で会いませんか。\nＭ：駅は人が多いですよ。\nＦ：そうですね。じゃあ、駅の前の喫茶店はどうですか。\nＭ：はい、そうしましょう。あ、サッカーを見てから近くのレストランで晩ご飯を食べませんか。\nＦ：ええ。じゃ、明日５時に会いましょう。\n二人は明日どこで会いますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "女生和男生对话。两人明天在哪里见面？\n女：明晚一起去看足球吗？\n男：好啊，在哪儿碰面？\n女：5点在车站见怎么样？\n男：车站人太多啦。\n女：也是。那车站前面的咖啡店怎么样？\n男：好，就这么定。啊，看完球要不要在附近的餐厅吃晚饭？\n女：好。那明天5点见。"
+    },
+    {
+      "id": "e2012lm3r",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 0,
+      "stem": "レストランでお店の人を呼びます。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m3_rei.mp3",
+      "script": "レストランでお店の人を呼びます。何と言いますか。\nＦ：１．いらっしゃいませ。２．失礼しました。３．すみません。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m3_rei.png",
+      "note": "例題：音频含考前说明与本問題的例题讲解",
+      "script_zh": "在餐厅要叫服务员过来。该怎么说？\n1 欢迎光临。　2 我失礼了。　3 不好意思，劳驾。"
+    },
+    {
+      "id": "e2012lm301",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 1,
+      "stem": "ご飯を食べました。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2012_m3_q01.mp3",
+      "script": "ご飯を食べました。何と言いますか。\nＦ：１．ごちそうさまでした。２．いただきます。３．どういたしまして。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m3_q01.png",
+      "script_zh": "吃完了饭。该说什么？\n1 我吃好了。　2 我开动了。　3 不客气。"
+    },
+    {
+      "id": "e2012lm302",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 2,
+      "stem": "電車の中です。女の人が来ました。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m3_q02.mp3",
+      "script": "電車の中です。女の人が来ました。何と言いますか。\nＭ：１．どうもありがとう。２．初めまして。３．ここ、どうぞ。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m3_q02.png",
+      "script_zh": "在电车里。一位女士走了过来。该说什么？\n1 太感谢了。　2 初次见面。　3 这边请坐。"
+    },
+    {
+      "id": "e2012lm303",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 3,
+      "stem": "家へ帰ります。友達に何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m3_q03.mp3",
+      "script": "家へ帰ります。友達に何と言いますか。\nＭ：１．いってきます。２．じゃ、また。３．ただいま。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m3_q03.png",
+      "script_zh": "要回家了。对朋友说什么？\n1 我出门啦。　2 回头见。　3 我回来了。"
+    },
+    {
+      "id": "e2012lm304",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 4,
+      "stem": "郵便局で切手を買います。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m3_q04.mp3",
+      "script": "郵便局で切手を買います。何と言いますか。\nＭ：１．切手を買いませんか。２．切手をどうぞ。３．切手を下さい。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m3_q04.png",
+      "script_zh": "在邮局买邮票。该说什么？\n1 要不要买邮票？　2 请收下邮票。　3 请给我邮票。"
+    },
+    {
+      "id": "e2012lm305",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 5,
+      "stem": "友達は鉛筆がありません。友達に何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m3_q05.mp3",
+      "script": "友達は鉛筆がありません。友達に何と言いますか。\nＦ：１．鉛筆、借りましょうか。２．鉛筆、使いますか。３．鉛筆、貸してください。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2012_m3_q05.png",
+      "script_zh": "朋友没有铅笔。对朋友说什么？\n1 我把铅笔借走好吗？　2 要用这支铅笔吗？　3 请把铅笔借给我。"
+    },
+    {
+      "id": "e2012lm4r",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 0,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m4_rei.mp3",
+      "script": "Ｆ：お国はどちらですか。\nＭ：１．あちらです。２．アメリカです。３．部屋です。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "例題：音频含考前说明与本問題的例题讲解｜选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：您的国家是哪里？\n1 那边。　2 美国。　3 房间。"
+    },
+    {
+      "id": "e2012lm401",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 1,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2012_m4_q01.mp3",
+      "script": "Ｆ：今日は何日ですか。\nＭ：１．三日です。２．3週間です。３．3時です。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：今天是几号？\n1 3号。　2 3周。　3 3点。"
+    },
+    {
+      "id": "e2012lm402",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 2,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2012_m4_q02.mp3",
+      "script": "Ｍ：すみません、図書館はどこですか。\nＦ：１．あそこです。２．6時までです。３．本を借ります。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：请问，图书馆在哪儿？\n1 在那儿。　2 营业到6点。　3 借书。"
+    },
+    {
+      "id": "e2012lm403",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 3,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2012_m4_q03.mp3",
+      "script": "Ｆ：明日、何時に学校に来ますか。\nＭ：１．バスで来ます。２．9時半です。３．6人です。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：明天几点来学校？\n1 坐公交来。　2 9点半。　3 6个人。"
+    },
+    {
+      "id": "e2012lm404",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 4,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m4_q04.mp3",
+      "script": "Ｍ：田中さん、その荷物を持ちましょうか。\nＦ：１．どういたしまして。２．持ちませんでした。３．ありがとうございます。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：田中，那个行李我帮你拿吧？\n1 不客气。　2 我没拿。　3 谢谢你。"
+    },
+    {
+      "id": "e2012lm405",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 5,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2012_m4_q05.mp3",
+      "script": "Ｍ：ちょっと休みませんか。\nＦ：１．日曜日です。２．お元気ですか。３．そうしましょう。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：稍微休息一下怎么样？\n1 是周日。　2 你好吗。　3 好啊，休息吧。"
+    },
+    {
+      "id": "e2012lm406",
+      "source": "Vol.1 (2012)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 6,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2012_m4_q06.mp3",
+      "script": "Ｍ：それは、何の本ですか。\nＦ：１．料理の本です。２．私の本です。３．はい、そうです。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：那是什么书？\n1 是本菜谱书。　2 是我的书。　3 是的。"
+    },
+    {
+      "id": "e2018lm1r",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 0,
+      "stem": "クラスで先生が話しています。学生は、今日うちで、どこを勉強しますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m1_rei.mp3",
+      "script": "クラスで先生が話しています。学生は、今日うちで、どこを勉強しますか。\nＦ：では、今日は20ページまで終わりましたから、21ページは宿題ですね。\nＭ：全部ですか。\nＦ：いえ、21ページの1番です。2番は、クラスでします。\n学生は、今日うちで、どこを勉強しますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m1_rei.png",
+      "note": "例題：音频含考前说明与本問題的例题讲解",
+      "script_zh": "老师在班里说话。学生今天要在家里复习哪部分？\n女：今天讲到第20页，所以第21页是作业。\n男：全部吗？\n女：不，是第21页的第1题。第2题在班里做。"
+    },
+    {
+      "id": "e2018lm101",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 1,
+      "stem": "男の人と女の人が話しています。男の人はどこへ行きますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m1_q01.mp3",
+      "script": "男の人と女の人が話しています。男の人はどこへ行きますか。\nＭ：すみません、喫茶店「みどり」はどこですか。\nＦ：喫茶店「みどり」ですね。あそこに交差点がありますね。\nＭ：はい。\nＦ：あの交差点を左に曲がってください。道の左側に銀行があります。喫茶店「みどり」は銀行のとなりですよ。\nＭ：分かりました。ありがとうございます。\n男の人はどこへ行きますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m1_q01.png",
+      "script_zh": "男士和女士对话。男士要去哪里？\n男：请问，咖啡店“绿”在哪儿？\n女：咖啡店“绿”啊。那边有个十字路口对吧。\n男：是。\n女：在那个路口左转，路左侧有家银行，咖啡店“绿”就在银行旁边。\n男：明白了，谢谢。"
+    },
+    {
+      "id": "e2018lm102",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 2,
+      "stem": "会社で女の人と男の人が話しています。男の人はどの雑誌を女の人に渡しますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m1_q02.mp3",
+      "script": "会社で女の人と男の人が話しています。男の人はどの雑誌を女の人に渡しますか。\nＦ：木村さん、すみません、木村さんの後ろにある雑誌を取ってください。\nＭ：時計の雑誌ですか。車の雑誌ですか。\nＦ：時計の雑誌です。\nＭ：いちばん新しい、8月のですか。きょう\nＦ：いいえ、７月のをお願いします。\nＭ：はい。\n男の人はどの雑誌を女の人に渡しますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m1_q02.png",
+      "script_zh": "在公司，女士和男士对话。男士要把哪本杂志递给女士？\n女：木村，麻烦你把我身后那本杂志拿给我。\n男：手表杂志还是汽车杂志？\n女：手表杂志。\n男：是最新的8月那本吗？\n女：不，麻烦给我7月的。\n男：好。"
+    },
+    {
+      "id": "e2018lm103",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 3,
+      "stem": "学校で先生が話しています。学生は、次、何日に学校に来ますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2018_m1_q03.mp3",
+      "script": "学校で先生が話しています。学生は、次、何日に学校に来ますか。\nＦ：皆さん、明日から休みですね。休みは四日から九日まで六日間です。十日はテストをします。休まないでください。では、六日間ゆっくり休んで、また学校に来てください。\n学生は、次、何日に学校に来ますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m1_q03.png",
+      "script_zh": "老师在班里说话。学生下次哪天来学校？\n女：各位，明天开始放假。假期从4日到9日共6天，10日有考试，别不来哦。这6天好好休息，之后再回学校来。"
+    },
+    {
+      "id": "e2018lm104",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 4,
+      "stem": "うちで女の学生と男の学生が話しています。男の学生は冷蔵庫から何を出しますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m1_q04.mp3",
+      "script": "うちで女の学生と男の学生が話しています。男の学生は冷蔵庫から何を出しますか。\nＦ：あ、１２時ですね。お昼ご飯を食べましょう。私が作りますよ。\nＭ：何かしましょうか。\nＦ：ありがとう。じゃ、冷蔵庫から卵を２個と牛乳を出してください。\nＭ：はい。\nＦ：それから魚も出してください。あ、すみません、卵は３個お願いします。\nＭ：はい。\n男の学生は冷蔵庫から何を出しますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m1_q04.png",
+      "script_zh": "在家，女生和男生对话。男生要从冰箱里拿出什么？\n女：啊，12点了，吃午饭吧，我来做。\n男：要我帮什么忙吗？\n女：谢谢。那请从冰箱里拿2个鸡蛋和牛奶。\n男：好。\n女：再把鱼拿出来。啊不好意思，鸡蛋麻烦拿3个。"
+    },
+    {
+      "id": "e2018lm105",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 5,
+      "stem": "日本語学校で女の人と男の人が話しています。女の人は何曜日のクラスで勉強しますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m1_q05.mp3",
+      "script": "日本語学校で女の人と男の人が話しています。女の人は何曜日のクラスで勉強しますか。\nＦ：すみません。1週間に1回、日本語で話す練習をしたいです。夜のクラスはありますか。\nＭ：はい、夜のクラスは毎週月曜日、火曜日、木曜日、金曜日です。夜６時からです。\nＦ：うーん、火曜日と金曜日は仕事が６時に終わりません。\nＭ：そうですか。では、月曜日がいいですよ。木曜日のクラスは話す時間が短いです。\nＦ：分かりました。じゃ、来週から勉強したいです。どうぞよろしくお願いします。\n女の人は何曜日のクラスで勉強しますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "在日语学校，女士和男士对话。女士要上星期几的课？\n女：不好意思，我想每周练一次日语口语，有晚上的班吗？\n男：有，晚间班是每周一、二、四、五，晚上6点开始。\n女：嗯，周二和周五我6点下不了班。\n男：那周一正合适。周四班会话时间比较短。\n女：明白了，那我想从下周开始学。"
+    },
+    {
+      "id": "e2018lm106",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 6,
+      "stem": "日本語学校で先生が学生に話しています。学生は明日の午前どの教室に行きますか。午前です。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2018_m1_q06.mp3",
+      "script": "日本語学校で先生が学生に話しています。学生は明日の午前どの教室に行きますか。午前です。\nＭ：明日の午前は、クラスに日本人の学生が来ますから、広い教室で授業をします。2階の4番の教室に来てください。午後は1階の3番の教室で授業をします。学生は明日の午前どの教室に行きますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "日语学校老师对学生说话。学生明天上午去哪间教室？（注意问的是上午）\n男：明天上午有日本学生来班里，所以在宽敞的教室上课。请来2楼4号教室。下午在1楼3号教室上课。"
+    },
+    {
+      "id": "e2018lm107",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "課題理解",
+      "number": 7,
+      "stem": "女の人と男の人が話しています。女の人は何を持っていきますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m1_q07.mp3",
+      "script": "女の人と男の人が話しています。女の人は何を持っていきますか。\nＦ：佐藤さん、日曜日、佐藤さんのうちでパーティーをしますね。何か持っていきましょうか。飲み物はどうですか。\nＭ：ありがとうございます。飲み物はたくさんありますから、食べ物がいいです。じゃ、おにぎりを持ってきてください。私はスパゲティを作ります。\nＦ：分かりました。\nＭ：それから、カメラはありますか。\nＦ：はい。\nＭ：パーティーのとき、使いたいですから、貸してください。\nＦ：はい、いいですよ。\n女の人は何を持っていきますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m1_q07.png",
+      "script_zh": "女士和男士对话。女士要带什么去？\n女：佐藤，周日在你家开派对吧。我带点什么去？饮料怎么样？\n男：谢谢，饮料有很多了，带点吃的吧。请带饭团来，我做意大利面。\n女：好。\n男：还有，你带相机了吗？\n女：带了。\n男：派对上想用，借我用用。\n女：好啊。"
+    },
+    {
+      "id": "e2018lm2r",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 0,
+      "stem": "男の人と女の人が話しています。男の人は、昨日どこへ行きましたか。男の人です。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m2_rei.mp3",
+      "script": "男の人と女の人が話しています。男の人は、昨日どこへ行きましたか。男の人です。\nＭ：山田さん、昨日どこかへ行きましたか。\nＦ：図書館へ行きました。\nＭ：駅のそばの図書館ですか。\nＦ：はい。\nＭ：僕は山川デパートへ行って、買い物をしました。\nＦ：え、私も昨日の夜、山川デパートのレストランへ行きましたよ。\nＭ：そうですか。男の人は、昨日どこへ行きましたか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "例題：音频含考前说明与本問題的例题讲解",
+      "script_zh": "男士和女士对话。男士昨天去了哪里？（要选的是男士的行程）\n男：山田，昨天你去哪儿了吗？\n女：去了图书馆。\n男：是车站旁边那家图书馆吗？\n女：是。\n男：我去了山川百货，买了东西。\n女：诶，我昨晚也去了山川百货的餐厅。\n男：这样啊。"
+    },
+    {
+      "id": "e2018lm201",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 1,
+      "stem": "うちで女の人と男の人が話しています。女の人は何のジュースを作りましたか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "audio": "/static/exam/audio/n5l2018_m2_q01.mp3",
+      "script": "うちで女の人と男の人が話しています。女の人は何のジュースを作りましたか。\nＦ：くだもののジュースを作りました。どうぞ飲んでください。\nＭ：いただきます。これは何のジュースですか。\nＦ：りんごと、それから、みかんとバナナを少し入れました。\n女の人は何のジュースを作りましたか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m2_q01.png",
+      "script_zh": "在家，女士和男士对话。女士榨了什么果汁？\n女：我榨了果汁，请喝。\n男：我喝了。这是什么果汁？\n女：放了苹果，还有一点橙子和香蕉。"
+    },
+    {
+      "id": "e2018lm202",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 2,
+      "stem": "女の学生と男の学生が話しています。男の学生はお兄さんが何人いますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m2_q02.mp3",
+      "script": "女の学生と男の学生が話しています。男の学生はお兄さんが何人いますか。\nＦ：中山さん、中山さんの家族は何人ですか。\nＭ：4人です。両親と、兄が一人と僕です。\nＦ：お兄さんは学生ですか。\nＭ：いえ、会社員です。結婚して、子供が二人いますよ。\n男の学生はお兄さんが何人いますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "女生和男生对话。男生有几位哥哥？\n女：中山，你家几口人？\n男：4口。父母、一个哥哥和我。\n女：你哥哥是学生吗？\n男：不是，是公司职员，已经结婚了，有两个孩子。"
+    },
+    {
+      "id": "e2018lm203",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 3,
+      "stem": "会社で女の人と男の人が話しています。男の人は何で会社に来ていますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m2_q03.mp3",
+      "script": "会社で女の人と男の人が話しています。男の人は何で会社に来ていますか。\nＦ：加藤さん、加藤さんのうちはどちらですか。\nＭ：みなみ町です。\nＦ：私もみなみ町ですよ。でも、駅や電車で全然加藤さんに会いませんね。電車じゃなくてバスで会社に来ていますか。\nＭ：いえ、僕は自転車です。前は車で来ていましたが、車はいろいろお金がかかりますから、今は乗っていません。\nＦ：そうですか。\nＭ：時間は50分ぐらいかかりますが、楽しいですよ。男の人は、何で会社に来ていますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m2_q03.png",
+      "script_zh": "在公司，女士和男士对话。男士平时怎么来公司？\n女：加藤，你家住哪儿？\n男：南町。\n女：我也住南町！可我在车站和电车上从没碰到过你。你不坐电车，是坐公交来公司吗？\n男：不是，我骑自行车。以前开车来的，但开车花销太多，现在不开了。\n女：这样啊。\n男：要花50分钟左右，不过挺开心的。"
+    },
+    {
+      "id": "e2018lm204",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 4,
+      "stem": "電話で女の学生と男の学生が話しています。二人は今日一緒に何をしますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m2_q04.mp3",
+      "script": "電話で女の学生と男の学生が話しています。二人は今日一緒に何をしますか。\nＦ：もしもし、吉田さん。\nＭ：あ、おはようございます。\nＦ：今日うちで映画を見ませんか。面白いDVDを借りましたよ。\nＭ：ああ。今日は今から友達とバスケットボールをして、それから、みんなと一緒にラーメンを食べに行きます。でも午後は大丈夫です。\nＦ：じゃ、午後来てください。\nＭ：はい。じゃ、行く前に電話します。何かおいしいお菓子を買って、持っていきます。\nＦ：ありがとうございます。お菓子も待っています。\n二人は今日一緒に何をしますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m2_q04.png",
+      "script_zh": "女生和男生通电话。两人今天要一起做什么？\n女：喂，吉田吗？\n男：啊，早上好。\n女：今天来我家看电影吗？我借了张有意思的DVD。\n男：不过我今天这会儿要和朋友打篮球，然后大家一起吃拉面去。下午倒是有空。\n女：那下午来吧。\n男：好，来之前我打电话。买点好吃的点心带过去。\n女：谢谢，我等着点心哦。"
+    },
+    {
+      "id": "e2018lm205",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 5,
+      "stem": "大学で日本人の学生と男の留学生が話しています。日本から男の留学生の国まで、飛行機で何時間かかりますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m2_q05.mp3",
+      "script": "大学で日本人の学生と男の留学生が話しています。日本から男の留学生の国まで、飛行機で何時間かかりますか。\nＦ：ジョージさん、冬休みに国へ帰りますか。\nＭ：はい。\nＦ：日本からジョージさんの国まで、飛行機でどのぐらいですか。5時間か6時間ぐらいですか。\nＭ：もっと早いですよ。3時間半です。\nＦ：ああ、近いですね。私も冬休みに両親に会いに帰りますが、ここからうちまで電車で5時間ぐらいかかりますよ。\nＭ：5時間ですか。じゃ、私の国のほうが近いですね。1時間半早いです。\n日本から男の留学生の国まで、飛行機で何時間かかりますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "在大学，日本学生和男留学生对话。从日本到男留学生的国家，坐飞机要几小时？\n女：乔治，寒假回国吗？\n男：回。\n女：从日本到你国家坐飞机要多久？5、6个小时？\n男：更快哦，3个半小时。\n女：好近啊。我寒假也回去看父母，从这里到家坐火车要5小时呢。\n男：5小时？那还是我的国家近，快1个半小时。"
+    },
+    {
+      "id": "e2018lm206",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "ポイント理解",
+      "number": 6,
+      "stem": "電話で女の学生が話しています。今晩、何の店にご飯を食べに行きますか。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m2_q06.mp3",
+      "script": "電話で女の学生が話しています。今晩、何の店にご飯を食べに行きますか。\nＦ：もしもし、森さん？大田です。今晩クラスのみんなとご飯を食べに行きますね。今朝学校では、駅の前のカレー屋に来てくださいと言いましたが、今日は店が休みです。だから、ピザ屋に行きます。先週一緒に行ったすし屋の前のビルです。1階にそば屋があるビルで、ビルの３階です。\n今晩、何の店にご飯を食べに行きますか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "script_zh": "女生在打电话。今晚要去吃哪种店？\n女：喂，森吗？我是大田。今晚和班里大家一起吃饭。今早在学校我说的是车站前的咖喱店，但那家店今天休息，所以改去披萨店。就是上周一起去过的那家寿司店前面的楼，1楼是荞麦面的那栋楼的3层。"
+    },
+    {
+      "id": "e2018lm3r",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 0,
+      "stem": "レストランでお店の人を呼びます。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m3_rei.mp3",
+      "script": "レストランでお店の人を呼びます。何と言いますか。\nＦ：１．いらっしゃいませ。２．失礼しました。３．すみません。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m3_rei.png",
+      "note": "例題：音频含考前说明与本問題的例题讲解",
+      "script_zh": "在餐厅要叫服务员过来。该怎么说？\n1 欢迎光临。　2 我失礼了。　3 不好意思，劳驾。"
+    },
+    {
+      "id": "e2018lm301",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 1,
+      "stem": "山を歩いています。友達と一緒に休みたいです。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m3_q01.mp3",
+      "script": "山を歩いています。友達と一緒に休みたいです。何と言いますか。\nＭ：１．あまり休みません。２．今、休んでいますか。３．少し休みましょう。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m3_q01.png",
+      "script_zh": "正在爬山。想和朋友一起歇会儿。该怎么说？\n1 不怎么休息。　2 现在、你在休息吗？　3 稍微歇会儿吧。"
+    },
+    {
+      "id": "e2018lm302",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 2,
+      "stem": "友達にチョコレートをあげます。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m3_q02.mp3",
+      "script": "友達にチョコレートをあげます。何と言いますか。\nＦ：１．どんなチョコレートですか。２．チョコレート、あげませんか。３．チョコレート、いかがですか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m3_q02.png",
+      "script_zh": "要把巧克力送给朋友。该怎么说？\n1 什么样的巧克力？　2 巧克力、要不要？　3 巧克力、给你尝尝如何？"
+    },
+    {
+      "id": "e2018lm303",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 3,
+      "stem": "エレベーターに乗りたいです。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m3_q03.mp3",
+      "script": "エレベーターに乗りたいです。何と言いますか。\nＦ：１．あ、乗ります。２．さあ、乗りましょう。３．すぐ乗ってください。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m3_q03.png",
+      "script_zh": "想上电梯。该怎么说？\n1 啊、我要上。　2 来、一起上吧。　3 请马上上来。"
+    },
+    {
+      "id": "e2018lm304",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 4,
+      "stem": "前に自転車があります。友達は見ていません。何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m3_q04.mp3",
+      "script": "前に自転車があります。友達は見ていません。何と言いますか。\nＭ：１．見ませんよ。２．危ないですよ。３．痛いですよ。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m3_q04.png",
+      "script_zh": "前面有自行车。朋友没看到。该说什么？\n1 看不见哦。　2 危险哦。　3 好痛哦。"
+    },
+    {
+      "id": "e2018lm305",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "発話表現",
+      "number": 5,
+      "stem": "レストランでコーヒーが来ません。長い時間待っています。店の人に何と言いますか。\n（やじるしの人は 何と言いますか）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m3_q05.mp3",
+      "script": "レストランでコーヒーが来ません。長い時間待っています。店の人に何と言いますか。\nＦ：１．コーヒーを持ってきますよ。２．コーヒーはまだですか。３．コーヒーを飲みませんか。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "image": "/static/exam/n5l2018_m3_q05.png",
+      "script_zh": "在餐厅点的咖啡一直没来。等了很久。对店员说什么？\n1 我给您拿咖啡来。　2 咖啡还没好吗？　3 要喝咖啡吗？"
+    },
+    {
+      "id": "e2018lm4r",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 0,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m4_rei.mp3",
+      "script": "Ｆ：お国はどちらですか。\nＭ：１．あちらです。２．アメリカです。３．部屋です。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "例題：音频含考前说明与本問題的例题讲解｜选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：您的国家是哪里？\n1 那边。　2 美国。　3 房间。"
+    },
+    {
+      "id": "e2018lm401",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 1,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m4_q01.mp3",
+      "script": "Ｆ：リーさん、リーさんはいつ日本に来ましたか。\nＭ：１．去年です。２．5時間です。３．3か月です。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：小李，你是什么时候来日本的？\n1 去年。　2 5小时。　3 3个月。"
+    },
+    {
+      "id": "e2018lm402",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 2,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m4_q02.mp3",
+      "script": "Ｍ：昼ご飯はもう食べましたか。\nＦ：１．そうしましょう。２．食堂ですよ。３．いえ、今からです。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：午饭吃过了吗？\n1 那就去吃吧。　2 是食堂哦。　3 不，马上吃。"
+    },
+    {
+      "id": "e2018lm403",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 3,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "audio": "/static/exam/audio/n5l2018_m4_q03.mp3",
+      "script": "Ｍ：おいしいクッキーですね。どこで買いましたか。\nＦ：１．デパートで買いましょう。２．はい、そうです。３．わたしが作りました。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：这饼干真好吃，在哪儿买的？\n1 去百货商店买吧。　2 是的。　3 是我自己做的。"
+    },
+    {
+      "id": "e2018lm404",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 4,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m4_q04.mp3",
+      "script": "Ｆ：あした京都に行きますね。何時の飛行機に乗りますか。\nＭ：１．はい、飛行機で行きますよ。２．4時半の飛行機です。３．1時間ぐらい乗ります。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：明天去京都对吧。乘几点的飞机？\n1 是的，坐飞机去。　2 4点半的飞机。　3 大概坐1小时。"
+    },
+    {
+      "id": "e2018lm405",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 5,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "audio": "/static/exam/audio/n5l2018_m4_q05.mp3",
+      "script": "Ｆ：すみません。田中さんの電話番号を知っていますか。\nＭ：１．はい、分かりますよ。２．え、知りませんでした。３．電話をしていません。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "女：请问，你知道田中的电话号码吗？\n1 知道哦。　2 诶、（当时）不知道。　3 他没在打电话。"
+    },
+    {
+      "id": "e2018lm406",
+      "source": "Vol.2 (2018)",
+      "section": "聴解",
+      "qtype": "即時応答",
+      "number": 6,
+      "stem": "即時応答：音声を聞いて、最も適当な応答を 1〜3 の中から選んでください。\n（質問は印刷されていません）",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "audio": "/static/exam/audio/n5l2018_m4_q06.mp3",
+      "script": "Ｍ：夏休みはどこかへ出掛けましたか。\nＦ：１．旅行しましょう。２．どこへも行きませんでした。３．外国から来ました。",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null,
+      "note": "选项仅以音频播报，反馈区附官方原文",
+      "script_zh": "男：暑假去哪里玩了吗？\n1 去旅行吧。　2 哪儿也没去。　3 是从外国来的。"
+    }
+  ]
+}

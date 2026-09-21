@@ -1,0 +1,242 @@
+/* 图片日语（/pictures）：左图右学。
+   公共控件（卡片 / 按钮 / toast / loading / 弹窗）走 style.css 与 reader.css，
+   这里只放本页特有的排版与标注色。 */
+
+.pictures-page { max-width: 1180px; }
+
+.pic-bar { margin-bottom: 14px; padding: 16px; }
+.pic-bar .bar-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.pic-bar select { width: auto; min-width: 220px; max-width: 100%; }
+.pic-bar .legend { margin-left: auto; }
+.pic-bar #practice-btn { padding: 9px 16px; font-size: 0.95rem; }
+
+/* 照片页签 */
+.photo-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.photo-tab {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.88rem;
+  cursor: pointer;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.photo-tab:hover { border-color: var(--primary); }
+.photo-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 左图右学 */
+.pic-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 16px;
+  align-items: start;
+}
+.pic-study { display: flex; flex-direction: column; gap: 16px; }
+.pic-figure { padding: 18px; }
+.pic-figure h2 { font-size: 1.15rem; }
+.photo-link { display: block; }
+.photo-link img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f3f4f6;
+  cursor: zoom-in;
+}
+
+/* 照片原文：逐行 = 🔊 + 可点词块 */
+.photo-text { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
+.ptxt-line { display: flex; gap: 8px; align-items: flex-start; }
+.ptxt-body {
+  font-family: var(--ja-font);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  word-break: break-word;
+}
+.ptxt-line.plain .ptxt-body {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* 小播放按钮（照片原文 / 例句 / 小结） */
+.mini-play {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  cursor: pointer;
+  color: var(--muted);
+}
+.mini-play:hover { border-color: var(--primary); color: var(--primary); }
+
+/* 词块：已学词按掌握度着色；库外词灰虚线，点一下可挖矿 */
+.seg { cursor: pointer; border-radius: 3px; }
+.seg:hover { outline: 1px solid var(--primary); }
+.seg-known { background: #d1fae5; }
+.seg-learn { background: #fef3c7; }
+.seg-new {
+  color: var(--muted);
+  border-bottom: 1px dashed #9ca3af;
+}
+/* 「已学词高亮」开关：挂在 body 上（讲解卡片在照片区之外，也得跟着关） */
+body.no-known .seg-known,
+body.no-known .seg-learn,
+body.no-known .seg-new { background: none; border-bottom: none; color: inherit; }
+
+/* 核心单词表 */
+.word-list { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; }
+.pw-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.pw-row:hover { border-color: var(--primary); }
+.pw-main { flex: 1 1 auto; min-width: 0; }
+.pw-form { font-family: var(--ja-font); font-size: 1.05rem; font-weight: 600; }
+.pw-kana { font-family: var(--ja-font); font-weight: 400; color: var(--muted); margin-left: 6px; font-size: 0.9rem; }
+.pw-meaning { font-size: 0.9rem; color: var(--text); }
+.pw-note { font-size: 0.8rem; color: var(--muted); }
+.pw-side { flex: 0 0 auto; display: flex; align-items: center; gap: 6px; }
+.pw-mastery { font-size: 0.75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); white-space: nowrap; }
+.pw-mastery.m-known { background: #d1fae5; color: #047857; border-color: #a7f3d0; }
+.pw-mastery.m-learn { background: #fef3c7; color: #b45309; border-color: #fde68a; }
+.pw-mastery.m-new { background: #f3f4f6; color: var(--muted); border-style: dashed; }
+.pw-mine {
+  border: 1px solid var(--primary);
+  background: #fff;
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.pw-mine:hover { background: #eff6ff; }
+
+/* 语法 / 句式卡片 */
+.pt-card h3 { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.pt-kind {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: var(--primary);
+  border: 1px solid #bfdbfe;
+}
+.pt-blocks { margin-top: 6px; }
+.pt-block { margin: 0 0 8px; }
+.pt-p, .pt-tip {
+  font-size: 0.95rem;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 0 8px;
+}
+.pt-tip {
+  background: var(--bg);
+  border-left: 3px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.pt-ul { margin: 0 0 8px; padding-left: 0; list-style: none; }
+.pt-ul li { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 4px; font-size: 0.95rem; }
+.pt-body { font-family: var(--ja-font); }
+.pt-text { flex: 1 1 auto; }
+
+/* 小结 */
+.sum-points { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.sum-line { display: flex; gap: 8px; align-items: flex-start; }
+.sum-words { display: flex; flex-wrap: wrap; gap: 8px; }
+.sw-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-family: var(--ja-font);
+  font-size: 0.92rem;
+  cursor: pointer;
+  background: #fff;
+}
+.sw-chip:hover { border-color: var(--primary); }
+.sw-chip .sw-kana { font-size: 0.78rem; color: var(--muted); }
+.sw-chip.m-known { background: #d1fae5; border-color: #a7f3d0; }
+.sw-chip.m-learn { background: #fef3c7; border-color: #fde68a; }
+.sw-chip.m-new { border-style: dashed; color: var(--muted); }
+
+/* 练习 */
+.ex-group { margin-bottom: 18px; }
+.ex-group > h3 { margin-bottom: 6px; }
+.ex-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  margin-bottom: 6px;
+}
+.ex-q { display: flex; gap: 8px; align-items: flex-start; font-size: 0.98rem; }
+.ex-hint { font-size: 0.82rem; color: var(--muted); font-family: var(--ja-font); }
+.ex-answer {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--correct-bg);
+  border-radius: 8px;
+  font-family: var(--ja-font);
+  font-size: 0.95rem;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.ex-toggle {
+  border: 1px dashed var(--border);
+  background: #fff;
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.ex-toggle:hover { border-color: var(--primary); color: var(--primary); }
+
+/* 词卡 / 挖矿弹窗 */
+.pop-actions input { margin-bottom: 0; }
+.mp-form { font-family: var(--ja-font); }
+#mine-popup label { display: block; font-weight: 600; margin: 10px 0 4px; font-size: 0.9rem; }
+.dict-box { margin-top: 10px; }
+.dict-sense {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 9px;
+  margin: 0 5px 5px 0;
+  font-size: 0.85rem;
+  background: #fff;
+  cursor: pointer;
+}
+.dict-sense:hover { border-color: var(--primary); color: var(--primary); }
+.dict-cand { margin-bottom: 6px; }
+.ptxt-plain { font-size: 0.95rem; }
+
+@media (max-width: 880px) {
+  .pic-layout { grid-template-columns: 1fr; }
+  .pic-bar select { width: 100%; }
+  .pic-bar .legend { margin-left: 0; }
+}

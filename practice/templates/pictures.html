@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片日语 - 日语练习</title>
+  <link rel="stylesheet" href="{{ asset('style.css') }}">
+  <link rel="stylesheet" href="{{ asset('reader.css') }}">
+  <link rel="stylesheet" href="{{ asset('pictures.css') }}">
+</head>
+<body class="pictures-body">
+  <header>
+    <h1>日语练习</h1>
+    <p class="subtitle">从真实日常照片里挑单词、语法与句式（一课可含多张照片）</p>
+  </header>
+
+  <main class="pictures-page">
+    <!-- 顶部导航：与练习页模块页同款（.nav-header + .back-btn + .nav-title） -->
+    <div class="nav-header">
+      <button id="back-btn" class="secondary back-btn" type="button">← 返回</button>
+      <span class="nav-title">📚 作品沉浸 › 🖼️ 图片日语</span>
+    </div>
+    <div class="card pic-bar">
+      <div class="bar-row">
+        <select id="lesson-select" title="选择课"></select>
+        <button class="secondary" id="prev-photo" type="button">← 上一张</button>
+        <button class="secondary" id="next-photo" type="button">下一张 →</button>
+        <button class="primary" id="practice-btn" type="button"
+                title="把本课已在词库里的词带回练习页，用「看汉字写假名」开练">🖊 练本课单词</button>
+        <span class="legend">
+          <span class="lg lg-known">会了(3+)</span>
+          <span class="lg lg-learn">在学(1-2)</span>
+          <span class="lg lg-new">库内未学</span>
+          <span class="lg lg-mine">生词 · 可收入</span>
+        </span>
+      </div>
+      <div class="bar-row bar-toggles">
+        <label><input type="checkbox" id="toggle-known" checked> 已学词高亮</label>
+        <span class="bar-tip">点原文里的词可看释义 / 听发音；灰色虚线的词点一下能加进生词本。
+          图片点开会新开一张原图（字小的时候放大看）。</span>
+      </div>
+      <p class="hint" id="lesson-intro"></p>
+    </div>
+
+    <nav class="photo-tabs" id="photo-tabs"></nav>
+
+    <div class="pic-layout">
+      <section class="card pic-figure">
+        <h2 id="photo-title">照片</h2>
+        <a class="photo-link" id="photo-link" target="_blank" rel="noopener"
+           title="新开一张原图（可放大）">
+          <img id="photo-img" alt="照片" loading="lazy">
+        </a>
+        <p class="hint" id="photo-caption"></p>
+        <div class="photo-text" id="photo-text"></div>
+      </section>
+
+      <section class="pic-study">
+        <div class="card" id="words-card">
+          <h2>核心单词</h2>
+          <div id="word-list" class="word-list"></div>
+          <p class="hint">「＋ 生词本」= 收进词库，之后按现有间隔重复安排复习；
+            「已在词库」的词显示掌握度，可直接进练习。</p>
+        </div>
+        <div id="points"></div>
+      </section>
+    </div>
+
+    <section class="card" id="summary-card">
+      <h2>まとめ · 本课小结</h2>
+      <h3>核心语法</h3>
+      <div id="summary-points" class="sum-points"></div>
+      <h3>核心单词</h3>
+      <div id="summary-words" class="sum-words"></div>
+    </section>
+
+    <section class="card" id="exercise-card">
+      <h2>練習 · 本课练习</h2>
+      <div id="exercises"></div>
+    </section>
+  </main>
+
+  <div id="word-popup" class="word-popup" hidden></div>
+  <div id="mine-popup" class="modal-mask" hidden>
+    <div class="modal-card">
+      <span class="pop-close" data-act="close-mine">✕</span>
+      <h3>＋ 生词本：<span class="mp-form" id="mine-form-label"></span></h3>
+      <p class="hint" id="mine-hint">保存后进「我的生词本」，按间隔重复复习；备注记来源课次与照片。</p>
+      <label>读音（假名，可直接敲罗马字）</label>
+      <input id="mine-reading" type="text" autocomplete="off">
+      <label>释义（中文）</label>
+      <input id="mine-meaning" type="text" autocomplete="off">
+      <div class="dict-box" id="mine-dict" hidden>
+        <div class="pop-dim">本地词典候选（点一下义项即填进释义）：</div>
+        <div id="mine-dict-list"></div>
+      </div>
+      <div class="pop-actions">
+        <button type="button" class="pop-save" id="mine-save">保存到生词本</button>
+        <button type="button" data-act="close-mine">取消</button>
+      </div>
+      <div class="pop-err" id="mine-err"></div>
+    </div>
+  </div>
+
+  <div id="loading" class="loading-mask" hidden>
+    <div class="loading-card">
+      <span class="spinner"></span>
+      <span id="loading-text">加载中…</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="{{ asset('pictures.js') }}"></script>
+</body>
+</html>

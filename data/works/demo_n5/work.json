@@ -1,0 +1,28 @@
+{
+ "id": "demo_n5",
+ "title": "田中さんの一日",
+ "author": "示例（N5 原创）",
+ "type": "novel",
+ "source": "source.txt",
+ "created": "2026-09-06",
+ "chapters": [
+  {
+   "id": 0,
+   "title": "第1章　朝",
+   "file": "ch00.json",
+   "sentences": 17
+  },
+  {
+   "id": 1,
+   "title": "第2章　学校",
+   "file": "ch01.json",
+   "sentences": 15
+  },
+  {
+   "id": 2,
+   "title": "第3章　夜",
+   "file": "ch02.json",
+   "sentences": 16
+  }
+ ]
+}

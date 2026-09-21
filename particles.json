@@ -1,0 +1,1140 @@
+{
+  "meta": {
+    "description": "助词填空题库（N5 核心助词）",
+    "created": "2026-08-29",
+    "format": "＿ 为填空位；answer 为标准助词；alternates 为可接受备选；explain 为讲解"
+  },
+  "questions": [
+    {
+      "id": "p001",
+      "sentence": "わたし＿学生です。",
+      "answer": "は",
+      "alternates": [],
+      "zh": "我是学生。",
+      "explain": "主题用は",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p002",
+      "sentence": "これ＿何ですか。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "这是什么？",
+      "explain": "疑问词作主语时用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p003",
+      "sentence": "猫＿好きです。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "喜欢猫。",
+      "explain": "好恶、能力的对象用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p004",
+      "sentence": "水＿飲みます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "喝水。",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p005",
+      "sentence": "音楽＿聴きます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "听音乐。",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p006",
+      "sentence": "七時＿起きます。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "七点起床。",
+      "explain": "具体时间点用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p007",
+      "sentence": "日曜日＿映画を見ます。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "周日看电影。",
+      "explain": "星期几用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p008",
+      "sentence": "東京＿住んでいます。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "住在东京。",
+      "explain": "居住地用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p009",
+      "sentence": "学校＿行きます。",
+      "answer": "へ",
+      "alternates": [
+        "に"
+      ],
+      "zh": "去学校。",
+      "explain": "方向/目的地用へ，に也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p010",
+      "sentence": "家＿帰ります。",
+      "answer": "へ",
+      "alternates": [
+        "に"
+      ],
+      "zh": "回家。",
+      "explain": "帰る的方向用へ或に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p011",
+      "sentence": "図書館＿勉強します。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "在图书馆学习。",
+      "explain": "动作发生场所用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p012",
+      "sentence": "コンビニ＿おにぎりを買います。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "在便利店买饭团。",
+      "explain": "动作发生场所用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p013",
+      "sentence": "バス＿行きます。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "坐公交去。",
+      "explain": "交通手段用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p014",
+      "sentence": "箸＿ご飯を食べます。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "用筷子吃饭。",
+      "explain": "工具手段用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p015",
+      "sentence": "友達＿話します。",
+      "answer": "と",
+      "alternates": [],
+      "zh": "和朋友聊天。",
+      "explain": "共同动作的对象用と",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p016",
+      "sentence": "九時＿五時まで働きます。",
+      "answer": "から",
+      "alternates": [],
+      "zh": "从九点工作到五点。",
+      "explain": "起点用から",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p017",
+      "sentence": "九時から五時＿働きます。",
+      "answer": "まで",
+      "alternates": [],
+      "zh": "从九点工作到五点。",
+      "explain": "终点用まで",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p018",
+      "sentence": "大阪＿東京まで行きます。",
+      "answer": "から",
+      "alternates": [],
+      "zh": "从大阪到东京。",
+      "explain": "起点用から",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p019",
+      "sentence": "これは私＿本です。",
+      "answer": "の",
+      "alternates": [],
+      "zh": "这是我的书。",
+      "explain": "领属用の",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p020",
+      "sentence": "日本語＿本を買いました。",
+      "answer": "の",
+      "alternates": [],
+      "zh": "买了日语（的）书。",
+      "explain": "内容/属性用の",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p021",
+      "sentence": "猫＿いますか。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "有猫吗？",
+      "explain": "存在句的主体用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p022",
+      "sentence": "机の上に本＿あります。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "桌上有书。",
+      "explain": "存在句的主体用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p023",
+      "sentence": "公園＿散歩します。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "在公园散步。",
+      "explain": "移动、经过的场所用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p024",
+      "sentence": "橋＿渡ります。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "过桥。",
+      "explain": "移动、经过的场所用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p025",
+      "sentence": "私はコーヒー＿好きです。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "我喜欢咖啡。",
+      "explain": "好恶句：大主题は＋小对象が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p026",
+      "sentence": "家に犬＿います。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "家里有狗。",
+      "explain": "存在句的主体用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p027",
+      "sentence": "りんご＿三つあります。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "有三个苹果。",
+      "explain": "存在物（含数量）用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p028",
+      "sentence": "手＿洗ってください。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "请洗手。",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p029",
+      "sentence": "兄＿医者です。",
+      "answer": "は",
+      "alternates": [],
+      "zh": "哥哥是医生。",
+      "explain": "主题用は",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p030",
+      "sentence": "テレビ＿見ます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "看电视。",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p031",
+      "sentence": "空港＿行きます。",
+      "answer": "へ",
+      "alternates": [
+        "に"
+      ],
+      "zh": "去机场。",
+      "explain": "方向/目的地用へ，に也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p032",
+      "sentence": "自転車＿学校へ行きます。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "骑自行车去学校。",
+      "explain": "交通手段用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p033",
+      "sentence": "日本語＿勉強しています。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "正在学日语。",
+      "explain": "勉強する的宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p034",
+      "sentence": "先生＿手紙をもらいました。",
+      "answer": "から",
+      "alternates": [
+        "に"
+      ],
+      "zh": "收到了老师的信。",
+      "explain": "授予来源用から，に也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p035",
+      "sentence": "コーヒー＿紅茶、どちらがいいですか。",
+      "answer": "と",
+      "alternates": [],
+      "zh": "咖啡和红茶，要哪个？",
+      "explain": "并列选择用と",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p036",
+      "sentence": "私は犬＿猫が好きです。",
+      "answer": "と",
+      "alternates": [
+        "や"
+      ],
+      "zh": "我喜欢狗和猫。",
+      "explain": "并列用と；列举用や也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p037",
+      "sentence": "これ＿ください。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "请给我这个。",
+      "explain": "ください前的宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p038",
+      "sentence": "日本語＿話します。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "用日语说。",
+      "explain": "语言手段用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p039",
+      "sentence": "兄＿東京に住んでいます。",
+      "answer": "は",
+      "alternates": [],
+      "zh": "哥哥住在东京。",
+      "explain": "主题用は",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p040",
+      "sentence": "ピアノ＿弾きます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "弹钢琴。",
+      "explain": "乐器演奏的宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p041",
+      "sentence": "友達＿手紙を書きます。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "给朋友写信。",
+      "explain": "动作的对象用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p042",
+      "sentence": "これは私＿かばんです。",
+      "answer": "の",
+      "alternates": [],
+      "zh": "这是我的包。",
+      "explain": "领属用の",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p043",
+      "sentence": "私＿学生です。",
+      "answer": "も",
+      "alternates": [],
+      "zh": "我也是学生。",
+      "explain": "「也」用も",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p044",
+      "sentence": "猫＿いません。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "没有猫。",
+      "explain": "存在句的否定主体用が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p045",
+      "sentence": "会議＿三時から始まります。",
+      "answer": "は",
+      "alternates": [
+        "が"
+      ],
+      "zh": "会议三点开始。",
+      "explain": "主题は；作为新信息也可が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p046",
+      "sentence": "富士山＿見ました。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "看到了富士山。",
+      "explain": "有意看某物的宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p047",
+      "sentence": "病院＿行きます。",
+      "answer": "へ",
+      "alternates": [
+        "に"
+      ],
+      "zh": "去医院。",
+      "explain": "方向/目的地用へ，に也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p048",
+      "sentence": "薬＿飲みましたか。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "吃药了吗？",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p049",
+      "sentence": "駅の近く＿住んでいます。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "住在车站附近。",
+      "explain": "居住点用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p050",
+      "sentence": "一緒に昼ご飯＿食べませんか。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "要不要一起吃午饭？",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p051",
+      "sentence": "バス＿何分ぐらいかかりますか。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "坐公交要几分钟？",
+      "explain": "交通手段用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p052",
+      "sentence": "猫＿箱の中にいます。",
+      "answer": "は",
+      "alternates": [
+        "が"
+      ],
+      "zh": "猫在箱子里。",
+      "explain": "作为主题は；回答「有什么」时が也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p053",
+      "sentence": "明日＿友達に会います。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "明天见朋友。",
+      "explain": "见面的对象用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p054",
+      "sentence": "コーヒー＿入れましたか。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "加咖啡了吗？",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p055",
+      "sentence": "ひらがな＿書きます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "写平假名。",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p056",
+      "sentence": "毎朝パン＿食べます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "每天早上吃面包。",
+      "explain": "宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p057",
+      "sentence": "空＿飛びます。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "在天上飞。",
+      "explain": "移动经过的场所用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p058",
+      "sentence": "東京タワー＿見たいです。",
+      "answer": "を",
+      "alternates": [
+        "が"
+      ],
+      "zh": "想看东京塔。",
+      "explain": "たい句的宾语用を，が也常见",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p059",
+      "sentence": "日本語＿じょうずですね。",
+      "answer": "は",
+      "alternates": [
+        "が"
+      ],
+      "zh": "日语真不错啊。",
+      "explain": "主题は；赞叹新信息也可が",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p060",
+      "sentence": "家族＿待っています。",
+      "answer": "を",
+      "alternates": [],
+      "zh": "家人在等（你）。",
+      "explain": "待つ的宾语用を",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p061",
+      "sentence": "お店は十時＿夜八時まで開いています。",
+      "answer": "から",
+      "alternates": [],
+      "zh": "店铺从十点营业到晚上八点。",
+      "explain": "时间起点用から（与まで配对）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p062",
+      "sentence": "駅＿ここまで歩いて十分かかります。",
+      "answer": "から",
+      "alternates": [],
+      "zh": "从车站走到这里要十分钟。",
+      "explain": "空间起点用から",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p063",
+      "sentence": "母＿手紙をもらいました。",
+      "answer": "から",
+      "alternates": [
+        "に"
+      ],
+      "zh": "收到了妈妈的来信。",
+      "explain": "授予来源用から，に也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p064",
+      "sentence": "このワインはぶどう＿できています。",
+      "answer": "から",
+      "alternates": [],
+      "zh": "这葡萄酒是葡萄酿成的。",
+      "explain": "原料发生质变用から（～からできている）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p065",
+      "sentence": "来週＿日本語の勉強を始めます。",
+      "answer": "から",
+      "alternates": [],
+      "zh": "从下周开始学日语。",
+      "explain": "时间起点用から",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p066",
+      "sentence": "友達＿プレゼントをもらいました。",
+      "answer": "から",
+      "alternates": [
+        "に"
+      ],
+      "zh": "从朋友那里收到了礼物。",
+      "explain": "授予来源用から，に也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p067",
+      "sentence": "図書館は夜九時＿開いています。",
+      "answer": "まで",
+      "alternates": [],
+      "zh": "图书馆开到晚上九点。",
+      "explain": "时间终点用まで",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p068",
+      "sentence": "駅からここ＿歩いて十分かかります。",
+      "answer": "まで",
+      "alternates": [],
+      "zh": "从车站走到这里要十分钟。",
+      "explain": "空间终点用まで",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p069",
+      "sentence": "金曜日＿レポートを出してください。",
+      "answer": "までに",
+      "alternates": [],
+      "zh": "请在周五之前交报告。",
+      "explain": "截止时间点用までに（“在……之前”）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p070",
+      "sentence": "朝八時から夕方五時＿働きます。",
+      "answer": "まで",
+      "alternates": [],
+      "zh": "从早上八点工作到傍晚五点。",
+      "explain": "时间终点用まで",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p071",
+      "sentence": "エレベーターで五階＿上がります。",
+      "answer": "まで",
+      "alternates": [],
+      "zh": "坐电梯上到五楼。",
+      "explain": "动作到达的终点用まで",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p072",
+      "sentence": "あなたは何時＿ここにいますか。",
+      "answer": "まで",
+      "alternates": [],
+      "zh": "你在这里待到几点？",
+      "explain": "持续到的时间终点用まで",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p073",
+      "sentence": "中国は日本＿広いです。",
+      "answer": "より",
+      "alternates": [],
+      "zh": "中国比日本辽阔。",
+      "explain": "比较基准用より（AはBより……）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p074",
+      "sentence": "わたしはあなた＿背が高いです。",
+      "answer": "より",
+      "alternates": [],
+      "zh": "我比你个子高。",
+      "explain": "比较基准用より",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p075",
+      "sentence": "今日は昨日＿暖かいです。",
+      "answer": "より",
+      "alternates": [],
+      "zh": "今天比昨天暖和。",
+      "explain": "比较基准用より",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p076",
+      "sentence": "日本語＿英語の方がむずかしいです。",
+      "answer": "より",
+      "alternates": [],
+      "zh": "比起日语，英语更难。",
+      "explain": "「AよりBの方が」表示 B 更……",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p077",
+      "sentence": "わたしはコーヒー＿お茶の方が好きです。",
+      "answer": "より",
+      "alternates": [],
+      "zh": "比起咖啡我更喜欢茶。",
+      "explain": "「AよりBの方が」表示更偏好 B",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p078",
+      "sentence": "今日は昨日＿寒くないです。",
+      "answer": "ほど",
+      "alternates": [],
+      "zh": "今天没有昨天那么冷。",
+      "explain": "「AはBほど……ない」表示 A 不如 B",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p079",
+      "sentence": "今年の夏は去年＿暑くなかったです。",
+      "answer": "ほど",
+      "alternates": [],
+      "zh": "今年夏天没有去年那么热。",
+      "explain": "「～ほど……ない」表示程度不及",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p080",
+      "sentence": "この問題はあの問題＿むずかしくないです。",
+      "answer": "ほど",
+      "alternates": [],
+      "zh": "这道题没那道题难。",
+      "explain": "「～ほど……ない」表示程度不及",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p081",
+      "sentence": "駅まで三十分＿かかります。",
+      "answer": "ほど",
+      "alternates": [
+        "くらい",
+        "ぐらい"
+      ],
+      "zh": "到车站大约要三十分钟。",
+      "explain": "接数量词表“大约”，くらい/ぐらい也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p082",
+      "sentence": "兄が行くならわたし＿行きます。",
+      "answer": "も",
+      "alternates": [],
+      "zh": "哥哥要是去，我也去。",
+      "explain": "类同“也”用も",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p083",
+      "sentence": "ゆうべ三時間＿寝ました。",
+      "answer": "も",
+      "alternates": [],
+      "zh": "昨晚足足睡了三个小时。",
+      "explain": "数量词+も强调数量之多",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p084",
+      "sentence": "部屋にだれ＿いません。",
+      "answer": "も",
+      "alternates": [],
+      "zh": "房间里谁都不在。",
+      "explain": "疑问词+も+否定表全面否定",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p085",
+      "sentence": "朝はパン＿卵を食べます。",
+      "answer": "と",
+      "alternates": [
+        "や"
+      ],
+      "zh": "早上吃面包和鸡蛋。",
+      "explain": "名词并列用と；非穷尽列举や也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p086",
+      "sentence": "あした雨が降る＿思います。",
+      "answer": "と",
+      "alternates": [],
+      "zh": "我觉得明天会下雨。",
+      "explain": "引用思考内容用と（と思う）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p087",
+      "sentence": "このボタンを押す＿ドアが開きます。",
+      "answer": "と",
+      "alternates": [],
+      "zh": "一按这个按钮门就开。",
+      "explain": "「Vると」表“一……就……”",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p088",
+      "sentence": "これはだれ＿かばんですか。",
+      "answer": "の",
+      "alternates": [],
+      "zh": "这是谁的包？",
+      "explain": "领属用の",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p089",
+      "sentence": "友達＿田中さんが来ました。",
+      "answer": "の",
+      "alternates": [],
+      "zh": "我朋友田中来了。",
+      "explain": "同位语（朋友＝田中）用の",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p090",
+      "sentence": "日本語を勉強する＿はたのしいです。",
+      "answer": "の",
+      "alternates": [
+        "こと"
+      ],
+      "zh": "学日语很开心。",
+      "explain": "动词连体形+の使其名词化（のは），こと也可以",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p091",
+      "sentence": "一週間＿三回日本語を勉強します。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "一周学三次日语。",
+      "explain": "频率（每……）用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p092",
+      "sentence": "買い物＿行きます。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "去买东西。",
+      "explain": "移动的目的用に（……に行く）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p093",
+      "sentence": "将来医者＿なりたいです。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "将来想当医生。",
+      "explain": "变化结果用に（……になる）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p094",
+      "sentence": "日本の文化＿興味があります。",
+      "answer": "に",
+      "alternates": [],
+      "zh": "对日本文化感兴趣。",
+      "explain": "「……に興味がある」的对象用に",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p095",
+      "sentence": "この机は木＿できています。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "这张桌子是木头做的。",
+      "explain": "看得出的原料用で（……でできている）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p096",
+      "sentence": "クラス＿一番背が高いです。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "在班里个子最高。",
+      "explain": "比较范围用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p097",
+      "sentence": "病気＿学校を休みました。",
+      "answer": "で",
+      "alternates": [],
+      "zh": "因病请假没去上学。",
+      "explain": "原因、理由用で",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p098",
+      "sentence": "わたしは日本語＿できます。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "我会日语。",
+      "explain": "能力对象用が（できる）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p099",
+      "sentence": "このりんごは大きい＿、あまり甘くないです。",
+      "answer": "が",
+      "alternates": [],
+      "zh": "这个苹果大，但不太甜。",
+      "explain": "句子转折连接用が（但是）",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    },
+    {
+      "id": "p100",
+      "sentence": "この本＿わたしのです。",
+      "answer": "は",
+      "alternates": [],
+      "zh": "这本书是我的。",
+      "explain": "主题用は",
+      "mastery": 0,
+      "last_reviewed": null,
+      "next_due": null
+    }
+  ]
+}

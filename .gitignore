@@ -1,0 +1,29 @@
+# 起始版：个人学习状态不入库（首次启动会从 data/seed/ 自举生成）
+vocabulary.json
+quizzes/
+data/focus_words.json
+progress.md
+weaknesses.md
+
+# 本地素材：真题音频与插图（practice/static/exam/）随仓库分发，不想要可以整目录删掉
+practice/audio/
+practice/static/images/
+data/works/*
+!data/works/demo_n5/
+data/audio/
+data/jmdict/
+# 图片日语：只带示例课（课件 + 一张自摄照片），其余自己导入
+data/picture_lessons/*
+!data/picture_lessons/lesson_demo.json
+data/extracted_images/*
+!data/extracted_images/image4.jpg
+data/backups/
+data/import_tasks/
+data/annot_cache/
+practice/asr_server.json
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.vscode/
+.idea/

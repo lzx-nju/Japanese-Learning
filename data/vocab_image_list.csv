@@ -1,0 +1,314 @@
+﻿lesson_id,word_id,kanji,hiragana,romaji,meaning,category
+lesson_01,w002,日本人,にほんじん,nihonjin,日本人,object
+lesson_01,w006,会社員,かいしゃいん,kaishain,公司职员,place
+lesson_duolingo,w001,空港,くうこう,,机场,place
+lesson_duolingo,w002,地下鉄,ちかてつ,,地铁,nature
+lesson_duolingo,w003,傘,かさ,,雨伞,object
+lesson_duolingo,w004,地図,ちず,,地图,object
+lesson_duolingo,w011,赤い,あかい,,红色的,color
+lesson_duolingo,w012,白い,しろい,,白色的,color
+lesson_duolingo,w013,桜,さくら,,樱花,place
+lesson_duolingo,w025,また明日,またあした,,明天见,nature
+lesson_duolingo,w027,---,すみません,,对不起、不好意思,verb_visual
+lesson_duolingo,w035,青い,あおい,,蓝色的、青色的,color
+lesson_duolingo,w036,---,ケーキ,,蛋糕,food
+lesson_duolingo,w037,---,ホテル,,酒店、旅馆,food
+lesson_duolingo,w038,---,パスポート,,护照,object
+lesson_duolingo,w039,帽子,ぼうし,,帽子,object
+lesson_duolingo,w040,---,スマホ,,智能手机,object
+lesson_duolingo,w041,切符,きっぷ,,车票、票,object
+lesson_duolingo,w042,靴,くつ,,鞋子,object
+lesson_duolingo,w044,手袋,てぶくろ,,手套,object
+lesson_duolingo,w046,水,みず,,水,food
+lesson_duolingo,w047,ご飯,ごはん,,米饭、饭,food
+lesson_duolingo,w048,鞄,かばん,,包、书包,object
+lesson_duolingo,w049,駅,えき,,车站,place
+lesson_duolingo,w050,---,コート,,外套、大衣,clothing
+lesson_duolingo,w056,美味しい,おいしい,,好吃的、美味的,verb_visual
+lesson_duolingo,w057,年/都市,とし,,年、年龄；都市、城市,place
+lesson_duolingo,w060,町,まち,,城镇、街道,place
+lesson_duolingo,w062,バス停,ばすてい,,公交站,place
+lesson_duolingo,w063,面白い,おもしろい,,有趣的、好玩的,color
+lesson_duolingo,w064,---,コンビニ,,便利店,place
+lesson_duolingo,w065,---,デパート,,百货商场,place
+lesson_duolingo,w066,お茶,おちゃ,,茶、茶叶,food
+lesson_duolingo,w067,---,テレビ,,电视,object
+lesson_duolingo,w068,---,えいが,,电影,object
+lesson_duolingo,w074,本,ほん,,书,object
+lesson_duolingo,w077,漫画,まんが,,漫画,object
+lesson_duolingo,w079,---,アニメ,anime,动画,object
+lesson_duolingo,w080,朝ご飯,あさごはん,,早饭,food
+lesson_duolingo,w081,昼ご飯,ひるごはん,,午饭,food
+lesson_duolingo,w082,晩ご飯,ばんごはん,,晚饭,food
+lesson_duolingo,w083,---,パン,pan（来自葡萄牙语）,面包,food
+lesson_duolingo,w084,---,サンドイッチ,sandoicchi,三明治,food
+lesson_duolingo,w086,---,ハンバーガー,hābāgā,汉堡,food
+lesson_duolingo,w087,毎日,まいにち,,每天,nature
+lesson_duolingo,w088,---,ラーメン,ra—me-n,拉面,food
+lesson_duolingo,w090,毎朝,まいあさ,,每天早上,nature
+lesson_duolingo,w091,---,サラダ,sarada,沙拉,nature
+lesson_duolingo,w092,---,コーヒー,kōhī（来自荷兰语）,咖啡,food
+lesson_duolingo,w093,---,ジュース,jūsu,果汁,food
+lesson_duolingo,w095,弁当,べんとう,,便当,food
+lesson_duolingo,w099,毎晩,まいばん,,每天晚上,nature
+lesson_duolingo,w100,夜ご飯,よるごはん,,晚饭,food
+lesson_duolingo,w101,財布,さいふ,,钱包,object
+lesson_duolingo,w102,服,ふく,,衣服,object
+lesson_duolingo,w105,---,カレー,karē,咖喱,food
+lesson_duolingo,w106,---,Tシャツ,Tshatsu,T恤,clothing
+lesson_duolingo,w107,---,スカート,sukāto,裙子,clothing
+lesson_duolingo,w108,---,ネクタイ,nekutai（英文necktie）,领带,clothing
+lesson_duolingo,w113,黒い,くろい,,黑色的,color
+lesson_duolingo,w114,---,ジャケット,jyaketto,夹克,clothing
+lesson_duolingo,w118,---,かに,kani,螃蟹,animal
+lesson_duolingo,w119,犬,いぬ,,狗,animal
+lesson_duolingo,w120,猫,ねこ,,猫,animal
+lesson_duolingo,w126,今日,きょう,,今天,nature
+lesson_duolingo,w127,---,ドラマ,dorama,电视剧,object
+lesson_duolingo,w136,---,ラジオ,rajio,收音机,object
+lesson_duolingo,w137,起きます,おきます,,起床,object
+lesson_duolingo,w144,作ります,つくります,,做,verb_visual
+lesson_duolingo,w146,明日,あした,,明天,nature
+lesson_duolingo,w147,空手,からて,,空手道,place
+lesson_duolingo,w151,寝ます,ねます,,上床睡觉,object
+lesson_duolingo,w152,---,メール,mēru,邮件，短信,nature
+lesson_duolingo,w153,浴びます,あびます,,淋浴，浇水,food
+lesson_duolingo,w155,出かけます,でかけます,,出门,object
+lesson_duolingo,w156,走ります,はしります,,跑步,verb_visual
+lesson_duolingo,w157,泳ぎます,およぎます,,游泳,verb_visual
+lesson_duolingo,w158,電車,でんしゃ,,电车,vehicle
+lesson_duolingo,w159,行きます,いきます,,去某地,nature
+lesson_duolingo,w160,バス,ばす,,公交,vehicle
+lesson_duolingo,w161,次,つぎ,,下一站，下一个,place
+lesson_duolingo,w162,---,もうすぐ,mousugu,快了，马上到了,animal
+lesson_duolingo,w166,掛かります,かかります,,花费,place
+lesson_duolingo,w171,昨日,きのう,,昨天,nature
+lesson_duolingo,w178,家族/ご家族,ごかぞく,,家人,place
+lesson_duolingo,w181,土曜日,どようび,,星期六,place
+lesson_duolingo,w183,---,ミステリー,mystery,悬疑/推理小说,verb_visual
+lesson_duolingo,w185,日曜日,にちようび,,星期日,place
+lesson_duolingo,w186,動画,どうが,,视频,object
+lesson_duolingo,w188,公園,こうえん,,公园,place
+lesson_duolingo,w189,春,はる,,春天,nature
+lesson_duolingo,w191,日,ひ,,日子，天,nature
+lesson_duolingo,w192,晴れ,はれ,,晴天,nature
+lesson_duolingo,w193,夏,なつ,,夏天,nature
+lesson_duolingo,w194,海,うみ,,海,place
+lesson_duolingo,w195,---,プール,pūru,游泳池,place
+lesson_duolingo,w196,花火,はなび,,烟花,place
+lesson_duolingo,w198,雨,あめ,,下雨,place
+lesson_duolingo,w199,秋,あき,,秋天,nature
+lesson_duolingo,w201,冬,ふゆ,,冬天,nature
+lesson_duolingo,w202,雪,ゆき,,下雪,place
+lesson_duolingo,w203,温泉,おんせん,,温泉,nature
+lesson_duolingo,w205,---,レストラン,resutoran,餐厅,place
+lesson_duolingo,w206,---,うどん,,乌冬面,food
+lesson_duolingo,w207,天ぷら,てんぷら,,天妇罗,food
+lesson_duolingo,w213,---,おにぎり,,饭团,food
+lesson_duolingo,w214,蕎麦,そば,,荞麦面,food
+lesson_duolingo,w215,味噌汁,みそしる,,味噌汤,food
+lesson_duolingo,w216,---,ピザ,piza,披萨,food
+lesson_duolingo,w217,紅茶,こうちゃ,,红茶,food
+lesson_duolingo,w218,---,アイスクリーム,aisukurīmu,ice cream，冰激凌,nature
+lesson_duolingo,w222,---,チーズ,chīzu,cheese，芝士,food
+lesson_duolingo,w223,---,ドーナツ,dōnatsu,甜甜圈,food
+lesson_duolingo,w224,開きます,あきます,,开门,object
+lesson_duolingo,w225,---,みどり,,绿色,color
+lesson_duolingo,w226,---,カップ,kappu,cup，杯子,object
+lesson_duolingo,w227,抹茶,まっちゃ,,抹茶,food
+lesson_duolingo,w229,---,クッキー,kukkī,cookie，饼干,food
+lesson_duolingo,w230,苺,いちご,,草莓,food
+lesson_duolingo,w232,---,チョコレート,chokorēto,chocolate，巧克力,food
+lesson_duolingo,w233,---,パイ,pai,派，pie,food
+lesson_duolingo,w237,---,ホーム,hōmu,站台，主页,place
+lesson_duolingo,w238,改札,かいさつ,,检票口,object
+lesson_duolingo,w240,ゴミ箱,ごみばこ,,垃圾箱,object
+lesson_duolingo,w243,お手洗い,おてあらい,,卫生间，洗手间，厕所,object
+lesson_duolingo,w245,地下,ちか,,地下,nature
+lesson_duolingo,w248,電話,でんわ,,电话,object
+lesson_duolingo,w251,---,カフェ,kafe,café，咖啡厅,food
+lesson_duolingo,w252,出口,でぐち,,出口,body
+lesson_duolingo,w253,自販機,じはんき,,自动贩卖机,verb_visual
+lesson_duolingo,w256,家,いえ,,房子,place
+lesson_duolingo,w257,---,アパート,apāto,apart，公寓,place
+lesson_duolingo,w260,引っ越します,ひっこします,,搬家,place
+lesson_duolingo,w261,---,キッチン,kicchin,kitchen，厨房,object
+lesson_duolingo,w263,---,リビング,ribingu,livingroom，客厅,place
+lesson_duolingo,w264,---,ベッド,beddo,bed，床,object
+lesson_duolingo,w266,---,エアコン,eakon,air condition，空调,object
+lesson_duolingo,w267,本棚,ほんだな,,书架,object
+lesson_duolingo,w268,掃除機,そうじき,,吸尘器,nature
+lesson_duolingo,w270,椅子,いす,,椅子,object
+lesson_duolingo,w271,---,テーブル,tēburu,table，桌子,object
+lesson_duolingo,w272,布団,ふとん,,被子,object
+lesson_duolingo,w273,電子レンジ,でんしれんじ,,微波炉,object
+lesson_duolingo,w275,冷蔵庫,れいぞうこ,,冰箱,object
+lesson_duolingo,w276,机,つくえ,,书桌，桌子,object
+lesson_duolingo,w277,洗濯機,せんたくき,,洗衣机,object
+lesson_duolingo,w281,日本語,にほんご,,日语,object
+lesson_duolingo,w293,---,ソール,sōru,鞋底,object
+lesson_duolingo,w298,具合が悪い,ぐあいがわるい,,不舒服,object
+lesson_duolingo,w299,坐り,すわり,,坐,verb_visual
+lesson_duolingo,w301,病院,びょういん,,医院,place
+lesson_duolingo,w302,救急車,きゅうきゅうしゃ,,救护车,vehicle
+lesson_duolingo,w304,電話番号,でんわばんごう,,电话号码,object
+lesson_duolingo,w311,---,ちゃんと,,好好地,nature
+lesson_duolingo,w313,---,ところ,,地方,nature
+lesson_duolingo,w314,建物,たてもの,,建筑,building
+lesson_duolingo,w315,お寺,おてら,,寺庙,place
+lesson_duolingo,w318,神社,じんじゃ,,神社,place
+lesson_duolingo,w319,山,やま,,山,place
+lesson_duolingo,w320,花,はな,,花,place
+lesson_duolingo,w321,お菓子,おかし,,点心，零食,food
+lesson_duolingo,w322,お土産,おみやげ,,土特产，纪念品，伴手礼,food
+lesson_duolingo,w324,---,ポストカード,,postcard，明信片,object
+lesson_duolingo,w329,---,プレゼント,,present，礼物,nature
+lesson_duolingo,w331,腕時計,うでどけい,,手表,object
+lesson_duolingo,w333,---,ブラウス,,女式衬衫，blouse,clothing
+lesson_duolingo,w335,---,スーツ,,西装，suit,clothing
+lesson_duolingo,w337,映画館,えいがかん,,电影院,object
+lesson_duolingo,w338,---,ポップコーン,,爆米花，popcorn,food
+lesson_duolingo,w340,---,ホットドッグ,,热狗，hotdog,animal
+lesson_duolingo,w342,---,ワイン,,wine，葡萄酒,food
+lesson_duolingo,w343,---,ステーキ,sutēki,牛排，steak,animal
+lesson_duolingo,w346,旅行,りょこう,,旅行，旅游,verb_visual
+lesson_duolingo,w347,---,チケット,chiketto,票，ticket,object
+lesson_duolingo,w348,---,スーツケース,,行李箱，suitcase,object
+lesson_duolingo,w349,飛行機,ひこうき,,飞机,vehicle
+lesson_duolingo,w350,会いましょう,あいましょう,,见面吧,verb_visual
+lesson_duolingo,w351,絵,え,,画,object
+lesson_duolingo,w352,美術館,びじゅつかん,,美术馆,place
+lesson_duolingo,w354,---,ライオン,,lion，狮子,animal
+lesson_duolingo,w356,動物園,どうぶつえん,,动物园,place
+lesson_duolingo,w357,写真,しゃしん,,照片,object
+lesson_duolingo,w359,肉,にく,,肉,food
+lesson_duolingo,w360,料理,りょうり,,料理,food
+lesson_duolingo,w363,---,レシピ,,recipe，菜谱，食谱,food
+lesson_duolingo,w364,暇,ひま,,空闲,place
+lesson_duolingo,w365,一緒に,いっしょに,,一起,verb_visual
+lesson_duolingo,w366,野菜,やさい,,蔬菜,food
+lesson_duolingo,w367,卵，玉子,たまご,,鸡蛋,animal
+lesson_duolingo,w368,---,スーパー,,super，超市,place
+lesson_duolingo,w369,醤油,しょうゆ,,酱油,food
+lesson_duolingo,w371,魚,さかな,,鱼,animal
+lesson_duolingo,w372,豆腐,とうふ,,豆腐,food
+lesson_duolingo,w373,牛丼,ぎゅうどん,,牛肉饭,animal
+lesson_duolingo,w375,塩,しお,,盐,food
+lesson_duolingo,w376,---,とんかつ,,猪排,animal
+lesson_duolingo,w380,豚肉,ぶたにく,,猪肉,animal
+lesson_duolingo,w382,---,ビール,,啤酒，beer,food
+lesson_duolingo,w383,本屋,ほんや,,书店,object
+lesson_duolingo,w397,---,ポスター,posutā,海报，poster,place
+lesson_duolingo,w399,---,カードゲーム,,纸牌游戏，cardgame,object
+lesson_duolingo,w403,---,プリンター,,打印机，printer,object
+lesson_duolingo,w407,---,フライドポテト,,薯条，fried potato,food
+lesson_duolingo,w408,---,チャーハン,,炒饭,food
+lesson_duolingo,w412,---,パソコン,,电脑，personal computer,object
+lesson_duolingo,w416,---,バー,,酒吧，bar,food
+lesson_duolingo,w420,会社,かいしゃ,,公司,place
+lesson_duolingo_phrases,w001,に住んでいます,にすんでいます,,住在（某地）,nature
+lesson_duolingo_phrases,w002,を見ます,をみます,,看（某物）,verb_visual
+lesson_duolingo_phrases,w003,---,をします,,做/打（某事）,verb_visual
+lesson_duolingo_phrases,w004,を聴きます,をききます,,听（某物）,verb_visual
+lesson_duolingo_phrases,w005,を読みます,をよみます,,读（某物）,verb_visual
+lesson_duolingo_phrases,w006,を食べます,をたべます,,吃（某物）,verb_visual
+lesson_duolingo_phrases,w008,を飲みます,をのみます,,喝（某物）,verb_visual
+lesson_duolingo_phrases,w013,を買います,をかいます,,买（某物）,verb_visual
+lesson_duolingo_phrases,w014,と遊びます,とあそびます,,和（某人）一起玩,verb_visual
+lesson_duolingo_phrases,w019,---,ができます,,会做（某事），会说（某语言）,verb_visual
+lesson_n5,w003,青,あお,,blue,color
+lesson_n5,w004,青い,あおい,,blue,color
+lesson_n5,w005,赤,あか,,red,color
+lesson_n5,w006,赤い,あかい,,red,color
+lesson_n5,w013,朝御飯,あさごはん,,breakfast,food
+lesson_n5,w037,雨,あめ,,rain,place
+lesson_n5,w039,洗う,あらう,,to wash,verb_visual
+lesson_n5,w047,家,いえ,,"house, home",place
+lesson_n5,w054,椅子,いす,,chair,object
+lesson_n5,w065,犬,いぬ,,dog,animal
+lesson_n5,w070,入口,いりぐち,,entrance,body
+lesson_n5,w083,海,うみ,,"sea, beach",place
+lesson_n5,w088,映画,えいが,,"movie, film",object
+lesson_n5,w089,映画館,えいがかん,,"movie theater, cinema",object
+lesson_n5,w102,お金,おかね,,money,color
+lesson_n5,w103,起きる,おきる,,"to get up (e.g., from sleeping); to happen",verb_visual
+lesson_n5,w106,お酒,おさけ,,sake; alcohol,food
+lesson_n5,w113,お茶,おちゃ,,(green) tea,food
+lesson_n5,w114,お手洗い,おてあらい,,"toilet, restroom, bathroom (lit., a place to wash one's hands)",body
+lesson_n5,w122,お腹,おなか,,stomach,body
+lesson_n5,w133,面白い,おもしろい,,"interesting, amusing",color
+lesson_n5,w160,家族,かぞく,,"family, members of a family",place
+lesson_n5,w162,学校,がっこう,,a school,place
+lesson_n5,w164,家庭,かてい,,home; family,place
+lesson_n5,w165,角,かど,,"corner (e.g., desk, pavement)",body
+lesson_n5,w167,花瓶,かびん,,(flower) vase,object
+lesson_n5,w178,川,かわ,,river,place
+lesson_n5,w181,木,き,,"tree, wood, timber",nature
+lesson_n5,w182,黄色,きいろ,,yellow,color
+lesson_n5,w183,黄色い,きいろい,,yellow,color
+lesson_n5,w189,喫茶店,きっさてん,,café,food
+lesson_n5,w190,切手,きって,,postal (postage) stamps,body
+lesson_n5,w194,牛肉,ぎゅうにく,,beef,animal
+lesson_n5,w195,牛乳,ぎゅうにゅう,,milk,animal
+lesson_n5,w207,金曜日,きんようび,,Friday,color
+lesson_n5,w211,果物,くだもの,,fruit,food
+lesson_n5,w212,口,くち,,job opening; mouth,body
+lesson_n5,w213,靴,くつ,,"shoes, footwear",object
+lesson_n5,w214,靴下,くつした,,socks,object
+lesson_n5,w234,交差点,こうさてん,,intersection,place
+lesson_n5,w235,紅茶,こうちゃ,,black tea,food
+lesson_n5,w253,御飯,ごはん,,rice (cooked); meal,food
+lesson_n5,w269,砂糖,さとう,,sugar,food
+lesson_n5,w292,写真,しゃしん,,a picture; a photograph,verb_visual
+lesson_n5,w298,上手,じょうず,,"be good at, skillful",body
+lesson_n5,w300,醤油,しょうゆ,,soy sauce,food
+lesson_n5,w303,白,しろ,,white,color
+lesson_n5,w304,白い,しろい,,white,color
+lesson_n5,w306,水曜日,すいようび,,Wednesday,food
+lesson_n5,w321,背,せい,,"(one's) height, stature",body
+lesson_n5,w324,石鹸,せっけん,,soap,nature
+lesson_n5,w325,背広,せびろ,,men's suit,body
+lesson_n5,w332,洗濯,せんたく,,"washing, laundry",verb_visual
+lesson_n5,w342,空,そら,,sky,place
+lesson_n5,w354,沢山,たくさん,,"many, much",place
+lesson_n5,w366,卵,たまご,,egg,food
+lesson_n5,w376,地下鉄,ちかてつ,,"underground train, subway",nature
+lesson_n5,w377,地図,ちず,,a map,nature
+lesson_n5,w379,茶色,ちゃいろ,,brown,food
+lesson_n5,w380,茶碗,ちゃわん,,rice bowl,food
+lesson_n5,w395,手,て,,hand,body
+lesson_n5,w400,手紙,てがみ,,letter,body
+lesson_n5,w402,出口,でぐち,,an exit,body
+lesson_n5,w409,天気,てんき,,weather,nature
+lesson_n5,w438,土曜日,どようび,,Saturday,nature
+lesson_n5,w440,鶏肉,とりにく,,chicken meat,food
+lesson_n5,w464,肉,にく,,meat,food
+lesson_n5,w473,猫,ねこ,,cat,animal
+lesson_n5,w483,灰皿,はいざら,,ashtray,color
+lesson_n5,w487,箱,はこ,,box,object
+lesson_n5,w493,走る,はしる,,to run,verb_visual
+lesson_n5,w500,花,はな,,flower,place
+lesson_n5,w501,鼻,はな,,nose,body
+lesson_n5,w516,晩御飯,ばんごはん,,"dinner, evening meal",food
+lesson_n5,w530,病院,びょういん,,hospital,place
+lesson_n5,w534,昼御飯,ひるごはん,,"lunch, midday meal",food
+lesson_n5,w541,服,ふく,,clothes,object
+lesson_n5,w543,豚肉,ぶたにく,,pork,food
+lesson_n5,w552,下手,へた,,"unskillful, poor",body
+lesson_n5,w559,帽子,ぼうし,,hat; cap,object
+lesson_n5,w568,本,ほん,,book,object
+lesson_n5,w569,本棚,ほんだな,,bookshelf,object
+lesson_n5,w570,本当,ほんとう,,"real, true",object
+lesson_n5,w582,町,まち,,town; city,place
+lesson_n5,w593,水,みず,,water,food
+lesson_n5,w602,耳,みみ,,ear,body
+lesson_n5,w610,目,め,,eye(s),body
+lesson_n5,w612,眼鏡,めがね,,eye glasses,body
+lesson_n5,w614,木曜日,もくようび,,Thursday,nature
+lesson_n5,w622,野菜,やさい,,vegetable,food
+lesson_n5,w628,山,やま,,mountain,place
+lesson_n5,w631,夕飯,ゆうはん,,"dinner, supper, evening meal",food
+lesson_n5,w635,雪,ゆき,,snow,place
+lesson_n5,w638,洋服,ようふく,,Western-style clothes,object
+lesson_n5,w655,料理,りょうり,,cooking; cuisine,food
+lesson_n5,w656,旅行,りょこう,,"travel, trip",verb_visual

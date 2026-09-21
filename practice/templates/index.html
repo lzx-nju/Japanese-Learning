@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日语练习</title>
+  <link rel="stylesheet" href="{{ asset('style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>日语练习</h1>
+  </header>
+
+  <main>
+    <!-- 首页：今日概览 + 今日处方 + 五个模块方块 -->
+    <section id="home-screen" class="screen">
+      <div id="overview" class="overview"></div>
+      <div id="plan" class="plan"></div>
+      <div id="tiles" class="tile-grid"></div>
+    </section>
+
+    <!-- 模块页：某个方块下的子项（按分组列出） -->
+    <section id="module-screen" class="screen" style="display:none">
+      <div class="nav-header">
+        <button id="module-back-btn" class="secondary back-btn" type="button">← 首页</button>
+        <span id="module-title" class="nav-title"></span>
+        <span id="module-badge" class="nav-badge"></span>
+      </div>
+      <div id="module-items"></div>
+    </section>
+
+    <!-- 配置页：选定子项后的具体参数（课程范围 / 题量 / 排题方式…） -->
+    <section id="config-screen" class="screen" style="display:none">
+      <div class="nav-header">
+        <button id="config-back-btn" class="secondary back-btn" type="button">← 返回</button>
+        <span id="config-crumb" class="nav-title"></span>
+      </div>
+      <div class="card">
+        <h2 id="config-title">开始练习</h2>
+        <div class="form-row" id="modes-row">
+          <label>练习模式</label>
+          <div id="modes" class="modes"></div>
+        </div>
+        <div class="form-row" id="exam-filter-row" style="display:none">
+          <label>真题范围</label>
+          <div class="exam-filters">
+            <select id="exam-source"></select>
+            <select id="exam-section"></select>
+          </div>
+        </div>
+        <div class="form-row" id="scope-row">
+          <label>练习范围</label>
+          <div id="scopes" class="modes">
+            <label class="mode-option">
+              <input type="radio" name="scope" value="lesson" checked>
+              <span><strong>按课程范围</strong><small>用下面的课程下拉筛词</small></span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="scope" value="focus">
+              <span><strong>🎯 只练重点词</strong><small id="scope-focus-desc">圈定的一小撮词反复练</small></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-row" id="lesson-row">
+          <label for="lesson">课程范围</label>
+          <div class="lesson-pick">
+            <select id="lesson"></select>
+            <button id="rename-lesson-btn" class="secondary rename-btn" type="button"
+                    title="改这门课的显示名（如「第1课」→「标日初级①」），只改名字，单词与进度不动">✏️ 改名</button>
+          </div>
+        </div>
+        <div class="form-row" id="count-row">
+          <label for="count" id="count-label">题目数量</label>
+          <input type="number" id="count" value="20" min="1" max="100">
+        </div>
+        <div class="form-row" id="pool-row">
+          <label>练习内容</label>
+          <div id="pools" class="modes">
+            <label class="mode-option">
+              <input type="radio" name="pool" value="review" checked>
+              <span><strong>到期复习</strong><small>只出练过的词，到期优先</small></span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="pool" value="new">
+              <span><strong>新词</strong><small>只出没练过的词，按词表顺序</small></span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="pool" value="all">
+              <span><strong>全部</strong><small>新词与复习混在一起</small></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-row" id="schedule-row">
+          <label>排题方式</label>
+          <div id="schedules" class="modes">
+            <label class="mode-option">
+              <input type="radio" name="schedule" value="due" checked>
+              <span><strong>间隔重复</strong><small>优先复习到期的词，长期记忆更牢</small></span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="schedule" value="random">
+              <span><strong>随机出题</strong><small>随机抽取，不按复习周期</small></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-row" id="weak-row">
+          <label class="checkbox">
+            <input type="checkbox" id="focus_weak">
+            <span>只练薄弱词（掌握度 ≤ 2）</span>
+          </label>
+        </div>
+        <button id="start-btn" class="primary">开始练习</button>
+        <p id="config-hint" class="hint hidden"></p>
+      </div>
+    </section>
+
+    <!-- 重点词（聚焦练习）：圈定一小撮词，之后各练习模式只出这些 -->
+    <section id="focus-screen" class="screen" style="display:none">
+      <div class="nav-header">
+        <button id="focus-back-btn" class="secondary back-btn" type="button">← 返回</button>
+        <span class="nav-title">🎓 课程与新词 › 🎯 重点词（聚焦练习）</span>
+        <span id="focus-badge" class="nav-badge"></span>
+      </div>
+      <div class="card">
+        <h2>当前清单</h2>
+        <p class="hint">词库上千词时按「到期优先」练，很多词练一次要等十几天才再见——印象还没建立就凉了。
+          圈定 10-20 个词，启用后各练习模式只出这些词（题量大于清单时自动循环补齐，同一词反复出现）。
+          清单只是「练什么」的选择，删掉不影响掌握度。</p>
+        <div class="focus-actions">
+          <label class="checkbox">
+            <input type="checkbox" id="focus-enabled">
+            <span>只练重点词（取消勾选则按课程范围正常出题）</span>
+          </label>
+          <button id="focus-clear-btn" class="secondary" type="button">🗑 清空清单</button>
+        </div>
+        <div id="focus-list" class="focus-list"></div>
+      </div>
+      <div class="card">
+        <h2>挑词加入清单</h2>
+        <div class="form-row">
+          <label for="focus-lesson">课程</label>
+          <select id="focus-lesson"></select>
+        </div>
+        <div class="form-row">
+          <label>只看</label>
+          <div id="focus-filters" class="modes focus-filters">
+            <label class="mode-option mode-inline">
+              <input type="radio" name="focus-filter" value="all" checked><span>全部</span>
+            </label>
+            <label class="mode-option mode-inline">
+              <input type="radio" name="focus-filter" value="unlearned"><span>未学（m=0）</span>
+            </label>
+            <label class="mode-option mode-inline">
+              <input type="radio" name="focus-filter" value="weak"><span>薄弱（m≤2）</span>
+            </label>
+            <label class="mode-option mode-inline">
+              <input type="radio" name="focus-filter" value="due"><span>今日到期</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="focus-search">搜索</label>
+          <input type="text" id="focus-search" placeholder="写法 / 读音 / 释义关键词" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="focus-quick-n">快捷选取</label>
+          <div class="focus-quick">
+            <input type="number" id="focus-quick-n" value="20" min="1" max="200">
+            <button id="focus-quick-first" class="secondary" type="button">取前 N 个</button>
+            <button id="focus-quick-random" class="secondary" type="button">随机 N 个</button>
+            <button id="focus-quick-page" class="secondary" type="button">加入当前全部</button>
+          </div>
+        </div>
+        <div id="focus-pick-list" class="pick-list"></div>
+        <p id="focus-msg" class="hint hidden"></p>
+      </div>
+    </section>
+
+    <!-- 练习页 -->
+    <section id="practice-screen" class="screen" style="display:none">
+      <div class="practice-header">
+        <span id="q-mode" class="badge"></span>
+        <span id="q-progress" class="muted"></span>
+        <span id="q-score" class="muted"></span>
+        <button id="mute-btn" class="secondary exit-btn" type="button">🔇 跳过听力题</button>
+        <button id="exit-btn" class="secondary exit-btn" type="button" title="结束本组练习，已作答的题会保存">退出</button>
+      </div>
+      <div class="prompt-card">
+        <div id="q-lesson" class="q-lesson"></div>
+        <div id="q-prompt" class="q-prompt" lang="ja"></div>
+        <div id="q-audio-box" class="q-audio-box hidden">
+          <div class="audio-btn-row">
+            <button id="play-audio-btn" class="audio-btn" type="button">🔊 播放发音</button>
+            <button id="regen-audio-btn" class="audio-btn audio-btn-sub" type="button"
+                    title="发音不对或残缺？重新生成（先试听，再决定是否覆盖）">↻ 重置语音</button>
+          </div>
+          <span class="audio-hint">听不清可重复播放（按 F2 或 Ctrl+R 重播）</span>
+          <div id="regen-panel" class="regen-panel hidden"></div>
+        </div>
+        <!-- 听力题专属：场合不方便听时把本题从本轮剔除，不判对错、不改掌握度 -->
+        <div id="no-audio-row" class="no-audio-row hidden">
+          <button id="skip-audio-btn" class="secondary" type="button">⏭ 跳过本题 · 不方便听（不计分）</button>
+          <button id="restore-audio-btn" class="secondary hidden" type="button">🔇 本组已静音 · 恢复自动发音</button>
+        </div>
+      </div>
+      <div id="input-phase">
+        <input type="text" id="answer-input" placeholder="输入假名或罗马字（如 norikae）…" autocomplete="off" lang="ja">
+        <div class="btn-row">
+          <button id="submit-btn" class="primary">提交 (Enter)</button>
+          <button id="skip-btn" class="secondary">我不会 (Esc)</button>
+        </div>
+      </div>
+      <!-- 真题实战：选择题（组句词块、配对瓦片也渲染进这里） -->
+      <div id="exam-controls" class="hidden"></div>
+      <!-- 反馈面板：必须排在作答区**之后**——否则选择题一作答，反馈就把刚点的
+           四个选项整块顶下去。它同时也是闪卡的背面（flipCard 往这里渲染），
+           所以必须留在「翻面 / 认识·不认识」按钮之前 -->
+      <div id="feedback" class="feedback hidden"></div>
+      <!-- 闪卡模式：先翻面看答案，再自评 -->
+      <div id="flashcard-controls" class="hidden">
+        <button id="flip-btn" class="primary">翻面看答案 (空格)</button>
+        <div id="assess-row" class="btn-row hidden">
+          <button id="dontknow-btn" class="secondary">😵 不认识 (1)</button>
+          <button id="know-btn" class="primary">✓ 认识 (2)</button>
+        </div>
+      </div>
+      <button id="next-btn" class="primary" style="display:none">下一题</button>
+    </section>
+
+    <!-- 学习模块：卡片教学 → 再认小测 → 衔接练习 -->
+    <section id="learn-screen" class="screen" style="display:none">
+      <div class="practice-header">
+        <span class="badge">📖 新词学习</span>
+        <span id="learn-lesson" class="muted"></span>
+        <span id="learn-progress" class="muted"></span>
+        <button id="learn-quit-btn" class="secondary exit-btn" type="button">退出学习</button>
+      </div>
+
+      <!-- 阶段一：学习卡片 -->
+      <div id="learn-cards">
+        <div class="prompt-card">
+          <div id="learn-card"></div>
+        </div>
+        <div class="btn-row">
+          <button id="learn-prev" class="secondary" type="button">← 回看</button>
+          <button id="learn-play" class="secondary" type="button">🔊 播放发音 (F2)</button>
+          <button id="learn-next" class="primary" type="button">认识，下一个 (Enter)</button>
+        </div>
+        <!-- 发音不对/残缺时重录当前词（学习阶段最容易第一次听到某个词的发音） -->
+        <div class="audio-btn-row sub-audio-row">
+          <button id="learn-regen-btn" class="audio-btn audio-btn-sub" type="button"
+                  title="发音不对或残缺？重新生成（先试听，再决定是否覆盖）">↻ 重置语音</button>
+        </div>
+        <div id="learn-regen-panel" class="regen-panel hidden"></div>
+      </div>
+
+      <!-- 阶段二：即时再认小测（答错的词重排队尾，直到全部答对） -->
+      <div id="learn-quiz" class="hidden">
+        <div class="prompt-card">
+          <div id="learn-quiz-progress" class="muted"></div>
+          <div id="learn-quiz-prompt" class="q-prompt" lang="ja"></div>
+          <div id="learn-quiz-opts"></div>
+          <p class="hint">答错的词会稍后再出现，直到全部答对；数字键 1-4 可直接作答</p>
+        </div>
+      </div>
+
+      <!-- 阶段三：完成 -->
+      <div id="learn-done" class="hidden">
+        <div class="card">
+          <h2>本批学完了</h2>
+          <p id="learn-done-msg"></p>
+          <div class="actions">
+            <button id="learn-practice-btn" class="primary" type="button">立即练习这批词（看汉字写假名）</button>
+            <button id="learn-home-btn" class="secondary" type="button">返回设置</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 汉字识字卡：按词条聚合汉字，浏览每个字出现在哪些词里 -->
+    <section id="kanji-screen" class="screen" style="display:none">
+      <div class="practice-header">
+        <span class="badge">漢 汉字卡</span>
+        <span id="k-lesson" class="muted"></span>
+        <span id="k-progress" class="muted"></span>
+        <button id="k-back-btn" class="secondary exit-btn" type="button">返回</button>
+      </div>
+      <div class="prompt-card">
+        <div class="k-char-wrap">
+          <div id="k-char" class="k-char" lang="ja"></div>
+          <div id="k-count" class="muted"></div>
+        </div>
+        <div id="k-words"></div>
+      </div>
+      <div class="btn-row">
+        <button id="k-prev" class="secondary" type="button">← 上一个</button>
+        <button id="k-play" class="secondary" type="button">🔊 读第一个词 (F2)</button>
+        <button id="k-next" class="primary" type="button">下一个 (Enter)</button>
+      </div>
+      <!-- 重置的是「读第一个词」那个发音，与该按钮同一口径 -->
+      <div class="audio-btn-row sub-audio-row">
+        <button id="k-regen-btn" class="audio-btn audio-btn-sub" type="button"
+                title="第一个词的发音不对或残缺？重新生成（先试听，再决定是否覆盖）">↻ 重置语音</button>
+      </div>
+      <div id="k-regen-panel" class="regen-panel hidden"></div>
+    </section>
+
+    <!-- 动词活用卡：逐词浏览 ます形/て形/た形/ない形（纯浏览，不排调度不计分） -->
+    <section id="conj-screen" class="screen" style="display:none">
+      <div class="practice-header">
+        <span class="badge">🔤 动词活用卡</span>
+        <span id="c-lesson" class="muted"></span>
+        <span id="c-progress" class="muted"></span>
+        <button id="c-back-btn" class="secondary exit-btn" type="button">返回</button>
+      </div>
+      <div class="prompt-card">
+        <div class="k-char-wrap">
+          <div id="c-basic" class="k-char" lang="ja"></div>
+          <div id="c-meta" class="muted"></div>
+          <div id="c-infl" class="conj-infl"></div>
+        </div>
+        <div id="c-rows"></div>
+        <div id="c-example" class="conj-example"></div>
+      </div>
+      <div class="btn-row">
+        <button id="c-prev" class="secondary" type="button">← 上一个</button>
+        <button id="c-play" class="secondary" type="button">🔊 读基本形 (F2)</button>
+        <button id="c-next" class="primary" type="button">下一个 (Enter)</button>
+      </div>
+    </section>
+
+    <!-- 进度与薄弱点：直接看项目里的两份 md，不用翻文件 -->
+    <section id="docs-screen" class="screen" style="display:none">
+      <div class="nav-header">
+        <button id="docs-back-btn" class="secondary back-btn" type="button">← 返回</button>
+        <span class="nav-title">📊 统计与复习 › 📈 进度与薄弱点</span>
+      </div>
+      <div class="card">
+        <h3>学习进度 progress.md</h3>
+        <pre id="docs-progress" class="doc-body">加载中…</pre>
+        <h3>薄弱点 weaknesses.md</h3>
+        <pre id="docs-weaknesses" class="doc-body">加载中…</pre>
+        <p class="hint">两处的聚合数字由 <code>python practice\report.py --write</code> 生成，
+          标记外的手写记录不会被覆盖。</p>
+      </div>
+    </section>
+
+    <!-- 结果页 -->
+    <section id="result-screen" class="screen" style="display:none">
+      <div class="card">
+        <h2>练习完成</h2>
+        <div id="r-stats" class="stats"></div>
+        <div id="r-metrics" class="metrics"></div>
+        <h3>错题回顾</h3>
+        <div id="r-wrong-list" class="wrong-list"></div>
+        <p id="r-record" class="record"></p>
+        <div class="actions">
+          <button id="again-btn" class="primary">再练一组 (Enter)</button>
+          <button id="home-btn" class="secondary">返回设置 (Esc)</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 新增单词模态框：不碰代码直接录入生词 -->
+  <div id="add-word-modal" class="modal-overlay hidden">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="add-word-title">
+      <div class="modal-head">
+        <h2 id="add-word-title">✍️ 新增单词</h2>
+        <button id="add-word-close" class="modal-close" type="button" title="关闭（Esc）">×</button>
+      </div>
+      <div class="form-row">
+        <label for="aw-lesson">加入课程</label>
+        <select id="aw-lesson"></select>
+        <input type="text" id="aw-new-lesson" class="hidden" autocomplete="off"
+               placeholder="新课程名称，如：多邻国 Unit 5">
+      </div>
+      <div class="form-row">
+        <label for="aw-kanji">写法（汉字/片假名，纯假名词可留空）</label>
+        <input type="text" id="aw-kanji" autocomplete="off" lang="ja">
+      </div>
+      <div class="form-row">
+        <label for="aw-hiragana">读音（平假名，可直接敲罗马字）<span class="req">*</span></label>
+        <input type="text" id="aw-hiragana" autocomplete="off" lang="ja"
+               placeholder="如 norikae 会自动变成 のりかえ">
+      </div>
+      <div class="form-row">
+        <label for="aw-meaning">中文释义<span class="req">*</span></label>
+        <input type="text" id="aw-meaning" autocomplete="off" lang="zh">
+      </div>
+      <div class="form-row">
+        <label for="aw-notes">备注（可选）</label>
+        <input type="text" id="aw-notes" autocomplete="off">
+      </div>
+      <details class="aw-more">
+        <summary>更多字段（例句 / 用法讲解，可选填）</summary>
+        <div class="form-row">
+          <label for="aw-example-ja">例句日语</label>
+          <input type="text" id="aw-example-ja" autocomplete="off" lang="ja">
+        </div>
+        <div class="form-row">
+          <label for="aw-example-zh">例句中文</label>
+          <input type="text" id="aw-example-zh" autocomplete="off" lang="zh">
+        </div>
+        <div class="form-row">
+          <label for="aw-tip">用法讲解（近义辨析 / 搭配小知识，可选）</label>
+          <textarea id="aw-tip" rows="2" autocomplete="off" placeholder="例：購入是书面说法，日常买东西用買う"></textarea>
+        </div>
+      </details>
+      <div id="aw-bound" class="aw-bound hidden">
+        <span id="aw-bound-text"></span>
+        <button id="aw-unbind" class="aw-unbind" type="button">✕ 改为新增</button>
+      </div>
+      <div id="aw-similar" class="aw-similar hidden"></div>
+      <p id="aw-msg" class="aw-msg hidden"></p>
+      <div class="btn-row">
+        <button id="aw-save-more" class="secondary" type="button">保存并继续添加</button>
+        <button id="aw-save-close" class="primary" type="button">保存并关闭</button>
+      </div>
+      <p class="hint">输入写法/读音时会自动提示词库里的相近词（如 中国 / 中国語），点「修改」直接改已有单词，也可忽略照常新增。新增的词掌握度为 0，会立即出现在所选课程中；发音在首次练习时自动生成。</p>
+    </div>
+  </div>
+
+  <!-- 重命名课程模态框：改单词表的显示名 -->
+  <div id="rename-modal" class="modal-overlay hidden">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="rename-title">
+      <div class="modal-head">
+        <h2 id="rename-title">✏️ 重命名课程</h2>
+        <button id="rename-close" class="modal-close" type="button" title="关闭（Esc）">×</button>
+      </div>
+      <div class="form-row">
+        <label for="rn-lesson">要改名的课程</label>
+        <select id="rn-lesson"></select>
+      </div>
+      <div class="form-row">
+        <label for="rn-title">新的名称</label>
+        <input type="text" id="rn-title" autocomplete="off" placeholder="例：X">
+      </div>
+      <p id="rn-msg" class="aw-msg hidden"></p>
+      <div class="btn-row">
+        <button id="rn-cancel" class="secondary" type="button">取消</button>
+        <button id="rn-save" class="primary" type="button">保存</button>
+      </div>
+      <p class="hint">只改课程的显示名：单词、掌握度、复习计划、发音与配图都按课程 id 关联，改名后照旧生效。已保存的练习记录里留着当时的课程名，不会跟着变。</p>
+    </div>
+  </div>
+
+  <script src="{{ asset('kana.js') }}"></script>
+  <script src="{{ asset('app.js') }}"></script>
+  <!-- 服务器导入任务悬浮球：后台转写跑着时右下角查看进度，无任务自动隐藏 -->
+  <script src="{{ asset('import_task_ball.js') }}"></script>
+</body>
+</html>

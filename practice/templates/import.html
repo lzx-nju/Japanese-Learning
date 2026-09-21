@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>导入作品 - 日语练习</title>
+  <link rel="stylesheet" href="{{ asset('style.css') }}">
+  <link rel="stylesheet" href="{{ asset('reader.css') }}">
+  <style>
+    .ip-card { max-width: 520px; }
+    .ip-card .row { display: flex; gap: 18px; flex-wrap: wrap; }
+    .ip-card .row label { display: inline-flex; align-items: center; gap: 5px;
+                          font-size: 0.9rem; color: var(--text); margin: 12px 0 0; cursor: pointer; }
+    .ip-card .hint { margin: 10px 0 0; }
+    .ip-card .hint.warn { color: #c2410c; }
+    /* 第二步的屏内标题：让「轻小说 / 音声作品」的区别一眼可见 */
+    #form-title { margin: 14px 0 2px; font-size: 1.05rem; }
+    /* 第一步：类型选择卡片（两张大按钮） */
+    .type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+    .type-card { display: flex; flex-direction: column; align-items: center; gap: 6px;
+                 padding: 20px 12px; border: 1px solid var(--border); border-radius: 12px;
+                 background: #fff; cursor: pointer; font: inherit; color: var(--text);
+                 transition: border-color .15s, box-shadow .15s, transform .15s; }
+    .type-card:hover { border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary);
+                       transform: translateY(-1px); }
+    .type-card .ticon { font-size: 1.9rem; line-height: 1; }
+    .type-card .tname { font-weight: 700; font-size: 1rem; }
+    .type-card .tdesc { font-size: 0.78rem; color: var(--muted); text-align: center;
+                        line-height: 1.5; }
+    @media (max-width: 430px) { .type-grid { grid-template-columns: 1fr; } }
+    #server-opts { border-top: 1px dashed var(--border); margin-top: 14px;
+                   padding-top: 10px; }
+    #server-opts .sub { color: var(--muted); font-size: 0.8rem; margin: 6px 0 4px; }
+    select#engine, input#gpu-text {
+      width: 100%; padding: 8px 10px; border: 1px solid var(--border);
+      border-radius: 8px; font-size: 0.95rem; }
+    .gpu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 8px; margin-top: 6px; }
+    .gpu-card { border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px;
+                cursor: pointer; user-select: none; transition: border-color .15s, box-shadow .15s; }
+    .gpu-card.sel { border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary); }
+    .gpu-card .gname { font-size: 0.78rem; color: var(--muted);
+                       overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .gpu-card .gidx { font-size: 0.9rem; font-weight: 700; }
+    .gpu-card .gbar { height: 6px; border-radius: 4px; background: var(--bg); margin: 6px 0 4px; }
+    .gpu-card .gbar i { display: block; height: 100%; border-radius: 4px;
+                        background: #f59e0b; }
+    .gpu-card.busy .gbar i { background: #ef4444; }
+    .gpu-card .gstats { font-size: 0.72rem; color: var(--muted); }
+    #gpu-err { margin-top: 6px; }
+    #import-progress { margin-top: 12px; padding: 10px 12px; border-radius: 10px;
+                       background: var(--bg); border: 1px solid var(--border); }
+    #import-progress[hidden] { display: none; }
+    #progress-text { font-size: 0.9rem; }
+    #progress-text.err { color: var(--wrong); }
+    #progress-bar { width: 100%; height: 8px; margin-top: 8px; border-radius: 6px; }
+  </style>
+</head>
+<body class="reader-body">
+  <header>
+    <h1>日语练习</h1>
+    <p class="subtitle">导入轻小说 / 音声作品；导入后在作品阅读器里边读边标注已学词</p>
+  </header>
+
+  <main class="reader-page">
+    <!-- 顶部导航：与练习页模块页同款（.nav-header + .back-btn + .nav-title） -->
+    <div class="nav-header">
+      <button id="back-btn" class="secondary back-btn" type="button">← 返回</button>
+      <span class="nav-title">📚 作品沉浸 › ➕ 导入作品</span>
+    </div>
+    <div class="ip-card">
+
+      <!-- 第一步：先选导入类型 -->
+      <div id="step-type">
+        <p class="hint">要导入什么？轻小说直接上传 txt / epub；音声作品上传 zip 或已解压
+          文件夹（内含音轨 + 字幕/台本，自动按文件名配对）。</p>
+        <div class="type-grid">
+          <button type="button" class="type-card" data-type="novel">
+            <span class="ticon">📖</span>
+            <span class="tname">轻小说</span>
+            <span class="tdesc">.txt / .epub，单文件<br>选文件即入库</span>
+          </button>
+          <button type="button" class="type-card" data-type="voice">
+            <span class="ticon">🎧</span>
+            <span class="tname">音声作品</span>
+            <span class="tdesc">.zip 或已解压文件夹<br>音轨 + 字幕/台本，可 ASR 补时间轴</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 第二步：对应类型的表单 -->
+      <div id="step-form" hidden>
+        <h4 id="form-title">导入</h4>
+        <p class="hint" id="novel-hint" hidden>轻小说：.txt / .epub 直接上传
+          （txt 按「第N章/節/話」分章，epub 按 spine 分章）。作品名相同则覆盖更新。</p>
+        <p class="hint" id="voice-hint" hidden>音声作品：.zip 或已解压文件夹
+          （内含音轨 mp3/wav + 字幕 .vtt/.srt/.ass 或台本 .txt/.pdf，自动按文件名配对）。
+          作品名相同则覆盖更新；音轨解压到 data/audio/ 并保留（不入 git，作品只登记其路径）。</p>
+
+        <form id="import-form">
+          <div class="row" id="voice-source-row" hidden>
+            <label><input type="radio" name="source" value="zip" checked> 音声压缩包 .zip</label>
+            <label><input type="radio" name="source" value="dir"> 音声文件夹（已解压）</label>
+          </div>
+          <label id="file-label">作品文件</label>
+          <input type="file" id="import-file" name="file" required>
+          <label>作品名</label>
+          <input id="import-title" name="title" placeholder="留空默认用文件名/文件夹名">
+          <label>作者（可留空）</label>
+          <input id="import-author" name="author">
+
+          <div class="row" id="asr-row" hidden>
+            <label><input type="radio" name="asr" value="local" checked> 本地 ASR</label>
+            <label><input type="radio" name="asr" value="server"> 服务器 ASR（需VPN）</label>
+          </div>
+          <label class="import-check" id="align-wrap" hidden>
+            <input type="checkbox" id="import-align" name="align" value="1">
+            音声作品没字幕/台本的轨道，用本地 ASR 补时间轴（首次要加载模型，很慢）
+          </label>
+
+          <div id="server-opts" hidden>
+            <div class="sub">服务器引擎（跑在带 GPU 的服务器上，转写几分钟到十几分钟）</div>
+            <select id="engine" name="engine">
+              <option value="qwen3" selected>qwen3（Qwen3-ASR-1.7B，准）</option>
+              <option value="kotoba21">kotoba21（kotoba-whisper-v2.1，日语专用）</option>
+              <option value="kotoba22">kotoba22（v2.2，说话人分离）</option>
+              <option value="largev3">largev3（faster-whisper 力量型）</option>
+            </select>
+            <div class="sub">挑空闲的卡（点卡片勾选，可多选；大显存任务可勾多张）</div>
+            <div class="gpu-grid" id="gpu-list"></div>
+            <p class="hint" id="gpu-hint" hidden>正在查询服务器显卡状态…</p>
+            <p class="hint warn" id="gpu-err" hidden></p>
+            <input type="hidden" id="gpu" name="gpu" value="">
+          </div>
+
+          <div class="pop-actions">
+            <button type="submit" class="pop-save" id="import-submit">开始导入</button>
+          </div>
+          <div class="pop-err" id="import-err"></div>
+          <div id="import-progress" hidden>
+            <div id="progress-text">准备中…</div>
+            <progress id="progress-bar" value="0" max="100"></progress>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const PHASES = ["collecting", "uploading", "transcribing", "pulling",
+                    "aligning", "importing", "done"];
+    const PHASE_CN = { collecting: "准备中", uploading: "上传音轨到服务器",
+      transcribing: "服务器转写中", pulling: "拉回转写结果",
+      aligning: "组装时间轴并导入", importing: "写入作品", done: "完成",
+      error: "失败" };   // 少了 error 时，失败的任务在进度条上是一行空白
+
+    function toast(msg) {
+      const t = document.createElement("div");
+      t.className = "toast";
+      t.textContent = msg;
+      document.body.appendChild(t);
+      setTimeout(() => t.remove(), 3200);
+    }
+
+    // ---- 两级流程：先选类型（novel / voice），再展示对应表单 ----
+    let importType = null;   // novel | voice
+
+    // 当前素材来源：轻小说固定 novel；音声看 zip / dir 单选项
+    function currentSource() {
+      if (importType === "novel") return "novel";
+      return document.querySelector('input[name="source"]:checked').value;
+    }
+
+    const SOURCE_LABELS = {
+      novel: "轻小说文件（.txt / .epub）",
+      zip: "音声压缩包（.zip）",
+      dir: "作品文件夹（已解压）",
+    };
+
+    function showTypeStep() {
+      importType = null;
+      $("step-type").hidden = false;
+      $("step-form").hidden = true;
+      $("import-file").value = "";
+      $("import-err").textContent = "";
+      $("import-progress").hidden = true;
+    }
+
+    function showFormStep(type) {
+      importType = type;
+      const novel = type === "novel";
+      $("step-type").hidden = true;
+      $("step-form").hidden = false;
+      $("form-title").textContent = novel ? "导入轻小说" : "导入音声作品";
+      $("novel-hint").hidden = !novel;
+      $("voice-hint").hidden = novel;
+      $("voice-source-row").hidden = novel;   // zip / 文件夹只在音声屏选
+      $("asr-row").hidden = novel;            // 轻小说没有音轨，ASR 选项整块收起
+      $("align-wrap").hidden = novel;
+      $("server-opts").hidden = true;
+      $("import-err").textContent = "";
+      $("import-progress").hidden = true;
+      syncSourceMode();
+    }
+
+    function syncSourceMode() {
+      const el = $("import-file");
+      const mode = currentSource();           // novel | zip | dir
+      const dir = mode === "dir";
+      el.removeAttribute("webkitdirectory");
+      el.removeAttribute("directory");
+      el.removeAttribute("multiple");
+      if (dir) { el.setAttribute("webkitdirectory", ""); el.setAttribute("directory", ""); }
+      el.removeAttribute("accept");
+      if (mode === "novel") el.setAttribute("accept", ".txt,.epub");
+      else if (mode === "zip") el.setAttribute("accept", ".zip");
+      $("file-label").textContent = SOURCE_LABELS[mode] || "作品文件";
+      el.value = "";
+    }
+
+    function syncAsrMode() {
+      const voice = importType === "voice";
+      const server = document.querySelector('input[name="asr"]:checked').value === "server";
+      $("server-opts").hidden = !voice || !server;
+      $("align-wrap").hidden = !voice || server;
+      $("import-align").checked = false;
+      if (voice && server) loadGpus();
+    }
+
+    function defaultTitleFromFiles(files) {
+      if (!$("import-title").value.trim() && files && files.length) {
+        const dir = currentSource() === "dir";
+        const name = dir
+          ? (files[0].webkitRelativePath || files[0].name).split("/")[0]
+          : files[0].name.replace(/\.[^.]+$/, "");
+        $("import-title").value = name;
+      }
+    }
+
+    // ---- GPU 可视化（服务器 nvidia-smi）----
+    async function loadGpus() {
+      const list = $("gpu-list");
+      const hint = $("gpu-hint"); hint.hidden = false;
+      $("gpu-err").hidden = true;
+      list.innerHTML = "";
+      try {
+        const res = await fetch("/api/asr/gpu").then((r) => r.json());
+        if (res.error) throw new Error(res.error);
+        hint.hidden = true;
+        if (!res.gpus || !res.gpus.length) {
+          $("gpu-err").textContent = "服务器没返回显卡信息";
+          $("gpu-err").hidden = false;
+          return;
+        }
+        const sel = new Set();
+        res.gpus.forEach((g) => {
+          const card = document.createElement("div");
+          card.className = "gpu-card";
+          const usedPct = g.mem_total ? Math.round(g.mem_used / g.mem_total * 100) : 0;
+          card.innerHTML = `
+            <div class="gidx">GPU ${g.index} <span class="gname">${esc(g.name)}</span></div>
+            <div class="gbar"><i style="width:${Math.min(100, usedPct)}%"></i></div>
+            <div class="gstats">显存 ${usedPct}%（${g.mem_used}/${g.mem_total} GiB）· 使用率 ${g.util}%</div>`;
+          card.addEventListener("click", () => {
+            if (card.classList.toggle("sel")) sel.add(g.index);
+            else sel.delete(g.index);
+            $("gpu").value = [...sel].sort().join(",");
+          });
+          list.appendChild(card);
+        });
+        // 默认勾上第一张卡（可取消，不勾会报错）
+        if (res.gpus.length) {
+          const first = list.firstChild;
+          if (first) {
+            sel.add(res.gpus[0].index);
+            $("gpu").value = String(res.gpus[0].index);
+            first.classList.add("sel");
+          }
+        }
+      } catch (e) {
+        hint.hidden = true;
+        $("gpu-err").textContent = "无法查询服务器显卡：" + (e.message || e) +
+          "（请确认VPN 已连接、ssh 免密已配置）";
+        $("gpu-err").hidden = false;
+      }
+    }
+    function esc(s) {
+      return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    // ---- 提交 ----
+    function buildFormData(form) {
+      const fd = new FormData(form);
+      fd.delete("file");
+      const src = currentSource();
+      fd.set("source", src);                 // novel | zip | dir（后端只对 dir 分叉）
+      if (src === "dir") {
+        [...form.querySelector("#import-file").files].forEach((f) => {
+          fd.append("files", f);
+          fd.append("path", f.webkitRelativePath || f.name);
+        });
+      } else {
+        const f = form.querySelector("#import-file").files[0];
+        if (f) fd.append("file", f);
+      }
+      const server = importType === "voice" &&
+        document.querySelector('input[name="asr"]:checked').value === "server";
+      fd.set("asr", server ? "server" : "local");
+      return fd;
+    }
+
+    function setProgress(phase, msg, err) {
+      const box = $("import-progress");
+      box.hidden = false;
+      $("progress-text").className = err ? "err" : "";
+      $("progress-text").textContent = (err ? "✖ " : "") + (msg || phase);
+      const i = PHASES.indexOf(phase);
+      $("progress-bar").value = err ? 0 : (i >= 0 ? i / (PHASES.length - 1) * 100 : 0);
+    }
+
+    $("import-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!importType) return;
+      const btn = $("import-submit");
+      if (btn.disabled) return;
+      const form = e.target;
+      const server = importType === "voice" &&
+        document.querySelector('input[name="asr"]:checked').value === "server";
+      const fileInput = form.querySelector("#import-file");
+      const files = fileInput.files;
+      if (!files || !files.length) {
+        $("import-err").textContent = "请先选择文件或文件夹";
+        return;
+      }
+      if (server && !$("gpu").value) {
+        $("import-err").textContent = "请至少勾选一张 GPU 卡";
+        return;
+      }
+      const fd = buildFormData(form);
+      btn.disabled = true;
+      btn.textContent = "提交中…";
+      $("import-err").textContent = "";
+      try {
+        const res = await fetch("/api/works/import", { method: "POST", body: fd })
+          .then((r) => r.json());
+        if (res.error) { $("import-err").textContent = res.error; return; }
+        if (!server) {
+          $("import-file").value = "";
+          toast(`已导入《${res.title}》：${res.chapters} 章 · ${res.sentences} 句`);
+          setTimeout(() => { window.location.href = "/"; }, 900);
+          return;
+        }
+        await pollTask(res.task_id);
+      } catch (err) {
+        $("import-err").textContent = "网络错误，请重试";
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "开始导入";
+      }
+    });
+
+    async function pollTask(tid) {
+      const btn = $("import-submit");
+      btn.textContent = "任务进行中…";
+      for (let i = 0; i < 240; i++) {   // 最长约 20 分钟
+        await new Promise((r) => setTimeout(r, 5000));
+        let t;
+        try {
+          t = await fetch("/api/works/import/task/" + tid).then((r) => r.json());
+        } catch (err) { continue; }
+        if (t.error && !t.done) { setProgress(t.phase, t.error, true); return; }
+        if (t.done && t.phase === "error") { setProgress(t.phase, t.error, true); return; }
+        if (t.done) {
+          setProgress(t.phase, `导入完成《${t.title}》：${t.chapters} 章 · ${t.sentences} 句`);
+          toast(`已导入《${t.title}》：${t.chapters} 章 · ${t.sentences} 句`);
+          setTimeout(() => { window.location.href = "/"; }, 1200);
+          return;
+        }
+        setProgress(t.phase, t.msg || PHASE_CN[t.phase]);
+      }
+      setProgress("error", "任务仍在进行，请回首页右上角悬浮球继续查看", true);
+    }
+
+    // ---- 事件接线 ----
+    document.querySelectorAll(".type-card").forEach((c) =>
+      c.addEventListener("click", () => showFormStep(c.dataset.type)));
+    document.querySelectorAll('input[name="source"]').forEach((r) =>
+      r.addEventListener("change", syncSourceMode));
+    document.querySelectorAll('input[name="asr"]').forEach((r) =>
+      r.addEventListener("change", syncAsrMode));
+    $("import-file").addEventListener("change", (e) => defaultTitleFromFiles(e.target.files));
+    // 「← 返回」与练习页（.back-btn）同款，逐级回退：
+    // 表单屏 → 回类型选择屏；类型选择屏 → 回上一页（直接打开本页时兜底首页）
+    $("back-btn").addEventListener("click", () => {
+      if (importType) { showTypeStep(); return; }
+      if (window.history.length > 1) window.history.back();
+      else window.location.href = "/";
+    });
+    syncAsrMode();
+    showTypeStep();
+    // ?type=novel / ?type=voice 直达对应表单（外链与真机排查用）
+    const bootType = new URLSearchParams(location.search).get("type");
+    if (bootType === "novel" || bootType === "voice") showFormStep(bootType);
+  </script>
+</body>
+</html>

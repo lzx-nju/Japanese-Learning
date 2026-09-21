@@ -1,0 +1,21 @@
+# 换行符以仓库为准，不依赖每台机器各自的 core.autocrlf
+* text=auto
+
+# 批处理必须是 CRLF：LF 版在 cmd.exe 下标签跳转与多行 if 块解析异常
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制：不做行尾转换，也不当文本出 diff
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.mp3 binary
+*.mp4 binary
+*.wav binary
+*.pdf binary
+*.docx binary
+*.epub binary
+*.zip binary

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习统计 - 日语练习</title>
+  <link rel="stylesheet" href="{{ asset('style.css') }}">
+</head>
+<body class="stats-body">
+  <header>
+    <h1>日语练习</h1>
+    <p class="subtitle">学习统计：掌握度分布、练习趋势、高频错词与混淆对</p>
+  </header>
+
+  <main class="stats-page">
+    <!-- 顶部导航：与练习页模块页同款（.nav-header + .back-btn + .nav-title） -->
+    <div class="nav-header">
+      <button id="back-btn" class="secondary back-btn" type="button">← 返回</button>
+      <span class="nav-title">📊 统计与复习 › 📊 学习统计</span>
+    </div>
+    <div id="summary" class="summary-grid"></div>
+
+    <section class="card">
+      <h2>各课程掌握度</h2>
+      <div id="lessons-table"></div>
+      <p class="hint">掌握度：0 未学习 · 1 见过 · 2 认识但写不出 · 3 会读写 · 4 熟练 · 5 完全掌握</p>
+    </section>
+
+    <section class="card">
+      <h2>练习趋势（按天）</h2>
+      <div id="days-table"></div>
+    </section>
+
+    <section class="card">
+      <h2>各模式累计</h2>
+      <div id="modes-table"></div>
+    </section>
+
+    <section class="card">
+      <h2>高频错词 TOP 20</h2>
+      <div id="wrong-table"></div>
+    </section>
+
+    <section class="card">
+      <h2>混淆对（正确答案 ← 你的答案）</h2>
+      <div id="confusion-table"></div>
+      <p class="hint">来自完整作答记录：你想写 A 却写成了 B 的模式统计，用于发现易混词。</p>
+    </section>
+  </main>
+
+  <script>
+    // 「← 返回」与练习页（.back-btn）同款：回上一页；直接打开本页时兜底回首页
+    document.getElementById("back-btn").addEventListener("click", () => {
+      if (window.history.length > 1) window.history.back();
+      else window.location.href = "/";
+    });
+    function esc(s) {
+      return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+    function pct(a) { return (a * 100).toFixed(1) + "%"; }
+    function table(headers, rows) {
+      if (!rows.length) return '<p class="hint">暂无数据</p>';
+      return '<table class="stat-table"><thead><tr>' +
+        headers.map((h) => `<th>${h}</th>`).join("") + '</tr><tbody>' +
+        rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("") +
+        '</tbody></table>';
+    }
+
+    fetch("/api/stats")
+      .then((res) => res.json())
+      .then((d) => {
+        const s = d.summary;
+        const acc = s.total_questions ? pct(s.total_correct / s.total_questions) : "—";
+        document.getElementById("summary").innerHTML = [
+          [s.total_words, "总词条"],
+          [s.unlearned, "未学习 (0分)"],
+          [s.practice_days, "练习天数"],
+          [s.total_sessions, "练习组数"],
+          [s.total_questions, "累计题数"],
+          [acc, "总正确率"],
+        ].map(([n, l]) => `<div class="sum-card"><span class="num">${n}</span><span class="lbl">${l}</span></div>`).join("");
+
+        document.getElementById("lessons-table").innerHTML = table(
+          ["课程", "词数", "待复习", "0分", "1分", "2分", "3分", "4分", "5分"],
+          d.lessons.map((l) => {
+            const m = l.mastery_dist || {};
+            return [esc(l.title), l.word_count, l.due_count,
+              m["0"] || 0, m["1"] || 0, m["2"] || 0, m["3"] || 0, m["4"] || 0, m["5"] || 0];
+          })
+        );
+
+        document.getElementById("days-table").innerHTML = table(
+          ["日期", "组数", "题数", "正确数", "正确率"],
+          d.days.slice(0, 30).map((x) =>
+            [x.date, x.sessions, x.total, x.correct, pct(x.accuracy)])
+        );
+
+        // 模式名取自后端注册表，避免在前端再抄一份清单（新增模式会漏）
+        const modeNames = d.mode_names || {};
+        document.getElementById("modes-table").innerHTML = table(
+          ["模式", "组数", "题数", "正确率"],
+          d.modes.map((m) => [esc(modeNames[m.mode] || m.mode), m.sessions, m.total, pct(m.accuracy)])
+        );
+
+        document.getElementById("wrong-table").innerHTML = table(
+          ["单词", "读音", "释义", "错误次数", "掌握度", "最近答错"],
+          d.top_wrong.map((w) => [
+            esc(w.kanji && w.kanji !== "---" ? w.kanji : w.hiragana),
+            esc(w.hiragana), esc(w.meaning), w.count, w.mastery, esc(w.last_wrong || "")])
+        );
+
+        document.getElementById("confusion-table").innerHTML = table(
+          ["正确答案", "你写的", "次数"],
+          d.top_confusions.map((c) => [esc(c.expected), esc(c.your), c.count])
+        );
+      })
+      .catch((e) => {
+        document.getElementById("summary").innerHTML = `<p>统计加载失败：${esc(e)}</p>`;
+      });
+  </script>
+</body>
+</html>

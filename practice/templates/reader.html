@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品阅读器 - 日语练习</title>
+  <link rel="stylesheet" href="{{ asset('style.css') }}">
+  <link rel="stylesheet" href="{{ asset('reader.css') }}">
+</head>
+<body class="reader-body">
+  <header>
+    <h1>日语练习</h1>
+    <p class="subtitle">读已导入的作品：已学词按掌握度标注，点生词可加进生词本</p>
+  </header>
+
+  <main class="reader-page">
+    <!-- 顶部导航：与练习页模块页同款（.nav-header + .back-btn + .nav-title） -->
+    <div class="nav-header">
+      <button id="back-btn" class="secondary back-btn" type="button">← 返回</button>
+      <span class="nav-title">📚 作品沉浸 › 📖 作品阅读器</span>
+    </div>
+    <div class="card reader-bar">
+      <div class="bar-row">
+        <select id="work-select" title="选择作品"></select>
+        <select id="chapter-select" title="选择章节"></select>
+        <button class="secondary" id="prev-ch" type="button">← 上一章</button>
+        <button class="secondary" id="next-ch" type="button">下一章 →</button>
+      </div>
+      <div class="bar-row bar-toggles">
+        <label><input type="checkbox" id="toggle-furigana"> 假名注音</label>
+        <label><input type="checkbox" id="toggle-known" checked> 已学词高亮</label>
+        <label><input type="checkbox" id="toggle-chips" checked> 句下已学词提示</label>
+        <button class="secondary" id="open-tokens" type="button" title="查看 / 撤销已保存的分词修正">📚 修正表</button>
+        <span class="bar-tip">选中相邻几个字 → 右键 → 合并分词；句子文本有误（如 ASR 错字）→ 点句首 ✏️ 修正</span>
+        <span class="legend">
+          <span class="lg lg-known">会了(3+)</span>
+          <span class="lg lg-learn">在学(1-2)</span>
+          <span class="lg lg-new">库内未学</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- 音声作品：章节音轨播放条（听音频 + 点句跳转到那一句） -->
+    <div class="card media-bar" id="media-bar" hidden>
+      <div class="bar-row">
+        <button class="secondary media-btn" id="media-play" type="button"
+                title="播放 / 暂停本轨（空格）">▶</button>
+        <button class="secondary media-btn" id="media-back" type="button"
+                title="回到上一句开头">⏮</button>
+        <input type="range" id="media-seek" class="media-seek" min="0" max="0"
+               step="0.1" value="0" title="拖动跳到任意位置">
+        <span class="media-time" id="media-time">00:00 / 00:00</span>
+        <span class="sync-ctl" title="字幕与语音的同步微调（毫秒；正值=高亮延迟，负值=高亮提前）">
+          同步
+          <button class="secondary sync-btn" id="sync-minus" type="button">−50</button>
+          <span id="sync-ms" class="sync-ms">0ms</span>
+          <button class="secondary sync-btn" id="sync-plus" type="button">+50</button>
+          <button class="secondary sync-btn" id="sync-reset" type="button"
+                  title="清零同步偏移（数据已修好的作品请归零，避免双重偏移）">归零</button>
+        </span>
+        <select id="media-rate" title="播放速度">
+          <option value="0.75">0.75×</option>
+          <option value="1" selected>1×</option>
+          <option value="1.25">1.25×</option>
+          <option value="1.5">1.5×</option>
+        </select>
+        <label class="media-follow"><input type="checkbox" id="media-follow" checked>
+          跟随高亮</label>
+        <label class="media-follow"><input type="checkbox" id="media-loop" checked>
+          单句循环停</label>
+      </div>
+      <p class="hint" id="media-hint"></p>
+    </div>
+
+    <section class="card" id="profile-card" hidden>
+      <h2>难度画像</h2>
+      <div id="profile-grid" class="profile-grid"></div>
+      <p class="hint" id="profile-hint"></p>
+      <div id="top-unknown" class="top-unknown"></div>
+    </section>
+
+    <div id="chapter-stats" class="chapter-stats"></div>
+
+    <article class="card reader-text" id="text"></article>
+
+    <p class="hint" id="empty-hint" hidden>
+      还没有导入任何作品。返回首页 → <b>📚 作品沉浸 → ➕ 导入作品</b>：轻小说选 txt /
+      epub 文件，音声作品选 zip（内含音轨 mp3/wav + 字幕或台本），即可开始。
+    </p>
+  </main>
+
+  <div id="word-popup" class="word-popup" hidden></div>
+  <!-- 「回到当前句」：手动滚开（离开跟随）后浮出，点一下跳回正在播的句子并继续跟随 -->
+  <button id="follow-btn" class="follow-btn" type="button" hidden
+          title="回到正在播放的句子，并继续跟随">
+    <span class="fb-arrow" aria-hidden="true">↓</span>当前句
+  </button>
+  <div id="import-panel" class="import-panel" hidden>
+    <div class="ip-card">
+      <span class="pop-close" data-act="close">✕</span>
+      <h3>导入作品</h3>
+      <p class="hint">轻小说：.txt / .epub；音声作品：.zip（内含音轨 mp3/wav +
+        字幕 .vtt/.srt/.ass 或台本 .txt/.pdf，自动按文件名配对）。作品名相同则
+        覆盖更新；zip 里的音轨会解压到 data/audio/ 并保留（不入 git，只登记路径）。</p>
+      <form id="import-form">
+        <label>作品文件（.txt / .epub / .zip）</label>
+        <input type="file" id="import-file" name="file"
+               accept=".txt,.epub,.zip" required>
+        <label>作品名</label>
+        <input id="import-title" name="title" placeholder="留空默认用文件名">
+        <label>作者（可留空）</label>
+        <input id="import-author" name="author">
+        <label class="import-check">
+          <input type="checkbox" id="import-align" name="align" value="1">
+          音声作品没字幕/台本的轨道，用 ASR 自动补时间轴（首次要下载/加载模型，很慢）
+        </label>
+        <div class="pop-actions">
+          <button type="submit" class="pop-save" id="import-submit">开始导入</button>
+          <button type="button" data-act="close">取消</button>
+        </div>
+        <div class="pop-err" id="import-err"></div>
+      </form>
+    </div>
+  </div>
+  <!-- 正文右键菜单：拖选几个字后右键，直接把选中的相邻词块合回一个词 -->
+  <div id="ctx-menu" class="ctx-menu" hidden>
+    <button type="button" class="cm-item" id="ctx-merge">🔧 合并分词…</button>
+    <button type="button" class="cm-item" id="ctx-edit-sent">✏️ 编辑这句文本</button>
+    <button type="button" class="cm-item" id="ctx-read">🔊 朗读所选</button>
+    <button type="button" class="cm-item" id="ctx-copy">📋 复制</button>
+    <div class="cm-tip" id="ctx-tip" hidden></div>
+  </div>
+
+  <!-- 复查弹窗：列出本书中所有会被合并的位置，默认全勾，用户勾掉切对的 -->
+  <div id="token-review" class="modal-mask" hidden>
+    <div class="modal-card">
+      <span class="pop-close" data-act="cancel-review">✕</span>
+      <h3>确认分词修正：<span class="tr-surface" id="review-surface"></span></h3>
+      <p class="hint" id="review-hint"></p>
+      <div class="tr-list" id="review-list"></div>
+      <div class="pop-actions">
+        <button type="button" class="pop-save" id="review-confirm">保存修正</button>
+        <button type="button" data-act="cancel-review">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 修正表管理：查看 / 撤销已保存的分词规则 -->
+  <div id="token-panel" class="modal-mask" hidden>
+    <div class="modal-card">
+      <span class="pop-close" data-act="close-tokens">✕</span>
+      <h3>分词修正表</h3>
+      <p class="hint">修正全局生效：所有已导入 / 将来导入的作品都按合并后的词块显示。撤销即恢复自动分词。</p>
+      <div class="tp-list" id="token-list"></div>
+    </div>
+  </div>
+
+  <!-- 编辑句子文本：修 whisper / 台本转写错字，保存后本章重新分词标注 -->
+  <div id="sent-edit" class="modal-mask" hidden>
+    <div class="modal-card">
+      <span class="pop-close" data-act="cancel-sent-edit">✕</span>
+      <h3>编辑这句文本</h3>
+      <p class="hint">修改这句的原文。保存后本章会重新分词标注；音声作品的时间轴不变。</p>
+      <textarea id="sent-edit-text" class="sent-edit-ta" rows="3" placeholder="输入正确的句子文本…"></textarea>
+      <div class="pop-actions">
+        <button type="button" class="pop-save" id="sent-edit-save">保存</button>
+        <button type="button" data-act="cancel-sent-edit">取消</button>
+      </div>
+      <div class="pop-err" id="sent-edit-err"></div>
+    </div>
+  </div>
+
+  <div id="loading" class="loading-mask" hidden>
+    <div class="loading-card">
+      <span class="spinner"></span>
+      <span id="loading-text">加载中…</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="{{ asset('reader.js') }}"></script>
+</body>
+</html>

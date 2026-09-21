@@ -1,0 +1,960 @@
+:root {
+  /* 底色与描边都往下压一档：原来是 #f5f6f8 配 #e5e7eb，白方块与背景差不到 3%，
+     一屏白乎乎一片、边界全靠猜。 */
+  --bg: #e8edf4;
+  --card: #ffffff;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #d4dbe5;
+  --correct: #16a34a;
+  --correct-bg: #dcfce7;
+  --wrong: #dc2626;
+  --wrong-bg: #fee2e2;
+  --ja-font: "Hiragino Sans", "Yu Gothic", "Meiryo", "Noto Sans JP", "Microsoft YaHei", sans-serif;
+  /* 方块网格的最小列宽：首页方块与模块页子项共用一套，宽屏自动多列、窄屏自动单列 */
+  --tile-min: 200px;
+}
+
+* { box-sizing: border-box; }
+
+/* hidden 属性必须真的隐藏：作者样式里的 display:flex / inline-flex（.row、
+   .modes、.bar-row 等）会覆盖 UA 样式表的 [hidden]{display:none}——导入页的
+   「轻小说 / 音声」两屏曾因此长得一模一样（音声专有选项泄漏到轻小说屏）。 */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 24px 16px 8px;
+}
+header h1 { margin: 0; font-size: 1.6rem; }
+.subtitle { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+/* 首页用更宽的版心：它是「概览 + 导航」而不是阅读内容，1120 宽下五个方块正好排成
+   一行、一屏看全不用滚。其余屏仍走 680 的窄栏——题干、选项、表单都只需要一列，
+   拉宽只会让眼睛从左扫到右。选屏靠 body 上的当前屏标记（showScreen 里写入），
+   不能给 .screen 自己加样式：显隐用的是内联 display，会盖掉样式表。 */
+body[data-screen="home-screen"] main { max-width: 1120px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+.card h2 { margin-top: 0; }
+.card h3 { margin-bottom: 8px; }
+
+/* 表单 */
+.form-row { margin-bottom: 16px; }
+.form-row > label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+select, input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--text);
+}
+input[type="text"] { font-family: var(--ja-font); }
+input:focus, select:focus { outline: 2px solid var(--primary); outline-offset: -1px; }
+
+.modes { display: flex; flex-direction: column; gap: 8px; }
+.mode-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.mode-option:hover { border-color: var(--primary); }
+.mode-option input { margin-top: 3px; }
+.mode-option span { display: flex; flex-direction: column; }
+.mode-option small { color: var(--muted); font-size: 0.82rem; }
+.mode-option:has(input:checked) {
+  border-color: var(--primary);
+  background: #eff6ff;
+}
+
+.checkbox { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal; }
+
+.hint { color: var(--muted); font-size: 0.82rem; margin-top: 12px; }
+
+/* ---- 首页导航：今日概览 + 四宫格 + 子项列表 ---- */
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.ov-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 84px;
+  padding: 8px 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+/* 今日有到期词：这一格点出来，提醒今天该练了 */
+.ov-chip.hot { border-color: #fdba74; background: #fff7ed; }
+.ov-value { font-size: 1.15rem; font-weight: 700; line-height: 1.2; }
+.ov-chip.hot .ov-value { color: #ea580c; }
+.ov-unit { font-size: 0.75rem; font-weight: 500; color: var(--muted); margin-left: 2px; }
+.ov-label { font-size: 0.75rem; color: var(--muted); }
+
+/* ---- 今日处方：按当前数据排出的「今天先做什么」 ---- */
+.plan {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  background: var(--card);
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+}
+.plan-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.plan-title { font-weight: 700; }
+.plan-steps { display: flex; flex-direction: column; gap: 6px; }
+.plan-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.plan-step:hover { border-color: var(--primary); background: #eff6ff; }
+/* 打过卡的那一项：浅底 + 文字变淡 + ✓，一眼看出今天已经做过（仍然可点，积压还在） */
+.plan-step.done { background: #f1f5f9; border-color: #e2e8f0; }
+.plan-step.done:hover { background: #e2e8f0; }
+.plan-step.done .ps-title { color: var(--muted); font-weight: 500; }
+.plan-step.done .ps-idx { background: #86efac; color: #065f46; }
+.plan-step.done .ps-count { color: #059669; }
+/* 「现在做这一项」：左边一条蓝杠。用 inset 阴影而不是加粗边框——
+   改 border-width 会让整行内容横移 2px */
+.plan-step.next { box-shadow: inset 3px 0 0 var(--primary); }
+.ps-idx {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.ps-main { display: flex; flex-direction: column; gap: 1px; flex: 1 1 auto; min-width: 0; }
+.ps-title { font-weight: 600; }
+.ps-desc { font-size: 0.78rem; color: var(--muted); }
+.ps-count { flex: 0 0 auto; font-size: 0.78rem; color: var(--muted); }
+
+.tile-grid {
+  display: grid;
+  /* 宽屏一行五个、中等窗三个、手机一个：auto-fit 自己算，不必再写断点。
+     原先固定 2 列 + 一条 560px 断点，在宽屏上 5 个方块排成 2+2+1、末行空半边。 */
+  grid-template-columns: repeat(auto-fit, minmax(var(--tile-min), 1fr));
+  gap: 14px;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  padding: 18px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
+  font: inherit;
+  color: var(--text);
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+.tile:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.12);
+}
+.tile-icon { font-size: 1.9rem; line-height: 1; }
+.tile-title { font-size: 1.1rem; font-weight: 700; margin-top: 4px; }
+.tile-badge {
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* 模块页 / 配置页 / 文档页共用的顶部导航条 */
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.nav-title { font-weight: 700; font-size: 1.05rem; }
+.nav-badge {
+  margin-left: auto;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.back-btn { padding: 5px 12px; font-size: 0.85rem; }
+
+/* 模块页子项：与首页方块同一套网格 —— 方块型，鼠标悬停时在旁边弹出说明卡片。
+   原先是通长的一列白条（名字 + 角标 + ›），一屏十几条都占满宽度，既单调，
+   说明也压在下面看不见。 */
+.group-title { margin: 18px 0 8px; font-size: 0.85rem; color: var(--muted); }
+.item-list {
+  display: grid;
+  /* auto-fill 而不是 auto-fit：分组里的项数不一样（读写输出 4 条、句子与游戏 5 条…），
+     auto-fit 会把空轨道塌掉，项数少的组被撑成超宽方块，各组大小就对不齐了。
+     方块宽度按最小列宽整除容器来定，行尾多余的空位留着。 */
+  grid-template-columns: repeat(auto-fill, minmax(var(--tile-min), 1fr));
+  gap: 14px;
+}
+.sub-item {
+  position: relative;          /* 说明卡片浮层的定位锚点（见下面的 .si-desc） */
+  display: flex;
+  min-height: 96px;            /* 方块的下限高度：没有角标的项也不至于缩成一条 */
+  text-align: left;
+  padding: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
+  font: inherit;
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.sub-item:hover,
+.sub-item:focus-visible {
+  border-color: var(--primary);
+  background: #f8fbff;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.12);
+}
+/* 键盘焦点（方向键选中的那个方块）：只靠细边框分不出「选中」和「鼠标悬停」，
+   也看不出键盘焦点停在哪一个，所以再加一圈描边。outline 不占布局，不会引起位移。 */
+.tile:focus-visible,
+.sub-item:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+.si-main { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
+.si-name { font-weight: 600; }
+.si-badge {
+  align-self: flex-start;      /* 药丸只包住文字，不跟着拉满整行 */
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+/* 详细说明：桌面端做成「悬停弹出的小卡片」——绝对定位浮在方块下方，完全不占布局。
+   上一版是「悬停把方块撑开」，整行跟着变高，鼠标扫过网格时下面的内容一直上下跳，
+   所以换成浮层：布局一动不动，说明只在需要时出现。
+
+   触屏（无 hover）不进这层，说明就按普通文字排在方块里，否则那些字永远摸不到。 */
+.si-desc {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+@media (hover: hover) {
+  .si-desc {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 3;                  /* 压在下面几行的方块之上 */
+    width: max-content;
+    min-width: 100%;
+    max-width: 300px;
+    padding: 10px 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2px);
+    pointer-events: none;        /* 没显示时别挡住下面的方块 */
+    transition: opacity 0.12s ease, transform 0.12s ease, visibility 0.12s;
+  }
+  .sub-item:hover .si-desc,
+  .sub-item:focus-visible .si-desc {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;        /* 显示后可以选中里面的文字 */
+  }
+}
+
+/* 文档页：直接看 progress.md / weaknesses.md 原文 */
+.doc-body {
+  max-height: 300px;
+  overflow: auto;
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 按钮 */
+.primary, .secondary {
+  font-size: 1rem;
+  padding: 11px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s, opacity 0.15s;
+}
+.primary { background: var(--primary); color: #fff; }
+.primary:hover { background: var(--primary-hover); }
+.primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.secondary { background: #e5e7eb; color: var(--text); }
+.secondary:hover { background: #d1d5db; }
+
+#submit-btn, #next-btn { width: 100%; margin-top: 12px; }
+/* 「下一题」粘在视口底部：反馈很长（答错 + 例句 + 配图）时也不用滚下去找它。
+   sticky 不脱离文档流——内容到底时自动落回原位，其他模式的排版都不受影响。
+   display:block 是因为 sticky 在 inline-block 的按钮上不可靠；它本来就是全宽，
+   改成 block 没有视觉差。上面一圈同色投影，滚过去的内容不会从缝里透出来。 */
+#next-btn {
+  position: sticky;
+  bottom: 0;
+  display: block;
+  z-index: 5;              /* 在正文之上、模态框（z-index 100）之下 */
+  box-shadow: 0 -10px 12px -10px rgba(15, 23, 42, 0.25);
+}
+
+.btn-row { display: flex; gap: 10px; margin-top: 12px; }
+.btn-row button { flex: 1; margin-top: 0; }
+
+/* 练习页 */
+.practice-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.badge {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.82rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.muted { color: var(--muted); font-size: 0.9rem; }
+#q-score { margin-left: auto; }
+/* 练习页右上角退出按钮：紧凑小号，不抢视觉焦点 */
+#exit-btn { padding: 4px 12px; font-size: 0.82rem; }
+/* 「跳过听力题」开关：与退出同样紧凑；打开时描边变蓝，一眼看出本轮不出听力题 */
+#mute-btn { padding: 4px 12px; font-size: 0.82rem; }
+#mute-btn.on {
+  border: 1px solid var(--primary);
+  background: #eff6ff;
+  color: var(--primary);
+}
+#mute-btn.on:hover { background: #dbeafe; }
+
+.prompt-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.q-lesson { color: var(--muted); font-size: 0.85rem; margin-bottom: 12px; }
+.q-prompt {
+  font-family: var(--ja-font);
+  font-size: 2.6rem;
+  font-weight: 700;
+  word-break: break-word;
+}
+.q-prompt.audio-mode {
+  font-size: 1.6rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+.q-audio-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+/* 通用隐藏类：听音模式的文字提示、反馈区等靠它切换显隐 */
+.hidden { display: none; }
+.audio-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.audio-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.audio-btn-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+/* 学习卡片 / 汉字卡下方的重置语音行：不进 .btn-row（那里 button 是 flex:1 等宽，会抢主按钮） */
+.sub-audio-row { margin-top: 10px; }
+/* 次级按钮：重置语音（重新生成当前词发音，先试听再决定是否覆盖） */
+.audio-btn-sub {
+  background: #fff; color: var(--text);
+  border: 1px solid var(--border);
+  padding: 11px 20px; font-size: 0.95rem;
+}
+.audio-btn-sub:hover { border-color: var(--primary); color: var(--primary); }
+.audio-btn-sub:disabled { opacity: 0.6; cursor: default; transform: none; box-shadow: none; }
+.regen-panel {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 8px;
+  margin-top: 4px; padding: 8px 12px;
+  border: 1px dashed var(--border); border-radius: 8px;
+  font-size: 0.9rem;
+}
+.regen-status { color: var(--muted); }
+.regen-btn {
+  padding: 4px 12px; border-radius: 999px;
+  border: 1px solid var(--border); background: #fff;
+  cursor: pointer; font-size: 0.88rem;
+}
+.regen-btn:hover { border-color: var(--primary); color: var(--primary); }
+.regen-btn.regen-primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+.regen-btn.regen-primary:hover { color: #fff; }
+.audio-btn:active { transform: translateY(0); }
+.audio-hint { color: var(--muted); font-size: 0.8rem; }
+/* 听力题「不方便听」跳过行：小号次级按钮，不抢作答区的焦点 */
+.no-audio-row {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+/* .no-audio-row 定义在通用 .hidden 之后，同优先级下 flex 会盖掉 display:none，需显式兜底 */
+.no-audio-row.hidden { display: none; }
+.no-audio-row button {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.no-audio-row .secondary {
+  background: #eef1f4;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+.no-audio-row .secondary:hover { background: #e2e6ea; color: var(--text); }
+
+#answer-input { margin-top: 0; }
+
+/* 反馈 */
+.feedback {
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+  border: 1px solid var(--border);
+}
+.feedback.hidden { display: none; }
+.feedback.correct { background: var(--correct-bg); border-color: var(--correct); }
+.feedback.wrong { background: var(--wrong-bg); border-color: var(--wrong); }
+.fb-status { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+.feedback.correct .fb-status { color: var(--correct); }
+.feedback.wrong .fb-status { color: var(--wrong); }
+.fb-your, .fb-correct { font-size: 0.92rem; margin: 2px 0; }
+.fb-your span, .fb-correct span { font-family: var(--ja-font); font-weight: 600; }
+.fb-hint {
+  font-size: 0.84rem;
+  color: #92400e;
+  background: #fef3c7;
+  border-left: 3px solid #f59e0b;
+  border-radius: 4px;
+  padding: 6px 9px;
+  margin: 6px 0;
+}
+.fb-word {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(0,0,0,0.12);
+  font-family: var(--ja-font);
+}
+.fb-kanji { font-size: 1.8rem; font-weight: 700; }
+.fb-hira { font-size: 1.1rem; color: var(--text); }
+.fb-roma { font-family: monospace; color: var(--muted); font-size: 0.9rem; margin-left: 6px; }
+.fb-meaning { font-size: 0.95rem; color: var(--muted); margin-top: 4px; }
+.fb-notes { font-size: 0.82rem; color: var(--muted); margin-top: 4px; font-style: italic; }
+
+/* ---- 掌握度标注：3 档（新 / 在学 / 会了），只用左侧竖色条 ----
+   整卡背景色已被「答对 / 答错」的红绿占用，掌握度不能再染背景，
+   否则分不清「发绿是答对了还是这词本来就熟」。三档色在浅绿底与浅红底上都清晰可辨。 */
+.m-new { --m-color: #3b82f6; }    /* m=0 未学：蓝 */
+.m-learn { --m-color: #f59e0b; }  /* m=1-2 在学：琥珀 */
+.m-known { --m-color: #0d9488; }  /* m>=3 会了：青绿 */
+
+.fb-word.m-new, .fb-word.m-learn, .fb-word.m-known {
+  border-left: 4px solid var(--m-color);
+  padding-left: 12px;
+}
+.wrong-item.m-new, .wrong-item.m-learn, .wrong-item.m-known {
+  border-left: 4px solid var(--m-color);
+  padding-left: 10px;
+}
+/* 汉字卡是紧凑列表行：细一点，不抢词形的注意力 */
+.k-word.m-new, .k-word.m-learn, .k-word.m-known {
+  border-left: 3px solid var(--m-color);
+  padding-left: 8px;
+}
+
+/* m=0 的「新」标签，跟在词形后面；其余档位不显示，免得满屏标签 */
+.tag-new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
+/* 结果页 */
+.stats { display: flex; gap: 12px; margin: 16px 0; }
+.stat {
+  flex: 1;
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+.stat .num { display: block; font-size: 1.8rem; font-weight: 700; color: var(--primary); }
+.stat .lbl { font-size: 0.82rem; color: var(--muted); }
+
+/* 学习指标行（连续答对、反应时间、上次对比） */
+.metrics {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 16px;
+  flex-wrap: wrap;
+}
+.metric {
+  flex: 1;
+  min-width: 140px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  text-align: center;
+}
+.metric .num { display: block; font-size: 1.3rem; font-weight: 700; color: var(--text); }
+.metric .lbl { font-size: 0.78rem; color: var(--muted); display: block; margin-top: 2px; }
+.metric .cmp { font-size: 0.74rem; color: var(--muted); display: block; margin-top: 4px; }
+.cmp-up { color: var(--correct); font-weight: 600; }
+.cmp-down { color: var(--wrong); font-weight: 600; }
+.cmp-same { color: var(--muted); }
+
+.wrong-list { display: flex; flex-direction: column; gap: 8px; max-height: 360px; overflow-y: auto; }
+.all-correct { color: var(--correct); font-weight: 600; text-align: center; padding: 16px; }
+.wrong-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: var(--ja-font);
+}
+.wi-prompt { font-size: 1.1rem; font-weight: 600; white-space: pre-line; }
+/* 真题长题干：保留 
+ 换行，缩小字号并左对齐 */
+.q-prompt.exam-stem {
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 1.9;
+}
+.wi-answer { font-size: 1rem; color: var(--text); }
+.wi-meaning { font-size: 0.85rem; color: var(--muted); }
+.wi-your { font-size: 0.82rem; color: var(--wrong); margin-top: 4px; }
+
+.record { font-size: 0.8rem; color: var(--muted); margin: 12px 0; }
+.actions { display: flex; gap: 10px; }
+.actions button { flex: 1; margin-top: 0; }
+
+/* 闪卡模式 */
+.feedback.reveal { background: #eef4ff; border-color: var(--primary); }
+#flashcard-controls { margin-top: 16px; }
+#flip-btn { width: 100%; padding: 14px; font-size: 1.05rem; }
+#assess-row { margin-top: 0; }
+
+/* 统计页 */
+.subtitle a { color: var(--primary); text-decoration: none; }
+/* 统计页比正文宽：掌握度分布 / 各模式正确率 / 混淆对都是数据密集内容，
+   一行能放下更多列，少换行就少滚动 */
+.stats-page { max-width: 1100px; }
+.stats-page .card { margin-bottom: 16px; }
+.summary-grid { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+.sum-card {
+  flex: 1; min-width: 110px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 12px 8px; text-align: center;
+}
+.sum-card .num { display: block; font-size: 1.45rem; font-weight: 700; }
+.sum-card .lbl { color: var(--muted); font-size: 0.8rem; }
+.stat-table { width: 100%; border-collapse: collapse; margin: 8px 0 4px; }
+.stat-table th, .stat-table td {
+  border: 1px solid var(--border); padding: 6px 8px;
+  text-align: center; font-size: 0.92rem;
+}
+.stat-table th { background: #f5f7fb; font-weight: 600; }
+.stat-table td:first-child { text-align: left; }
+
+/* 例句 */
+.fb-example {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+.ex-audio-btn {
+  flex: none; width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--border); background: #fff;
+  cursor: pointer; font-size: 0.95rem;
+}
+.ex-audio-btn:hover { border-color: var(--primary); }
+.fb-ex-ja { font-family: var(--ja-font); font-weight: 600; }
+.fb-ex-zh { color: var(--muted); font-size: 0.88rem; }
+
+/* 真题实战选择题 */
+.exam-qtype { text-align: center; color: var(--muted); font-size: 0.9rem; margin-bottom: 8px; }
+.exam-img {
+  display: block; max-width: 60%; margin: 0 auto 12px;
+  border: 1px solid var(--border); border-radius: 8px;
+}
+/* 单词配图：题干大图（看图写假名/看图选词） */
+.q-image {
+  display: block; max-width: min(320px, 78%); max-height: 280px;
+  margin: 0 auto;
+  border: 1px solid var(--border); border-radius: 10px;
+}
+/* 单词配图：反馈面板 / 闪卡背面 / 课程预习卡 / 学习卡片里的小图 */
+.fb-img {
+  display: block; max-height: 150px; margin: 0 auto 10px;
+  border: 1px solid var(--border); border-radius: 8px;
+}
+/* 单词配图：结果页错题回顾缩略图 */
+.wi-img {
+  max-height: 72px;
+  border: 1px solid var(--border); border-radius: 6px;
+  vertical-align: middle;
+}
+.exam-opt {
+  display: flex; align-items: flex-start; gap: 10px; width: 100%;
+  text-align: left; padding: 12px 14px; margin-bottom: 8px;
+  border: 1px solid var(--border); border-radius: 8px; background: #fff;
+  font-size: 1rem; cursor: pointer; line-height: 1.5;
+  transition: border-color .15s, background .15s;
+  font-family: var(--ja-font);
+}
+.exam-opt:hover { border-color: var(--primary); }
+.exam-opt.answered { cursor: default; pointer-events: none; }
+/* 方向键高亮游标：↑/↓ 选中、Enter 确认的那一项 */
+.exam-opt.opt-cursor { border-color: var(--primary); background: #eef3ff; }
+
+/* 掌握度三档色条：新(红)/在学(橙)/会了(绿)，按档位设置 --m-color */
+.fb-word.m-new, .wrong-item.m-new, .k-word.m-new { --m-color: #d9534f; }
+.fb-word.m-learn, .wrong-item.m-learn, .k-word.m-learn { --m-color: #e8a33d; }
+.fb-word.m-known, .wrong-item.m-known, .k-word.m-known { --m-color: #4cae6d; }
+.fb-word.m-new, .fb-word.m-learn, .fb-word.m-known,
+.wrong-item.m-new, .wrong-item.m-learn, .wrong-item.m-known,
+.k-word.m-new, .k-word.m-learn, .k-word.m-known {
+  border-left: 4px solid var(--m-color);
+}
+.m-tag {
+  float: right; margin-left: 8px;
+  font-size: 0.72rem; line-height: 1.8;
+  padding: 1px 8px; border-radius: 999px;
+  background: var(--m-color, var(--muted)); color: #fff;
+}
+.exam-opt .opt-num { font-weight: 700; color: var(--primary); flex: none; }
+.exam-opt.opt-correct { background: var(--correct-bg); border-color: var(--correct); }
+.exam-opt.opt-wrong { background: var(--wrong-bg); border-color: var(--wrong); }
+/* 选项即发音：瓦片只显示喇叭（选项文本=读音=答案，不能显示）；
+   作答后仍可点着逐个对比发音，故不套用 answered 的指针禁用 */
+.exam-opt.audio-opt {
+  align-items: center; justify-content: center; gap: 12px; padding: 16px 14px;
+}
+.exam-opt.audio-opt .opt-speaker { font-size: 1.9rem; line-height: 1; }
+.exam-opt.audio-opt.answered { pointer-events: auto; cursor: pointer; }
+
+/* 组句排序：答案行（放置区）+ 词块托盘；点选和拖拽都落在这里 */
+.order-line {
+  min-height: 52px;
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.order-tray { display: flex; flex-wrap: wrap; gap: 8px; }
+.order-chip {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 1.05rem;
+  cursor: grab;               /* 主要交互是拖拽，点击是快捷方式 */
+}
+.order-chip:active { cursor: grabbing; }
+.order-chip.dragging { opacity: .45; }  /* 拖动中的块：句子里其余块会实时让位 */
+.order-chip:hover { border-color: var(--primary); }
+.order-line .order-chip { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+/* 词义配对：词列 + 释义列瓦片 */
+.pair-grid { display: flex; gap: 12px; }
+.pair-col { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.pair-tile {
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+.pair-tile:hover { border-color: var(--primary); }
+.pair-tile.pair-selected { border-color: var(--primary); background: #eef4ff; }
+.pair-tile.pair-matched {
+  background: var(--correct-bg);
+  border-color: var(--correct);
+  cursor: default;
+  opacity: .55;
+  pointer-events: none;
+}
+.pair-tile.pair-wrong { background: var(--wrong-bg); border-color: var(--wrong); }
+
+/* 汉字识字卡 */
+.k-char-wrap { text-align: center; margin-bottom: 14px; }
+.k-char { font-size: 5rem; font-weight: 700; line-height: 1.2; }
+.k-word {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  border-top: 1px solid var(--border);
+}
+.k-word:first-child { border-top: none; }
+.k-word-text { min-width: 0; }
+.k-word-form { font-size: 1.1rem; font-weight: 600; }
+.k-word-meaning { font-size: .9rem; color: var(--muted); }
+
+/* 动词活用卡：变形行 / 活用型说明 / 例句（复用 k-char 与 k-word 的行布局） */
+.conj-infl { margin-top: 6px; color: var(--muted); font-size: .85rem; }
+.conj-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  border-top: 1px solid var(--border);
+}
+.conj-row:first-child { border-top: none; }
+.conj-label { color: var(--muted); flex-shrink: 0; width: 3.6em; }
+.conj-form { font-size: 1.4rem; font-weight: 600; }
+.conj-example { margin-top: 10px; color: var(--muted); font-size: .95rem; }
+
+/* 真题范围过滤（真题实战模式） */
+.exam-filters { display: flex; gap: 8px; }
+.exam-filters select { flex: 1; }
+
+/* 课程范围一行：下拉 + 「✏️ 改名」（改名只改显示名，不动词与进度） */
+.lesson-pick { display: flex; gap: 8px; align-items: center; }
+.lesson-pick select { flex: 1; }
+.lesson-pick .rename-btn {
+  padding: 9px 12px; font-size: 0.9rem; white-space: nowrap; margin-top: 0;
+}
+
+/* 新增单词模态框 */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(17, 24, 39, 0.45);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 40px 16px; overflow-y: auto; z-index: 100;
+}
+/* 双类选择器压过 .modal-overlay 的 display:flex，保证 hidden 真正隐藏 */
+.modal-overlay.hidden { display: none; }
+.modal-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 24px;
+  width: 100%; max-width: 480px;
+}
+.modal-head {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;
+}
+.modal-head h2 { margin: 0; font-size: 1.25rem; }
+.modal-close {
+  border: none; background: transparent; font-size: 1.5rem; line-height: 1;
+  color: var(--muted); cursor: pointer; padding: 4px 8px; border-radius: 6px;
+}
+.modal-close:hover { background: #f3f4f6; color: var(--text); }
+.req { color: var(--wrong); margin-left: 2px; }
+#aw-new-lesson { margin-top: 8px; }
+.aw-more { margin-bottom: 16px; }
+.aw-more summary { cursor: pointer; color: var(--muted); font-size: 0.9rem; }
+.aw-more[open] summary { margin-bottom: 14px; }
+.aw-msg { font-size: 0.9rem; margin: 4px 0 12px; padding: 8px 12px; border-radius: 8px; }
+.aw-ok { background: var(--correct-bg); color: var(--correct); }
+.aw-err { background: var(--wrong-bg); color: var(--wrong); }
+
+/* 新增单词：相近词匹配列表 + 「正在修改已有词」横幅 */
+.aw-bound {
+  display: flex; align-items: center; gap: 10px;
+  margin: 4px 0 10px; padding: 8px 12px;
+  background: var(--correct-bg); border-radius: 8px;
+  font-size: 0.9rem; color: var(--text);
+}
+.aw-unbind {
+  flex: none; margin-left: auto; padding: 3px 10px;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: #fff; cursor: pointer; font-size: 0.85rem;
+}
+.aw-unbind:hover { border-color: var(--wrong); color: var(--wrong); }
+.aw-similar { margin: 4px 0 10px; }
+.aw-sim-head { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
+.aw-sim-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 10px; margin-bottom: 6px;
+  border: 1px solid var(--border); border-radius: 8px;
+  font-size: 0.92rem;
+}
+.aw-sim-use {
+  flex: none; padding: 3px 12px;
+  border: 1px solid var(--primary); border-radius: 999px;
+  background: #fff; color: var(--primary);
+  cursor: pointer; font-size: 0.85rem;
+}
+.aw-sim-use:hover { background: var(--primary); color: #fff; }
+.aw-sim-word { font-family: var(--ja-font); font-weight: 700; }
+.aw-sim-meaning { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.aw-sim-meta { margin-left: auto; flex: none; color: var(--muted); font-size: 0.8rem; }
+
+/* 学新词卡片：用法讲解（记忆钩子） */
+.fb-tip {
+  margin-top: 10px; padding: 8px 12px; text-align: left; line-height: 1.6;
+  background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;
+  font-size: 0.88rem; color: #92400e;
+}
+.fb-tip-label { font-weight: 700; margin-right: 6px; white-space: nowrap; }
+/* 新增/编辑弹窗的多行输入框 */
+.modal-card textarea {
+  width: 100%; padding: 8px 10px; border: 1px solid var(--border);
+  border-radius: 8px; font: inherit; line-height: 1.5;
+  resize: vertical; min-height: 48px; box-sizing: border-box;
+}
+
+/* ---- 重点词（聚焦练习）：清单页 ---- */
+.focus-actions {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin: 12px 0;
+}
+.focus-actions .secondary { padding: 6px 14px; font-size: 0.88rem; }
+.focus-actions .secondary:disabled { opacity: 0.5; cursor: default; }
+
+/* 清单：每个词一枚 chip，左侧掌握度色条（与反馈卡同一套三档色） */
+.focus-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.focus-chip {
+  display: flex; align-items: center; gap: 6px;
+  padding: 5px 8px 5px 10px;
+  border: 1px solid var(--border); border-left: 3px solid var(--m-color, var(--border));
+  border-radius: 8px; background: #fff; font-size: 0.88rem;
+}
+.focus-chip .fc-form { font-family: var(--ja-font); font-weight: 700; }
+.focus-chip .fc-hira { color: var(--muted); font-family: var(--ja-font); }
+.focus-chip .fc-mean { color: var(--muted); font-size: 0.82rem; }
+.focus-chip .fc-del {
+  border: none; background: transparent; color: var(--muted);
+  cursor: pointer; font-size: 0.85rem; padding: 0 2px; line-height: 1;
+}
+.focus-chip .fc-del:hover { color: var(--wrong); }
+
+/* 挑词面板：筛选横排 + 快捷选取 + 候选行 */
+.focus-filters { flex-direction: row; flex-wrap: wrap; gap: 8px; }
+.mode-inline { padding: 6px 10px; }
+.mode-inline span { flex-direction: row; }
+.focus-quick { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.focus-quick input[type="number"] { width: 84px; flex: none; }
+.focus-quick .secondary { padding: 8px 12px; font-size: 0.85rem; }
+
+.pick-list { display: flex; flex-direction: column; gap: 6px; max-height: 420px; overflow-y: auto; }
+.pick-row {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 8px 12px; text-align: left;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: #fff; cursor: pointer; font: inherit; color: var(--text);
+}
+.pick-row:hover { border-color: var(--primary); }
+.pick-row .pr-form {
+  font-family: var(--ja-font); font-weight: 700; flex: none; min-width: 5em;
+}
+.pick-row .pr-hira { font-family: var(--ja-font); color: var(--muted); flex: none; }
+.pick-row .pr-mean {
+  color: var(--muted); font-size: 0.85rem;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0;
+}
+.pick-row .pr-flag { margin-left: auto; flex: none; color: var(--muted); font-size: 0.85rem; }
+.pick-row.picked { background: #eff6ff; border-color: #bfdbfe; }
+.pick-row.picked .pr-flag { color: var(--primary); font-weight: 700; }
